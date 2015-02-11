@@ -21,7 +21,7 @@ print $rp->get('title') . " " . $rp->get('url') . " " . $rp->get('description') 
 for (my $i = 0; $i < $rp->count(); $i++) {
     my $it = $rp->get($i);
     print "Title: " . $it->get('title') . "\n" . "URL:" . $it->get('url') . "\n" . "Desc:" . $it->get('description') . "\n\n";
-
+    
     my $url = $it->get('url');
     #print "$url\n";
     my $pd = get($url);
