@@ -1,61 +1,55 @@
-package FeedParser;
+package FeedRunner;
 
 use Carp;
 use LWP::Simple;
 use Class::Load ':all';
 use XML::RSS::Parser::Lite;
-use Moose::Role;
+use Moose;
 use MongoDB;
 
 with 'MooseX::Runnable';
 with 'MooseX::Getopt';
 
 has source => (
-    is => 'ro', 
-    isa => 'Str', 
-    required => 1;
+    is       => 'ro', 
+    isa      => 'Str', 
+    required => 1,
+); 
+
+has dest => (
+    is       => 'ro', 
+    isa      => 'Str', 
+    default  => sub { return q{Mongo}},
 ); 
 
 has parser => (
     is         => 'ro',
-    does       => 'Parser',
+    does       => 'ParserRole',
     lazy_build => 1, 
 );
 
-has collection => (
-    is      => 'ro',
-    isa     => 'Object',
-    lazy    => 1,
-    default => sub {
-        return MongoDB::MongoClient->new(
-            host => 'localhost', 
-            port => 27017
-        )->get_database('test')->get_collection('vaarta');
-    },
+has dumper => (
+    is         => 'ro',
+    does       => 'DestRole',
+    lazy_build => 1, 
 );
 
 sub _build_parser {
     my ($self) =@_;
 
-    load_class(q{Parser::} . $self->source);
+    my $source = q{Plugin::} . $self->source;
+    load_class($source);
 
-    return $self->source->new();
+    return $source->new();
 }
 
-sub load {
-    my ($self, $parsed_data) = @_;
+sub _build_dumper {
+    my ($self) =@_;
 
-    for my $data (@{$parsed_data}) {
-        $collection->insert({
-            source   => $data->{source},
-            title    => $data->{title},
-            story_id => $data->{story_id},
-            author   => $data->{author},
-            content  => $data->{content},
-            time     => $data->{time},
-            tags     => $data->{tags},
-        });
-    }
+    my $dest = q{Plugin::} . $self->dest;
+    load_class($dest);
+
+    return $dest->new();
 }
 
 sub run {
@@ -63,7 +57,7 @@ sub run {
 
     my $data = $self->parser->extract();
     my $parsed_data = $self->parser->parse($data);
-    $self->load($parsed_data);
+    $self->dumper->persist($parsed_data);
 }
 
 1;

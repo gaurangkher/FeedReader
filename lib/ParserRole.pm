@@ -4,16 +4,13 @@ use Moose::Role;
 use Carp;
 use LWP::Simple;
 use XML::RSS::Parser::Lite;
-use Digest::MD5 qw(md5 md5_hex md5_base64);
-use Encode qw(encode_utf8);
-
 requires 'parse';
-requires 'source_name';
 
 has feeds => (
     is       => 'ro',
     isa      => 'ArrayRef',
     required => 1,
+    default  => sub { [] },
 );
 
 has rss_parser => (
@@ -22,13 +19,6 @@ has rss_parser => (
     lazy    => 1,
     default => sub { return new XML::RSS::Parser::Lite;},
 );
-
-sub get_id {
-    my ($self, $title) = @_;
-
-    my $string = $self->source_name() . encode_utf8($title);
-    return md5_hex($string);
-}
 
 sub extract {
     my ($self) = @_;

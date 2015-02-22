@@ -1,7 +1,7 @@
-package Parser::Hindu;
+package Plugin::Hindu;
 
 use Moose;
-use Mojo::Dom;
+use Mojo::DOM;
 
 with 'ParserRole'
 
