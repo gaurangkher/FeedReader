@@ -1,4 +1,4 @@
-package Plugin::Hindu;
+package Plugin::HindustanTimes;
 
 use Data::Dumper;
 use Moose;
@@ -21,7 +21,7 @@ has feeds => (
 );
 
 sub source_name {
-    return q{The Hindu};
+    return q{Hindustan Times};
 }
 
 sub parse {
@@ -31,10 +31,12 @@ sub parse {
 
     for my $story (@{ $stories }) {    
         
-        my $url = $story->get('url');
-        my $pd  = get($url);
-        my $args = $self->parse_page($pd); 
+        my $url   = $story->get('url');
+        my $pd    = get($url);
+        my $title = $story->get('title');
+        my $args  = $self->parse_page($pd); 
         my $story = Story->new(
+            title   => $title,
             source  => $self->source_name(),
             url     => $url,
             %{ $args },
@@ -49,24 +51,31 @@ sub parse {
 sub parse_page {
     my ($self, $pd) = @_;
 
-    my $page = Mojo::DOM->new($pd);
-    my $content = $page->find('p.body')->map('text')->join("\n\n");
-    
-    $content = "$content";
-    my $author = $page->at('.author')->content;
-    my $title =  $page->at('h1.detail-title')->text;
-    my $image_url = $page->at('img.main-image')->tree->[2]->{src};
-   
-    my $time = $page->at('div.artPubUpdate')->text;
-    $time =~ s/Updated: //g;
-    
     my $hp = HTML::HeadParser->new();
     $hp->parse($pd);
+    my $description = $hp->header('X-Meta-Description');
     my $tags = $hp->header('X-Meta-keywords');
-    my $description = $hp->header('X-Meta-description');
+    my $time = $hp->header('Last-Modified'); 
+    my ($day, @arr) = split q{ }, $time;
+    $time = join q{ }, @arr;
     
+    my $page = Mojo::DOM->new($pd);
+
+    my $stream =  $page->find('p')->map('text')->join("\n");
+    my $content = "$stream";
+    my $pg_content = $page->at('.page_update')->content;
+
+    my $find = $page->at('div.news_photo')->content;
+    my $temp = Mojo::DOM->new($find);
+    my $image_url = $temp->at('img')->tree->[2]->{src};
+    
+    my $dm1 =  Mojo::DOM->new($pg_content);
+    my $coll = $dm1->find('b')->map('text');
+    my $prob_authors =  $coll->first;
+    my @aut = split q{,}, $prob_authors;
+    my $author =  $aut[0];
+
     return {
-        title       => $title,
         time        => $time,
         author      => $author,
         content     => $content,

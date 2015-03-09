@@ -34,13 +34,13 @@ has time => (
     required => 1,
 ); 
 
-has tags => (
+has description => (
     is       => 'ro', 
     isa      => 'Str', 
     required => 1,
 ); 
 
-has description => (
+has url => (
     is       => 'ro', 
     isa      => 'Str', 
     required => 1,
@@ -49,18 +49,6 @@ has description => (
 has image => (
     is       => 'ro', 
     isa      => 'FileHandle', 
-    required => 1,
-); 
-
-has feed_type => (
-    is       => 'ro', 
-    isa      => 'Str', 
-    required => 1,
-); 
-
-has classification => (
-    is       => 'ro', 
-    isa      => 'Str', 
     required => 1,
 ); 
 
@@ -82,9 +70,7 @@ sub to_href {
         author   => $self->author,
         content  => $self->content,
         time     => $self->time,
-        tags     => $self->tags,
-        feed_type => $self->feed_type,
-        classification => $self->classification,
+        url      => $self->url,
     };
 }
 

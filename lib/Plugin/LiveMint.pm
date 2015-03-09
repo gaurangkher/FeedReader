@@ -1,4 +1,4 @@
-package Plugin::Hindu;
+package Plugin::LiveMint;
 
 use Data::Dumper;
 use Moose;
@@ -21,7 +21,7 @@ has feeds => (
 );
 
 sub source_name {
-    return q{The Hindu};
+    return q{LiveMint};
 }
 
 sub parse {
@@ -31,10 +31,12 @@ sub parse {
 
     for my $story (@{ $stories }) {    
         
-        my $url = $story->get('url');
-        my $pd  = get($url);
-        my $args = $self->parse_page($pd); 
+        my $url   = $story->get('url');
+        my $pd    = get($url);
+        my $title = $story->get('title');
+        my $args  = $self->parse_page($pd); 
         my $story = Story->new(
+            title   => $title,
             source  => $self->source_name(),
             url     => $url,
             %{ $args },
@@ -50,23 +52,22 @@ sub parse_page {
     my ($self, $pd) = @_;
 
     my $page = Mojo::DOM->new($pd);
-    my $content = $page->find('p.body')->map('text')->join("\n\n");
-    
+    my $content = $page->find('div.p')->map('text')->join("\n");
     $content = "$content";
-    my $author = $page->at('.author')->content;
-    my $title =  $page->at('h1.detail-title')->text;
-    my $image_url = $page->at('img.main-image')->tree->[2]->{src};
-   
-    my $time = $page->at('div.artPubUpdate')->text;
-    $time =~ s/Updated: //g;
+    my $auths = $page->at('.sty_author')->find('a')->map('text');
+    my $author = $auths->first;
+    my $image_url = $page->at('.sty_main_pic_sml1')->find('img')->first;
+    $image_url = q{http://www.livemint.com} . $image_url->attr('src');
     
     my $hp = HTML::HeadParser->new();
     $hp->parse($pd);
-    my $tags = $hp->header('X-Meta-keywords');
-    my $description = $hp->header('X-Meta-description');
+    my $tags = $hp->header('X-Meta-keywords'); 
+    my $description = $hp->header('X-Meta-description'); 
+    my $time = $hp->header('X-Meta-eomportal-lastUpdate');
+    my ($day, @args) = split q{ }, $time;
+    $time = join q{ }, @args;
     
     return {
-        title       => $title,
         time        => $time,
         author      => $author,
         content     => $content,

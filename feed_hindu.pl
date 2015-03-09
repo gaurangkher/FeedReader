@@ -19,12 +19,15 @@ print $rp->get('title') . " " . $rp->get('url') . " " . $rp->get('description') 
 
 for (my $i = 0; $i < $rp->count(); $i++) {
     my $it = $rp->get($i);
-    print Dumper $it;
-    exit;
+    
     print "Title: " . $it->get('title') . "\n" . "URL:" . $it->get('url') . "\n" . "Desc:" . $it->get('description') . "\n\n";
     my $url = $it->get('url');
     my $pd = get($url);
     my $page = Mojo::DOM->new($pd);
+    my $hp = HTML::HeadParser->new();   
+    $hp->parse($pd);
+    print Dumper $hp->header('X-Meta-description');
+    exit;
     my $content = $page->find('p.body')->map('text')->join("\n");
     my $content = "$content";
     my $author = $page->at('.author')->content;
