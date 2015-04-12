@@ -2,11 +2,10 @@ package Plugin::Hindu;
 
 use Data::Dumper;
 use Moose;
+use Try::Tiny;
 use Mojo::DOM;
 use LWP::Simple;
 use HTML::HeadParser;
-use Story;
-use Story;
 use Story;
 
 with 'ParserRole';
@@ -32,6 +31,7 @@ sub parse {
     for my $story (@{ $stories }) {    
         
         my $url = $story->get('url');
+        print Dumper $url;
         my $pd  = get($url);
         my $args = $self->parse_page($pd); 
         my $story = Story->new(
@@ -51,17 +51,16 @@ sub parse_page {
 
     my $page = Mojo::DOM->new($pd);
     my $content = $page->find('p.body')->map('text')->join("\n\n");
-    
     $content = "$content";
-    my $author = $page->at('.author')->content;
     my $title =  $page->at('h1.detail-title')->text;
-    my $image_url = $page->at('img.main-image')->tree->[2]->{src};
+    my $image_url = try {$page->at('img.main-image')->tree->[2]->{src} } || undef;
    
     my $time = $page->at('div.artPubUpdate')->text;
     $time =~ s/Updated: //g;
     
     my $hp = HTML::HeadParser->new();
     $hp->parse($pd);
+    my $author = $hp->header('X-Meta-author');
     my $tags = $hp->header('X-Meta-keywords');
     my $description = $hp->header('X-Meta-description');
     

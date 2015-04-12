@@ -30,26 +30,22 @@ has author => (
 
 has time => (
     is       => 'ro', 
-    isa      => 'Str', 
-    required => 1,
+    isa      => 'Maybe[Str]', 
 ); 
 
 has description => (
     is       => 'ro', 
-    isa      => 'Str', 
-    required => 1,
+    isa      => 'Maybe[Str]', 
 ); 
 
 has url => (
     is       => 'ro', 
-    isa      => 'Str', 
-    required => 1,
+    isa      => 'Maybe[Str]', 
 ); 
 
-has image => (
+has image_url => (
     is       => 'ro', 
-    isa      => 'FileHandle', 
-    required => 1,
+    isa      => 'Maybe[Str]', 
 ); 
 
 sub get_id {
@@ -64,13 +60,16 @@ sub to_href {
     my ($self) = @_;
 
     return {
-        source   => $self->source,
-        title    => $self->title,
-        story_id => $self->get_id(),
-        author   => $self->author,
-        content  => $self->content,
-        time     => $self->time,
-        url      => $self->url,
+        source      => $self->source,
+        title       => $self->title,
+        story_id    => $self->get_id(),
+        author      => $self->author,
+        content     => $self->content,
+        time        => $self->time,
+        url         => $self->url,
+        description => $self->description,
+        image_url   => $self->image_url,
+        tags        => $self->tags,
     };
 }
 
