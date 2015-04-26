@@ -7,7 +7,10 @@ with 'DestRole';
 sub persist {
     my ($self, $data) = @_;
 
-    return $data->to_href();
+    for my $story (@{$data}) {
+        print Dumper $story;
+    }
+    return;
 }
 
 1;

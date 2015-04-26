@@ -48,6 +48,11 @@ has image_url => (
     isa      => 'Maybe[Str]', 
 ); 
 
+has tags => (
+    is       => 'ro', 
+    isa      => 'Maybe[Str]', 
+); 
+
 sub get_id {
     my ($self) = @_;
 

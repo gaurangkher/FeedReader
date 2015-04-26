@@ -16,7 +16,7 @@ has feeds => (
     isa      => 'ArrayRef',
     required => 1,
     default  => sub { [
-        'http://www.thehindu.com/?service=rss',
+        'http://www.livemint.com/rss/homepage',
     ] },
 );
 
@@ -32,6 +32,7 @@ sub parse {
     for my $story (@{ $stories }) {    
         
         my $url   = $story->get('url');
+        print Dumper $url;
         my $pd    = get($url);
         my $title = $story->get('title');
         my $args  = $self->parse_page($pd); 

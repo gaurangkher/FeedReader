@@ -31,8 +31,8 @@ sub parse {
     for my $story (@{ $stories }) {    
         
         my $url = $story->get('url');
-        print Dumper $url;
-        my $pd  = get($url);
+        my $pd  = $self->get_url($url);
+        next if (!defined $pd);
         my $args = $self->parse_page($pd); 
         my $story = Story->new(
             source  => $self->source_name(),
@@ -52,10 +52,11 @@ sub parse_page {
     my $page = Mojo::DOM->new($pd);
     my $content = $page->find('p.body')->map('text')->join("\n\n");
     $content = "$content";
-    my $title =  $page->at('h1.detail-title')->text;
+    my $try = $page->find('meta[property="og:title"]')->first;
+    my $title = $try->tree->[2]->{content};
     my $image_url = try {$page->at('img.main-image')->tree->[2]->{src} } || undef;
    
-    my $time = $page->at('div.artPubUpdate')->text;
+    my $time = try { $page->at('div.artPubUpdate')->text; };
     $time =~ s/Updated: //g;
     
     my $hp = HTML::HeadParser->new();

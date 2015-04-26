@@ -16,7 +16,7 @@ has feeds => (
     isa      => 'ArrayRef',
     required => 1,
     default  => sub { [
-        'http://www.thehindu.com/?service=rss',
+        'http://feeds.hindustantimes.com/HT-HomePage-TopStories',
     ] },
 );
 

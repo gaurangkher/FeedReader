@@ -2,8 +2,11 @@ package ParserRole;
 
 use Moose::Role;
 use Carp;
+use Data::Dumper;
 use LWP::Simple;
 use XML::RSS::Parser::Lite;
+use Action::Retry qw(retry);
+
 requires 'parse';
 
 has feeds => (
@@ -37,4 +40,14 @@ sub extract {
     return \@content;
 }
 
+sub get_url {
+    my ($self, $url) = @_;
+
+    my $content = retry { get($url) } strategy => q{Fibonacci};
+
+    if (!defined $content) {
+        print Dumper $url;
+    }
+    return $content;    
+}
 1;
