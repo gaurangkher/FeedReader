@@ -1,5 +1,6 @@
 package Plugin::Dumper;
 
+use Data::Dumper;
 use Moose;
 
 with 'DestRole';
@@ -7,10 +8,7 @@ with 'DestRole';
 sub persist {
     my ($self, $data) = @_;
 
-    for my $story (@{$data}) {
-        print Dumper $story;
-    }
-    return;
+    print Dumper $data->to_href();
 }
 
 1;
