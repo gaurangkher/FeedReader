@@ -32,7 +32,7 @@ sub parse {
     for my $story (@{ $stories }) {    
         
         my $url   = $story->get('url');
-        my $pd    = get($url);
+        my $pd    = $self->get_url($url);
         my $title = $story->get('title');
         my $args  = $self->parse_page($pd); 
         my $story = Story->new(

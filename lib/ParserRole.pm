@@ -28,7 +28,7 @@ sub extract {
 
     my @content;
     for my $feed ( @{ $self->feeds }) {
-        my $xml = get($feed);
+        my $xml = $self->get_url($feed);
         if (!defined $xml) {
             croak qq{ did not get response for feed: $feed};
         }

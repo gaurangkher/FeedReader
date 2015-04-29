@@ -34,15 +34,23 @@ has img_col => (
 sub persist {
     my ($self, $data) = @_;
 
-    $self->collection->insert($data->to_href());
-    
-    my $image_url = $data->to_href()->{image_url};
+    my $hash = $data->to_href();
+    my @result = $self->collection->find({ title_id => $hash->{title_id}})->all;
+    if (scalar @result == 0 ) {
+        $self->collection->insert($hash);
+        
+        my $image_url = $hash->{image_url};
 
-    if ($image_url) {
-        my $img = get($image_url);
-        my $story_id = $data->get_id();
-        $self->img_col($img, { filename => $story_id });
+        if ($image_url) {
+            $self->save_image($hash);
+        }
+        return 1;
     }
+    return 0;
+}
+
+sub save_image {
+    my ($self, $hash) = @_;
 }
 
 1;

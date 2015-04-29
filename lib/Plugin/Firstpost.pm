@@ -17,7 +17,7 @@ has feeds => (
     isa      => 'ArrayRef',
     required => 1,
     default  => sub { [
-        'http://www.thehindu.com/?service=rss',
+        'http://www.firstpost.com/india/feed',
     ] },
 );
 
@@ -33,7 +33,8 @@ sub parse {
     for my $story (@{ $stories }) {    
         
         my $url   = $story->get('url');
-        my $pd    = get($url);
+        my $pd    = $self->get_url($url);
+        print Dumper $url;
         my $title = $story->get('title');
         my $args  = $self->parse_page($pd); 
         my $story = Story->new(
