@@ -1,40 +1,130 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#"   xmlns:article="http://ogp.me/ns/article#" itemscope itemtype="http://schema.org/Article">
-<!--
-	generated 182 seconds ago
-	generated in 0.423 seconds
-	served from batcache in 0.002 seconds
-	expires in 118 seconds
--->
 <head profile="http://en.wordpress.com/vip-hosting">
+<script type='text/javascript'>
+//critio
+var crtg_nid = '3833';
+var crtg_cookiename = 'crtg_rta';
+var crtg_varname = 'crtg_content';
+function crtg_getCookie(c_name){ var i,x,y,ARRCookies=document.cookie.split(";");for(i=0;i<ARRCookies.length;i++){x=ARRCookies[i].substr(0,ARRCookies[i].indexOf("="));y=ARRCookies[i].substr(ARRCookies[i].indexOf("=")+1);x=x.replace(/^\s+|\s+$/g,"");if(x==c_name){return unescape(y);} }return'';}
+var crtg_content = crtg_getCookie(crtg_cookiename);
+var crtg_rnd=Math.floor(Math.random()*99999999999);
+(function(){
+var crtg_url=location.protocol+'//rtax.criteo.com/delivery/rta/rta.js?netId='+escape(crtg_nid);
+crtg_url +='&cookieName='+escape(crtg_cookiename);
+crtg_url +='&rnd='+crtg_rnd;
+crtg_url +='&varName=' + escape(crtg_varname);
+var crtg_script=document.createElement('script');crtg_script.type='text/javascript';crtg_script.src=crtg_url;crtg_script.async=true;
+if(document.getElementsByTagName("head").length>0)document.getElementsByTagName("head")[0].appendChild(crtg_script);
+else if(document.getElementsByTagName("body").length>0)document.getElementsByTagName("body")[0].appendChild(crtg_script);
+})();
+//critio
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A700&#038;ver=3.9" type="text/css">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
-<script type="text/javascript">
-  (function() {
-  var useSSL = 'https:' == document.location.protocol;
-  var src = (useSSL ? 'https:' : 'http:') +
-  '//www.googletagservices.com/tag/js/gpt.js';
-  document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-  })();
-</script>
-<script src="http://s0.wp.com/wp-content/themes/vip/indianexpress/js/ie_adv_list.js?m=1423657090g"></script>
+<!-- Vizury ads start-->
+<script type='text/javascript'>
+	(function() {
+		try {
+			var viz = document.createElement('script');
+			viz.type = 'text/javascript';
+			viz.async = true;
+			var rand = Math.random()*100000000;
+			viz.src = '//rtb-ap.vizury.com/bidrequest/rtbpam?v=1.1&id=6868&name=PAM_IND_PC_IndianExpress&r='+rand;
 
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(viz, s);
+		} catch (i) {}
+	})();
+</script>
+
+<script type='text/javascript'>
+	
+	var vizPAM = '';
+	var name = 'vizPAM=';
+	var sizes = new Array();
+	var itemp="0";
+	var ca = document.cookie.split(';');
+	
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i];
+		
+		while (c.charAt(0)==' ') c = c.substring(1);
+		if (c.indexOf(name) != -1){
+			vizPAM = c.substring(name.length,c.length);
+		}
+	}
+
+	try{
+		vizPAM = JSON.parse(vizPAM);
+	}catch(i){}
+
+	function isVizInterested(size){
+		try{
+			if(vizPAM.result[size]['int'] === 'yes'){
+				return true;
+			}else{
+				return false;
+			}
+
+		}catch(i){
+			
+			return false;
+		}
+	}
+
+	function getAdv(size){
+		try{
+			return vizPAM.result[size]['adv'];
+		}catch(i){
+			return '';
+		}
+	}
+
+	function getImpr(size){
+		try{
+			return vizPAM.result[size]['impid'];
+		}catch(i){
+			return '';
+		}
+	}
+
+	function getSizes(){
+		
+		try {
+			for( var size in vizPAM.result){
+				sizes[itemp]=size;
+				itemp++;
+			} return sizes;      
+		} catch (i) {
+				return '';
+		}
+	}
+</script>
+<!-- Visury ads end-->
+<script type="text/javascript">
+(function() {
+	var useSSL = 'https:' == document.location.protocol;
+	var src = (useSSL ? 'https:' : 'http:') +
+	'//www.googletagservices.com/tag/js/gpt.js';
+	document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+	})();
+</script>
 <script type="text/javascript">var switchTo5x=true;</script>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "d4265d8f-ff31-4770-9be3-ba9b1333e195", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-<meta name="description" content="Masarat had become a cult figure in the Valley for issuing protests during 2010." /><meta name="news_keywords" content="Mufti Mohammad Sayeed, Hurriyat Conference, Masarat Alam, mufti, mufti sayeed, mufti mohammed sayeed, hurriyat, bjp, bjp mufti mohammed sayeed, political prisoners, mufti sayeed political prisoners, kashmir news, jammu news" />
-<meta name="keywords" content="mufti mohammad sayeed, hurriyat conference, masarat alam, mufti, mufti sayeed, mufti mohammed sayeed, hurriyat, bjp, bjp mufti mohammed sayeed, political prisoners, mufti sayeed political prisoners, kashmir news, jammu news" /><meta name="robots" content="NOODP" />
+<meta name="description" content="Search teams say it is not easy getting to the bodies because they are probably deep inside, beneath layers of flattened buildings." /><meta name="news_keywords" content="Nepal Earthquake, Earthquake, india nepal relief plane, nepal india rescue plane, india rescue plane, india earthquake deaths, indian express, nepal massive earthquake, Nepal landslides, Nepal avalanches, Nepal earthquake landslides, Nepal earthquake victims, Nepal earthquake, nepal disaster, Nepal chinese tourist, nepal rescue effort, india nepal rescue effort, nepal earthquake tourist, Nepal, nepal earthquake, earthquake, nepal, indiaaid, india nepal earthquake, india nepal aid, india relief operation, india relief ops, World News, Indian express, Eathquake news, Nepal earthquake news, Nepal earthquake, nepal natural disaster, india nepal NDRF teams, india NDRF teams, Nepal earthquake patients, nepal earthquake treatment, Saturday earthquake, earthquake tremors, nepal bigger earthquake, Nepal earthquake Eyewitness, Narendra Modi,  Operation Maitri, nepal earthquake aftershocks, earthquake relief operations, india relief operations nepal, india nepal aid package, Kathmandu" />
+<meta name="keywords" content="nepal earthquake, nepal earthquake, earthquake, india nepal relief plane, nepal india rescue plane, india rescue plane, india earthquake deaths, indian express, nepal massive earthquake, nepal landslides, nepal avalanches, nepal earthquake landslides, nepal earthquake victims, nepal earthquake, nepal disaster, nepal chinese tourist, nepal rescue effort, india nepal rescue effort, nepal earthquake tourist, nepal, nepal earthquake, earthquake, nepal, indiaaid, india nepal earthquake, india nepal aid, india relief operation, india relief ops, world news, indian express, eathquake news, nepal earthquake news, nepal earthquake, nepal natural disaster, india nepal ndrf teams, india ndrf teams, nepal earthquake patients, nepal earthquake treatment, saturday earthquake, earthquake tremors, nepal bigger earthquake, nepal earthquake eyewitness, narendra modi,  operation maitri, nepal earthquake aftershocks, earthquake relief operations, india relief operations nepal, india nepal aid package, kathmandu" /><meta name="robots" content="NOODP" />
+<meta name="majestic-site-verification" content="MJ12_ad7db024-a46c-482a-bb2f-e1ae09432a65">
 
 <meta name="google-site-verification" content="4VKBquZoU-tYqmCYVAiCwBrBzbXCXZO15lCeN1tnv2M" />
 <meta name="msvalidate.01" content="CCA9DA5B985004F4462DA743E776C636" />
-		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=indianexpress.com&amp;id=53855017&amp;t=1425741610&amp;back=http%3A%2F%2Findianexpress.com%2Farticle%2Findia%2Findia-others%2Fmufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail%2F' type="text/javascript"></script>
+		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=indianexpress.com&amp;id=53855017&amp;t=1430350101&amp;back=http%3A%2F%2Findianexpress.com%2Farticle%2Findia%2Findia-others%2Fafter-death-its-disease-epidemic-fear-in-camps%2F' type="text/javascript"></script>
 		<script type="text/javascript">
 		/* <![CDATA[ */
 			if ( 'function' === typeof WPRemoteLogin ) {
@@ -45,33 +135,28 @@
 			}
 		/* ]]> */
 		</script>
-		<link rel="alternate" type="application/rss+xml" title="The Indian Express &raquo; Mufti govt releases Hurriyat hardliner Masarat Alam from&nbsp;jail Comments Feed" href="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/feed/" />
-<script type="text/javascript">
+		<script type="text/javascript">
 /* <![CDATA[ */
 function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
 /* ]]> */
 </script>
 <link rel='stylesheet' id='all-css-0' href='http://s1.wp.com/wp-content/mu-plugins/likes/jetpack-likes.css?m=1424450955g' type='text/css' media='all' />
-<link rel='stylesheet' id='-1-css'  href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A700&#038;ver=4.1#038;ver=3.9' type='text/css' media='all' />
-<link rel='stylesheet' id='all-css-2' href='http://s1.wp.com/_static/??-eJyljFEKhDAMBS+kRkXxSzyLtJGNtGnpC+reXoW9wf4MDANDZ65dUmM1sg9HBh2SSdTLqnzlwgBFcSVB7ImP56SQgwn2DT82Dqjo39UW+EIQz+X9LXHuhn6curEf2v0GsJxABA==' type='text/css' media='all' />
-<link rel='stylesheet' id='10-css'  href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&#038;ver=4.1' type='text/css' media='all' />
-<link rel='stylesheet' id='all-css-4' href='http://s0.wp.com/_static/??/wp-content/mu-plugins/core-compat/wp-mediaelement.css,/wp-content/mu-plugins/mp6-compat/mp6-hacks.css?m=1421279841j' type='text/css' media='all' />
-<link rel='stylesheet' id='indianexpress-google-style-roboto-css'  href='http://fonts.googleapis.com/css?family=Roboto+Condensed%3A400%2C700&#038;ver=4.1' type='text/css' media='' />
-<link rel='stylesheet' id='all-css-6' href='http://s0.wp.com/_static/??-eJx9j1EKwkAMRC/kGloX/8SzbGvcRtJkaaK1t3dFkYrg3wx5byAwl9CrOIqDDziiwY0KkJwoCd7LhGZgvjDCnJaiJG7b3mwDBKJO1bVPeB1Wi+M1FL5mqkxGDax9clL5KuHMiaZ/6oQda64xQ6VW9Ud6fzBEyKxd4idwHA9NbGNsm13cXx40XllL' type='text/css' media='all' />
-<script type='text/javascript' src='http://s0.wp.com/_static/??-eJytkVFOwzAMhi9EGrXqxHhA3IA7hNQdLokTYrddd/p5ojyglSEBUqQoyZfPf2I7Z4Pkw9gB20HH+whlWadq4Dt7CzARD8UJVBHpE/aJBEgubEwvGMCMDMUddE9FfdrgcmKJwKzQxunXSEgTwvwjNoBk599MAcbTlVVeQevZCbNF6tARHLOSmhh9SYyih7rOiRgn+HhKB4XwVCo/sqRY3ddt0/zdu8btAxw5oNYwG1/5a61ffID/S7nqvCtJexq2uv6tWy29Ms/Xvbt1ZXZLTkjCa62n+Fi39f5h3za73XAGuTwKmw=='></script>
-<script type='text/javascript' src='http://adcdn.forkmedia.in/impulse3/indianexpressarticle.impulse.js?ver=4.1'></script>
-<script type='text/javascript' src='http://w.sharethis.com/button/buttons.js?ver=4.1'></script>
-<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
-<!--[if lt IE 8]>
-<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
-<![endif]-->
+<link rel='stylesheet' id='-1-css'  href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A700&#038;ver=4.2-alpha-31564#038;ver=3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='http://s2.wp.com/_static/??-eJyljFEKgzAQBS+kbrX2ww/xLCVucSXZhLwl6u2bgjfoz8AwMHSk1kU1ViPbODCoSCLRVd7KZ8oMUBCXI8RqrJ6iQgoT7PI3Owc09O/q4/mEl5Xz77eEuR+fj2EYp9e0fwGwjEAM' type='text/css' media='all' />
+<link rel='stylesheet' id='10-css'  href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&#038;ver=4.2-alpha-31564' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-4' href='http://s1.wp.com/_static/??/wp-content/mu-plugins/core-compat/wp-mediaelement.css,/wp-content/mu-plugins/mp6-compat/mp6-hacks.css?m=1430329265j' type='text/css' media='all' />
+<link rel='stylesheet' id='indianexpress-google-style-css'  href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A700&#038;ver=4.2-alpha-31564#038;ver=3.9' type='text/css' media='' />
+<link rel='stylesheet' id='indianexpress-google-style-roboto-css'  href='http://fonts.googleapis.com/css?family=Roboto+Condensed%3A400%2C700&#038;ver=4.2-alpha-31564' type='text/css' media='' />
+<link rel='stylesheet' id='all-css-8' href='http://s0.wp.com/_static/??-eJx9j1EKwkAMRC/kGloX/8SzbGvcRtJkaaK1t3dFkYrg3wx5byAwl9CrOIqDDziiwY0KkJwoCd7LhGZgvjDCnJaiJG7b3mwDBKJO1bVPeB1Wi+M1FL5mqkxGDax9clL5KuHMiaZ/6oQda64xQ6VW9Ud6fzBEyKxd4idwHA9NbGNsm13cXx40XllL' type='text/css' media='all' />
+<script type='text/javascript' src='http://s0.wp.com/_static/??-eJytkl1OwzAQhC9E4rZUhRfEDbhCZTnTssFeG+8maXr6uig8oEYBAZIly9pvZ/bHZkgVsfNdAzFtOe8d8jhddSt3ZgmoAh2zVdSB+BN2kRWsVzZF0QARe8RM9KsVcU8YvsVaaLLurcoQOt+o6iuKn+kpGeKGLOOUCvlROGFvm37vSfTHaYFcjkJaguWdIgv1uIqF2CAznXPtOtEY6of1drP5u+7U5cHjJJ6KRzUz2V/LutF5/F+Vk5yzOXYCP/cJlhZyKMzL7cqXUgY7pkisMnk9h6f19n5VZr/aPbYXWsgQnw=='></script>
+<script type='text/javascript' src='http://adcdn.forkmedia.in/impulse3/indianexpressarticle.impulse.js?ver=4.2-alpha-31564'></script>
+<script type='text/javascript' src='http://w.sharethis.com/button/buttons.js?ver=4.2-alpha-31564'></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://indianexpressonline.wordpress.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Pakistan &#8216;catch&#8217; crucial win, split Group B wide&nbsp;open' href='http://indianexpress.com/article/sports/cricket-world-cup/2310444/live-cricket-score-pakistan-vs-south-africa/' />
-<link rel='next' title='Saina Nehwal beats Yihan Wang 21-19, 21-6, marches into All England&nbsp;semis' href='http://indianexpress.com/article/sports/sport-others/saina-nehwal-beats-yihan-wang-21-19-21-6-marches-into-all-england-semis/' />
+<link rel='prev' title='Herd of 20, forest staff guard newborn calf and mother&nbsp;elephant' href='http://indianexpress.com/article/india/india-others/herd-of-20-forest-staff-guard-newborn-calf-and-mother-elephant/' />
 <meta name="generator" content="WordPress.com" />
-<link rel='shortlink' href='http://wp.me/p3DY9j-9H7E' />
-<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Findianexpress.com%2Farticle%2Findia%2Findia-others%2Fmufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Findianexpress.com%2Farticle%2Findia%2Findia-others%2Fmufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail%2F&amp;for=wpcom-auto-discovery" /><link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/8e7929855c7783319ae1c24e33a8e271?s=16" sizes="16x16" />
+<link rel='shortlink' href='http://wp.me/p3DY9j-9STT' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Findianexpress.com%2Farticle%2Findia%2Findia-others%2Fafter-death-its-disease-epidemic-fear-in-camps%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Findianexpress.com%2Farticle%2Findia%2Findia-others%2Fafter-death-its-disease-epidemic-fear-in-camps%2F&amp;for=wpcom-auto-discovery" /><link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/8e7929855c7783319ae1c24e33a8e271?s=16" sizes="16x16" />
 <link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/8e7929855c7783319ae1c24e33a8e271?s=16" sizes="16x16" />
 <link rel="apple-touch-icon-precomposed" href="http://0.gravatar.com/blavatar/efe0300e7f891c5c802ed340f6b20b67?s=114" />
 <link rel='openid.server' href='http://indianexpressonline.wordpress.com/?openidserver=1' />
@@ -84,36 +169,36 @@ function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!
 				display: inline-block;
 			}
 		</style>
-		<meta name="application-name" content="The Indian Express" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Latest News, Breaking News Live, Current Headlines, India News Online" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://indianexpress.com/feed/;icon-uri=http://0.gravatar.com/blavatar/8e7929855c7783319ae1c24e33a8e271?s=16" /><link rel="canonical" href="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/" />
+		<meta name="application-name" content="The Indian Express" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Latest News, Breaking News Live, Current Headlines, India News Online" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://indianexpress.com/feed/;icon-uri=http://0.gravatar.com/blavatar/8e7929855c7783319ae1c24e33a8e271?s=16" /><link rel="canonical" href="http://indianexpress.com/article/india/india-others/after-death-its-disease-epidemic-fear-in-camps/" />
 <style type="text/css" id="syntaxhighlighteranchor"></style>
 		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://s2.wp.com/?custom-css=1&#038;csblog=3DY9j&#038;cscache=6&#038;csrev=10" />
 		<link rel="publisher" href="https://plus.google.com/+indianexpress" /><meta property="og:type" content="article" />
-		<meta property="og:url" content="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/" />
+		<meta property="og:url" content="http://indianexpress.com/article/india/india-others/after-death-its-disease-epidemic-fear-in-camps/" />
 					<meta property="og:site_name" content="The Indian Express" />
-					<meta property="og:title" content="Mufti govt releases Hurriyat hardliner Masarat Alam from jail" />
-					<meta property="og:image" content="http://images.indianexpress.com/2015/03/sayeed-thumb1.jpg?w=480" />
+					<meta property="og:title" content="After death, it’s disease: epidemic fear in camps" />
+					<meta property="og:image" content="http://images.indianexpress.com/2015/04/nepal-victim-m.jpg?w=480" />
 			<meta property="og:image:type" content="image/jpeg" />
 			<meta property="og:image:width" content="480" />
 			<meta property="og:image:height" content="267" />
-			<meta property="og:description" content="Masarat had become a cult figure in the Valley for issuing protests during 2010." />
-		<meta property="og:updated_time" content="March 7, 2015 7:48 pm" /><meta name="twitter:card" content="summary">
+			<meta property="og:description" content="Search teams say it is not easy getting to the bodies because they are probably deep inside, beneath layers of flattened buildings.  " />
+		<meta property="og:updated_time" content="April 30, 2015 4:48 am" /><meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@IndianExpress">
-		<meta name="twitter:url" content="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/">
-		<meta name="twitter:title" content="Mufti govt releases Hurriyat hardliner Masarat Alam from jail">
-		<meta name="twitter:description" content="Masarat had become a cult figure in the Valley for issuing protests during 2010.">
-		<meta name="twitter:image" content="http://images.indianexpress.com/2015/03/sayeed-thumb1.jpg?w=480">
+		<meta name="twitter:url" content="http://indianexpress.com/article/india/india-others/after-death-its-disease-epidemic-fear-in-camps/">
+		<meta name="twitter:title" content="After death, it’s disease: epidemic fear in camps">
+		<meta name="twitter:description" content="Search teams say it is not easy getting to the bodies because they are probably deep inside, beneath layers of flattened buildings.  ">
+		<meta name="twitter:image" content="http://images.indianexpress.com/2015/04/nepal-victim-m.jpg?w=480">
 		<meta name="twitter:image:width" content="480"/>
 		<meta name="twitter:image:height" content="267"/>
-		<meta itemprop="description" content="Masarat had become a cult figure in the Valley for issuing protests during 2010."><meta itemprop="image" content="http://images.indianexpress.com/2015/03/sayeed-thumb1.jpg?w=480"><meta property="article:published_time" content="March 7, 2015 6:12 am" /><meta property="article:modified_time" content="March 7, 2015 7:48 pm" />
+		<meta itemprop="description" content="Search teams say it is not easy getting to the bodies because they are probably deep inside, beneath layers of flattened buildings.  "><meta itemprop="image" content="http://images.indianexpress.com/2015/04/nepal-victim-m.jpg?w=480"><meta property="article:published_time" content="April 30, 2015 4:46 am" /><meta property="article:modified_time" content="April 30, 2015 4:48 am" />
 <meta itemprop="publisher" content="The Indian Express" />
-<meta itemprop="url" content="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/" />
-<meta itemprop="headline" content="Mufti govt releases Hurriyat hardliner Masarat Alam from jail" />
-<meta itemprop="datePublished" content="March 7, 2015 6:12 am" />
-<meta itemprop="dateModified" content="March 7, 2015 7:48 pm" />
+<meta itemprop="url" content="http://indianexpress.com/article/india/india-others/after-death-its-disease-epidemic-fear-in-camps/" />
+<meta itemprop="headline" content="After death, it’s disease: epidemic fear in camps" />
+<meta itemprop="datePublished" content="April 30, 2015 4:46 am" />
+<meta itemprop="dateModified" content="April 30, 2015 4:48 am" />
 <meta itemprop="inLanguage" content="English" />
-<meta itemprop="articleSection" content="india news" /><meta http-equiv="Last-Modified" content="Sat, 07 Mar 2015 20:50:10 +0530"/><title>
-Mufti govt releases Hurriyat hardliner Masarat Alam from jail | The Indian Express</title></head>
-<body class="single single-article postid-2310718 single-format-standard mp6 typekit-enabled customizer-styles-applied highlander-enabled highlander-light">
+<meta itemprop="articleSection" content="india news" /><meta http-equiv="Last-Modified" content="Thu, 30 Apr 2015 04:58:21 +0530"/><title>
+After death, it’s disease: epidemic fear in camps | The Indian Express</title></head>
+<body class="single single-article postid-2355993 single-format-standard mp6 typekit-enabled customizer-styles-applied highlander-enabled highlander-light">
 <!-- Begin comScore Tag -->
 <script type="text/javascript">
 
@@ -135,15 +220,18 @@ Mufti govt releases Hurriyat hardliner Masarat Alam from jail | The Indian Expre
 <img src="http://b.scorecardresearch.com/p?c1=2&c2=8738137&cv=2.0&cj=1" />
 </noscript>
 <!-- End comScore Tag -->
+<!-- IndianExpress - IN - RTA -->
+
 <div id="wrapper">
 <header id="common">
 	<div class="news">
 		<div class="express">
-			<ul><strong>Express Specials</strong>
-								<li><a href="http://indianexpress.com/topic/indian-express-power-list-2015/">Express Power List 2015</a></li>
-								<li><a href="http://indianexpress.com/topic/essar-leaks-2/">Essar Leaks</a></li>
-								<li><a href="http://indianexpress.com/topic/icc-cricket-world-cup-2015/">World Cup 2015</a></li>
-								<li><a href="http://indianexpress.com/topic/idea-exchange/">Idea Exchange</a></li></ul>		</div>
+			<ul><p><strong>Express Specials</strong></p>
+
+								<li><a href="http://indianexpress.com/topic/idea-exchange/">Idea Exchange</a></li>
+								<li><a href="http://indianexpress.com/section/trending/">#TRENDING</a></li>
+								<li><a href="http://indianexpress.com/section/good-news/">#GoodNews</a></li>
+								<li><a href="http://indianexpress.com/article/india/india-others/indian-express-nepal-earthquake-relief-fund/">#HelpNepal</a></li></ul>		</div>
 		<div class="papers">
 			<ul>
 				<li><a target="_blank" href="http://epaper.indianexpress.com/">E-Paper</a></li>
@@ -155,6 +243,7 @@ Mufti govt releases Hurriyat hardliner Masarat Alam from jail | The Indian Expre
 	<div class="clear"></div>
 	<!--Display Only Mobile and Tablet-->
 		<!--Display Only Desktop-->
+	
 			<nav>
 	<div class="menu-container">
 		<div class="megamenu-wrapper megamenu-light-theme home">
@@ -276,7 +365,7 @@ jQuery("div[class~='dropdown-right']").hide();
 			<div class="logo">
 								<h2><a href="http://indianexpress.com/india/" title="Nation">Nation</a> <span>&nbsp;</span></h2>
 				  			</div>
-			<div class="date">Saturday, Mar 07, 2015</div>
+			<div class="date">Wednesday, Apr 29, 2015</div>
 			<div class="figure">
 				<div class="social-media">
 					
@@ -311,10 +400,10 @@ jQuery("div[class~='dropdown-right']").hide();
 				<div class="breadcrumb">
 					<ul>
 						<li  itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/" itemprop="url"> <span itemprop="title">Home</span></a></li>
-						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="first"><a  itemprop="url" href="http://indianexpress.com/section/india/"><span itemprop="title">india</span></a></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://indianexpress.com/section/india/india-others/"><span itemprop="title">india-others</span></a></li>						<li></li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="first"><a  itemprop="url" href="http://indianexpress.com/section/india/"><span itemprop="title">india</span></a></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://indianexpress.com/section/india/india-others/"><span itemprop="title">india-others</span></a></li>						<li><span><a href="/topic/nepal-earthquake-2/" />Nepal Earthquake</a></span></li>
 					</ul>
 				</div>
-				<h1>Mufti govt releases Hurriyat hardliner Masarat Alam from&nbsp;jail</h1>
+				<h1>After death, it’s disease: epidemic fear in&nbsp;camps</h1>
 								<div class="comments">
 					<div class="social-icons">
 						<div class="icons">
@@ -326,7 +415,7 @@ jQuery("div[class~='dropdown-right']").hide();
 					<div class="email">
 						<ul>
 							<li>
-								<a class="comment" href="#comments" data-vuukle="2310718">Comments</a>
+								<a class="comment" href="#comments" data-vuukle="2355993">Comments</a>
 							</li>
 							<li><a href="javascript:" onclick="return addthis_sendto('email');" class="email">Email</a></li>
 							<li><a class="print" href="javascript:window.print()">Print</a></li>
@@ -399,10 +488,11 @@ jQuery("div[class~='dropdown-right']").hide();
 						</script></div>
 					<div class="main-story">
 						<div class="story-image punchline">
-							<img class="size-full wp-image-2310746" src="http://images.indianexpress.com/2015/03/sayeed-main.jpg" alt="Mufti Mohammad Sayeed" width="759" height="422" /> Jammu and Kashmir Chief Minister Mufti Mohammad Sayeed.						</div>
+							<img class="size-full wp-image-2356000" src="http://images.indianexpress.com/2015/04/nepal-victim-l.jpg" alt="Water bottles are used to apply traction to the fractured legs of a girl, in Kathmandu Wednesday.  (Source: Reuters photo)" width="759" height="422" /> Water bottles are used to apply traction to the fractured legs of a girl, in Kathmandu Wednesday. (Source: Reuters photo)						</div>
 					</div>
-											<div class="editor">		Written by <a href="http://indianexpress.com/profile/author/arun-sharma/" class="bulletProj" id="written_by1">Arun Sharma</a>
-						 | Jammu | 		<script language="javascript">
+											<div class="editor">		Written by <a href="http://indianexpress.com/profile/author/rakesh-sinha/" class="bulletProj" id="written_by1">Rakesh Sinha</a>
+				, <a href="http://indianexpress.com/profile/columnist/yubaraj-ghimire/" class="bulletProj" id="written_by2">Yubaraj Ghimire</a>
+						 | Kathmandu | 		<script language="javascript">
 		 /// Story Page Editor Details //// 
 		jQuery(".bulletProj").hover(function() {
 		   var dividshow = '#div_'+jQuery( this ).attr( 'id' );
@@ -416,23 +506,27 @@ jQuery("div[class~='dropdown-right']").hide();
 		});
 
 	</script>
-							 <span> Updated: March 7, 2015 7:48 pm</span>					<div class="editor-details" id="div_written_by_parent"></div>
+							 <span> Updated: April 30, 2015 4:48 am</span>					<div class="editor-details" id="div_written_by_parent"></div>
 					</div>
 					<div class="main-body-content">
 					
-<p>Chief of the Muslim League and a senior Hurriyat Conference leader Masarat Alam, who successfully organized anti-India protests resulting in the death of 112 people in stone pelting across the Valley during 2010, is finally a free man on Saturday evening as the Jammu-Kashmir government revoked his detention under the Public Safety Act.</p>
-<p>This followed an order from the State Home Department pointing that his detention under PSA has not been approved by it, a senior police officer told The Indian Express. The order was received in the afternoon, but police took time in completing requisite formalities including whether he was not wanted in some other case elsewhere in the state.</p>
-<p><a href="http://indianexpress.com/article/news-archive/web/allow-protests-no-one-will-throw-stones-most-wanted-separatist/" target="_blank">[ARCHIVE] Masrat Alam interview: Allow protests, no one will throw stones</a></p>
-<p>&#8220;We did not approve his detention under PSA when his file was put before us somewhere in January-February this year,&#8221; Principal Secretary Home Suresh Kumar said.</p>
-<div class="related"><h4>Related</h4><ul><li><a href="http://indianexpress.com/article/india/politics/i-stand-by-my-statement-on-pakistan-and-hurriyat-jk-cm-mufti-mohammad-sayeed/">I stand by my statement on Pakistan and Hurriyat: J&amp;K CM Mufti Mohammad Sayeed</a></li><li><a href="http://indianexpress.com/article/news-archive/web/hurriyat-gen-secy-masarat-alam-held/">Hurriyat gen secy Masarat Alam held</a></li><li><a href="http://indianexpress.com/article/news-archive/web/valleys-new-torchbearers/">Valleys new Torchbearers</a></li></ul></div>
-<p>The process for his release had followed CM Mufti&#8217;s instructions at a detailed review meeting with Director General of Police on Wednesday to release political prisoners against whom there were no criminal charges. On Saturday morning, Director General of Police K Rajendra said that the state government&#8217;s instructions in the matter will be complied with.</p>
-<p>Significantly, the release came despite facing resistance from leaders within the sate BJP, who is the main partner in Mufti Sayeed led coalition government in the state. Pointing out that it was only a statement from the chief minister, senior BJP leader and Forest Minister Bali Bhagat said that &#8220;we will see when the matter comes before the state cabinet.&#8221; However, the issue regarding release of political prisoners who do not have any criminal charges against them can be examined, he added.</p>
-<p>&#8220;How he can do it without taking us (BJP) into confidence,&#8221; asked BJP general secretary (organization) Ashok Koul. Pointing out that the party will not allow it to happen, he said that there are certain decisions in the coalition which have to be taken during cabinet meeting and not at individual level.</p>
-<p>&#8220;The BJP is already talking to them asking them for restraint on such issues. However, we are at present going by our coalition dharma and let us see as to how long we can pull on,&#8221; Koul said.</p>
-<p>Masarat, who had become a cult figure in the Valley for his issuing protest calendars during 2010, was arrested by state police from the outskirts of Srinagar city after a four-month long hunt and the announcement of Rs 10 lakh award for information about his whereabouts. His arrest had come nearly two months after his release from jail in July the same year. Since then, he had been kept in one or the other jail of the state on the basis of detention orders issued by district magistrate under Public Safety Act, not withstanding they being quashed by courts from time to time.</p>
-<p>The 43-year-old internet-savy, science graduate Masarat ,who <span class="continue"><i><a href="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/2">continued&#8230;</a></i></span></p>
+<p>In the early hours of Wednesday at Tundikhel, in the heart of Kathmandu, women form a circle and shout at the men to stay away. One of them is in the centre, defecating in the open.</p>
+<p>A terrible stench rises from the grounds, one of the 16 designated open camps after the weekend quakes sent fearful Kathmandu outdoors.<br />
+With day temperatures rising, temporary toilets in a mess and little or no water supply, conditions at the camps are deteriorating rapidly, prompting health warnings on disease outbreaks post-disaster.</p><div class='pageadd' id='div-gpt-ad-1429260192255-0'>
+			<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429260192255-0'); });
+			</script>
+			</div>
+<p><b><div class="related"><h4>Related</h4><ul><li><a href="http://indianexpress.com/article/world/neighbours/nepal-earthquake-under-rubble-man-says-he-drank-urine-to-survive/">Nepal Earthquake: Under rubble, man says he drank urine to survive</a></li><li><a href="http://indianexpress.com/article/world/neighbours/live-nepal-earthquake-toll-rises-to-4310/">LIVE: 5,006 people dead in Nepal earthquake, risk of mudslides, landslides in coming weeks remain</a></li><li><a href="http://indianexpress.com/article/world/neighbours/tears-after-shock-fearful-kathmandu-stays-outdoors-in-the-rain-and-cold/">Tears after shock: Fearful Kathmandu stays outdoors in the rain and cold</a></li></ul></div><br />
+</b></p>
+<p>Doctors in city hospitals have begun receiving complaints of diarrhoea and skin allergies. In Bhaktapur, east of Kathmandu, suspected cases of gastroenteritis have surfaced and doctors say an outbreak of water-borne diseases in such a situation is not unusual.</p>
+<p>Making matters worse are the bodies trapped in the debris of toppled buildings. There is no clarity on how many could be there and this has set off alarm bells.</p>
+<p>An official of the Ministry of Health and Population said the trapped bodies and dead cattle pose a serious health hazard and work has been stepped up to retrieve and dispose them.</p>
+<p>But search teams say it is not easy getting to the bodies because they are probably deep inside, beneath layers of flattened buildings. India’s National Disaster Response Force (NDRF) alone has pulled out 85 bodies so far.</p>
+<p>A doctor at the Bir Hospital, the city’s largest, said inadequate sanitary conditions, contaminated water and lack of specialists in hospitals posed “imminent danger” to a population still counting its dead.</p>
+<p>Bracing for an outbreak-like situation, officials at the Tribhuvan University Teaching Hospital have kept a medical team on alert and readied a plan to handle at least 500 cases.</p>
 					</div>
-					<div class="editor"><span>First Published on: March 7, 20156:12 am</span></div>					<div id="story_content_parts" style="display:none">
+					<div class="editor"><span>First Published on: April 30, 20154:46 am</span></div>					<div id="story_content_parts" style="display:none">
 					<div id="part1">
 											</div>
 					<div id="part2">
@@ -466,14 +560,14 @@ jQuery("div[class~='dropdown-right']").hide();
 							});
 						</script>
 										<div class="likestory"><span>Do you like this story</span>
-					<div id="pd_rating_holder_7251833_2310718"></div>
+					<div id="pd_rating_holder_7251833_2355993"></div>
 					<script type="text/javascript">
-					PDRTJS_settings_7251833_2310718 = {
+					PDRTJS_settings_7251833_2355993 = {
 					"id" : "7251833",
-					"unique_id" : "7251833_2310718",
-					"title" : "Mufti govt releases Hurriyat hardliner Masarat Alam from&nbsp;jail",
-					"permalink" : "http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/",
-					"item_id" : "_2310718"};
+					"unique_id" : "7251833_2355993",
+					"title" : "After death, it’s disease: epidemic fear in&nbsp;camps",
+					"permalink" : "http://indianexpress.com/article/india/india-others/after-death-its-disease-epidemic-fear-in-camps/",
+					"item_id" : "_2355993"};
 					</script>
 					<script type="text/javascript" src="http://i0.poll.fm/js/rating/rating.js"></script></div>					<div class="social">
 						<div class="icons">
@@ -485,20 +579,18 @@ jQuery("div[class~='dropdown-right']").hide();
 						<div class="comments">
 							<ul>
 								<li>
-									<a href="#comments" data-vuukle="2310718">Comments</a>
+									<a href="#comments" data-vuukle="2355993">Comments</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="OUTBRAIN" data-src="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/" data-widget-id="AR_1" data-ob-template="IndianExpress" ></div>
-					<div class="OUTBRAIN" data-src="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/" data-widget-id="AR_2" data-ob-template="IndianExpress" ></div>
+					<div class="OUTBRAIN" data-src="http://indianexpress.com/article/india/india-others/after-death-its-disease-epidemic-fear-in-camps/" data-widget-id="AR_1" data-ob-template="IndianExpress" ></div>
+					<div class="OUTBRAIN" data-src="http://indianexpress.com/article/india/india-others/after-death-its-disease-epidemic-fear-in-camps/" data-widget-id="AR_2" data-ob-template="IndianExpress" ></div>
 					<script type="text/javascript" async="async" src="http://widgets.outbrain.com/outbrain.js"></script> 
-					<div class="pagination"><span><a href="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/99">Single Page Format</a></span><ul> <li><a class="currentpage">1</a></li> <li><a class="page-numbers" href="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/2/">2</a></li></ul></div>					<div class="storytags">
+										<div class="storytags">
 						<ul>
 							<li>Tags:</li>
-														<li><a href="/tag/hurriyat-conference">Hurriyat Conference</a></li>
-														<li><a href="/tag/masarat-alam">Masarat Alam</a></li>
-														<li><a href="/tag/mufti-mohammad-sayeed">Mufti Mohammad Sayeed</a></li>
+														<li><a href="/tag/nepal-earthquake">Nepal earthquake</a></li>
 													</ul>
 					</div>
 										
@@ -519,11 +611,7 @@ jQuery("div[class~='dropdown-right']").hide();
 					<div class="prev-next">
 										<div class="stories">
 					<div class="subheading"><span class="prev">&nbsp;</span> Previous Story</div>
-					<h5><a href="http://indianexpress.com/article/sports/cricket-world-cup/2310444/live-cricket-score-pakistan-vs-south-africa/">Pakistan &#039;catch&#039; crucial win, split Group B wide open</a></h5>
-					</div>
-										 <div class="stories last">
-					 <div class="subheading">Next Story <span class="next">&nbsp;</span></div>
-					<h5><a href="http://indianexpress.com/article/sports/sport-others/saina-nehwal-beats-yihan-wang-21-19-21-6-marches-into-all-england-semis/">Saina Nehwal beats Yihan Wang 21-19, 21-6, marches into All England semis</a></h5>
+					<h5><a href="http://indianexpress.com/article/india/india-others/herd-of-20-forest-staff-guard-newborn-calf-and-mother-elephant/">Herd of 20, forest staff guard newborn calf and mother elephant</a></h5>
 					</div>
 										</div>
 					<div class="more-from">
@@ -531,146 +619,39 @@ jQuery("div[class~='dropdown-right']").hide();
 						<div id="vuukle_div"></div> 
 						<script src="http://vuukle.com/js/vuukle.js" type="text/javascript"></script> 
 						<script type="text/javascript"> 
-							create_vuukle_platform('2e5a47ef-15f6-4eec-a685-65a6d0ed00d0', '2310718', 0, 'india, india-others', 'Mufti govt releases Hurriyat hardliner Masarat Alam from&nbsp;jail'); 
+							create_vuukle_platform('2e5a47ef-15f6-4eec-a685-65a6d0ed00d0', '2355993', 0, 'india, india-others', 'After death, it’s disease: epidemic fear in&nbsp;camps'); 
 						</script>
 					</div>
 									</div>
 			</div>
 			<div class="rightpanel">
-			<div id="text-52" class="widget widget_text">			<div class="textwidget"><div class=""><a href="http://indianexpress.com/cricket-world-cup/" target="_blank"><img src="https://indianexpressonline.files.wordpress.com/2015/02/cwc-sp-2-v21.jpg" alt="" /></a>
-  </div></div>
-		</div><div class='new' id='event'>									<iframe src="http://cricketlive.indianexpress.com/other-matches.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:294px; height:180px;" allowTransparency="true"></iframe>
-									</div>		<div class="trending-now"><div class="titles"><h4>Trending Now</h4><h5><a href="http://indianexpress.com/article/india/india-others/legal-notice-to-bbc-over-gangrape-documentary-youtube-asked-to-remove-video/">Gangrape documentary on YouTube, govt serves legal notice on BBC</a></h5></div><div class="snaps"><a href="http://indianexpress.com/article/india/india-others/legal-notice-to-bbc-over-gangrape-documentary-youtube-asked-to-remove-video/"><img alt="Gangrape documentary on YouTube, govt serves legal notice on BBC" title="Gangrape documentary on YouTube, govt serves legal notice on BBC" src="//images.indianexpress.com/2015/03/december-gangrape_480.jpg?w=450"></a></div></div><div class='add-first' id='div-gpt-ad-1383904327704-22' >					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-22');</script>
-				</div>		<div id="text-38" class="widget widget_text">			<div class="textwidget"><div class="add-first  no-dis">
-<a target="_blank" href="http://indianexpress.com/gaming/">
-	<img width="300" height="100" src="https://indianexpressonline.files.wordpress.com/2014/08/games2.jpg">
-</a>
-</div></div>
-		</div><div class="only-express"><h4>World Cup Express</h4><div class="wrapper"><div class="lead-story"><div class="snap"><a href="http://indianexpress.com/article/sports/cricket-world-cup/2310694/kept-calm-carried-on/"> <img alt="Kept calm, carried on" title="Kept calm, carried on" src="//images.indianexpress.com/2015/03/indiawestindiesshamireuters.jpg"></a></div><div class="links"><a href="http://indianexpress.com/article/sports/cricket-world-cup/2310694/kept-calm-carried-on/"> Kept calm, carried on</a></div><p><a href="http://indianexpress.com/article/sports/cricket-world-cup/2310694/kept-calm-carried-on/"> India bowlers keep Windies to 182, batsmen stutter over the line for fourth successive win and quarters spot.</a></p></div></div></div><div class="aside">
-										<div class="city-news">
-										<h4><span>City News:</span>
-											<select name="city" id="cmdindiacity">
-												<option value='0'>Select City</option><option value='1929751' selected>delhi</option><option value='1929750'>mumbai</option><option value='1929749'>kolkata</option><option value='1929748'>pune</option><option value='1929747'>chandigarh</option><option value='1929746'>ahmedabad</option><option value='1929745'>lucknow</option><option value='1929744'>ludhiana</option>
-											</select>
-										</h4>
-										<div class="main-part" id="dvCity_1929751"><div class="temprature">Today’s Forecast : <span> Fog, 18  </span></div><div class="headlines">
-												<div class="info">
-													<div class="heading">
-													<a href="http://indianexpress.com/article/cities/delhi/arvind-kejriwal-appeals-to-men-to-make-delhi-safe-for-women/">Arvind Kejriwal appeals to men to make Delhi safe for women</a></div>
-													<div class="image"><a href="http://indianexpress.com/article/cities/delhi/arvind-kejriwal-appeals-to-men-to-make-delhi-safe-for-women/"><img src="//images.indianexpress.com/2015/03/arvind-kejriwal_480.jpg?w=450" alt="Arvind Kejriwal appeals to men to make Delhi safe for women"></a></div>
-													<p>In an audio message released on radio, Kejriwa credited his wife and mother for whatever he is today.</p>
-												</div>
-											</div>
-											<div class="news">
-												<ul><li><a href="http://indianexpress.com/article/cities/delhi/aap-govt-gets-former-derc-chief-to-study-power-sector-write-white-paper/">AAP govt gets former DERC chief to study power sector, write white paper</a></li><li><a href="http://indianexpress.com/article/cities/delhi/uber-cab-rape-case-victim-traumatised-due-to-delay-in-trial/">Uber victim says defence using delaying tactics</a></li><li><a href="http://indianexpress.com/article/cities/delhi/disabled-activist-denied-entry-to-upscale-restaurant-in-delhi/">Disabled activist denied entry to upscale restaurant in Delhi</a></li><li><a href="http://indianexpress.com/article/cities/delhi/on-rape-outraged-politicians-have-been-outrageous-in-past/">On rape, ‘outraged’ politicians have been outrageous in past</a></li><li><a href="http://indianexpress.com/article/cities/delhi/8-aravalli-farmhouses-demolished/">8 Aravalli farmhouses demolished</a></li></ul>
-											</div></div><div class="main-part" id="dvCity_1929750" style="display:none;"><div class="temprature">Today’s Forecast : <span> Smoke, 31  </span></div><div class="headlines">
-												<div class="info">
-													<div class="heading">
-													<a href="http://indianexpress.com/article/cities/mumbai/whats-communal-about-ban-on-cow-slaughter-asks-fm-sudhir-mugantiwar/">What&#039;s communal about ban on cow slaughter? asks FM Sudhir Mugantiwar</a></div>
-													<div class="image"><a href="http://indianexpress.com/article/cities/mumbai/whats-communal-about-ban-on-cow-slaughter-asks-fm-sudhir-mugantiwar/"><img src="//images.indianexpress.com/2015/03/cow-main.jpg?w=450" alt="What&#039;s communal about ban on cow slaughter? asks FM Sudhir Mugantiwar"></a></div>
-													<p>&quot;The issue of climate change and global warning is because we have disturbed the nature&#039;s cycle,&quot; said the FM.</p>
-												</div>
-											</div>
-											<div class="news">
-												<ul><li><a href="http://indianexpress.com/article/india/india-others/mumbai-varsity-v-c-row-governor-urged-to-withdraw-order-allowing-welukar-to-resume-work/">Mumbai varsity V-C row: Governor urged to withdraw order allowing Welukar to resume work</a></li><li><a href="http://indianexpress.com/article/india/india-others/soon-heftier-fines-community-service-for-spitting-in-maharashtra/">Soon, heftier fines, community service for spitting in Maharashtra</a></li><li><a href="http://indianexpress.com/article/cities/mumbai/special-units-to-check-human-trafficking-cops/">Special units to check human trafficking: Cops</a></li><li><a href="http://indianexpress.com/article/cities/mumbai/traffic-police-could-have-handled-nsci-fracas-better-probe-report/">Traffic police could have handled NSCI fracas better: Probe report</a></li></ul>
-											</div></div><div class="main-part" id="dvCity_1929749" style="display:none;"><div class="temprature">Today’s Forecast : <span> Haze, 23  </span></div><div class="headlines">
-												<div class="info">
-													<div class="heading">
-													<a href="http://indianexpress.com/article/cities/kolkata/mitra-set-to-be-grilled-again-this-time-by-ed-in-rose-valley-scam/">Mitra set to be grilled again, this time by ED in Rose Valley scam</a></div>
-													<div class="image"><a href="http://indianexpress.com/article/cities/kolkata/mitra-set-to-be-grilled-again-this-time-by-ed-in-rose-valley-scam/"><img src="//images.indianexpress.com/2013/12/madan-mitra-4.jpg?w=450" alt="Mitra set to be grilled again, this time by ED in Rose Valley scam"></a></div>
-													<p>The ED is also looking into meetings held between Mitra and Kundu in Kolkata during 2011-13.</p>
-												</div>
-											</div>
-											<div class="news">
-												<ul><li><a href="http://indianexpress.com/article/cities/kolkata/vivekananda-misused-by-bjp-rss-cpm-leader/">Vivekananda misused by BJP, RSS: CPM leader</a></li><li><a href="http://indianexpress.com/article/cities/kolkata/40-year-old-man-beaten-to-death-in-north-24-parganas/">40-year-old man beaten to death in North-24 Parganas</a></li><li><a href="http://indianexpress.com/article/cities/kolkata/mukul-calls-on-venkaiah-good-boy-ghosh-follows-suit/">Mukul calls on Venkaiah, ‘good boy’ Ghosh follows suit</a></li><li><a href="http://indianexpress.com/article/cities/kolkata/pm-remark-on-left-hints-at-tmc-bjp-alliance-biman-bose/">PM remark on Left hints at TMC-BJP alliance: Biman Bose</a></li></ul>
-											</div></div><div class="main-part" id="dvCity_1929748" style="display:none;"><div class="temprature">Today’s Forecast : <span> Sunny, 33  </span></div><div class="headlines">
-												<div class="info">
-													<div class="heading">
-													<a href="http://indianexpress.com/article/cities/pune/girl-collapses-dies-in-bathroom-after-playing-holi/">Girl collapses, dies in bathroom after playing Holi</a></div>
-													<div class="image"><a href="http://indianexpress.com/article/cities/pune/girl-collapses-dies-in-bathroom-after-playing-holi/"><img src="//images.indianexpress.com/2015/03/holi-festival480.jpg?w=450" alt="Girl collapses, dies in bathroom after playing Holi"></a></div>
-													<p>Police said Rutuja, a student of class IX of an English medium school, lived earlier at Kumbre Park Society.</p>
-												</div>
-											</div>
-											<div class="news">
-												<ul><li><a href="http://indianexpress.com/article/cities/pune/constable-guarding-ssc-papers-commits-suicide/">Constable guarding SSC papers commits suicide</a></li><li><a href="http://indianexpress.com/article/cities/pune/conference-on-head-and-neck-cancer-from-saturday/">Conference on head and neck cancer from Saturday</a></li><li><a href="http://indianexpress.com/article/cities/pune/virtual-communication-a-bane-for-families-cause-for-most-friction/">‘Virtual communication a bane for families, cause for most friction’</a></li><li><a href="http://indianexpress.com/article/cities/pune/pmc-panel-chief-poll-today-ncp-flexes-muscle-cong-demands-its-pound-of-flesh/">PMC panel chief poll today: NCP flexes muscle, Cong demands its pound of flesh</a></li></ul>
-											</div></div><div class="main-part" id="dvCity_1929747" style="display:none;"><div class="temprature">Today’s Forecast : <span> Drizzle, 18  </span></div><div class="headlines">
-												<div class="info">
-													<div class="heading">
-													<a href="http://indianexpress.com/article/cities/chandigarh/avoid-gaudy-colours-use-red-and-pink/">Holi care: Avoid gaudy colours, use red and pink, say doctors</a></div>
-													<div class="image"><a href="http://indianexpress.com/article/cities/chandigarh/avoid-gaudy-colours-use-red-and-pink/"><img src="//images.indianexpress.com/2015/03/colors-thumb.jpg?w=450" alt="Holi care: Avoid gaudy colours, use red and pink, say doctors"></a></div>
-													<p>One should apply sunscreen or oil or a skin barrier cream on face and exposed parts for protection.</p>
-												</div>
-											</div>
-											<div class="news">
-												<ul><li><a href="http://indianexpress.com/article/cities/chandigarh/explain-pas-posting-to-marketing-board-home-secy-tells-dc/">Explain PA’s posting to marketing board, Home Secy tells DC</a></li><li><a href="http://indianexpress.com/article/cities/chandigarh/guard-held-for-rape-murder-of-8-year-old/">Guard held for rape, murder of 8-year-old</a></li><li><a href="http://indianexpress.com/article/cities/chandigarh/class-x-boy-stabbed-by-senior-near-lalru/">Class X boy stabbed by senior near Lalru</a></li><li><a href="http://indianexpress.com/article/cities/chandigarh/ut-to-spend-over-rs-1-crore-on-renovation-of-advisers-residence-tenders-floated/">UT to spend over Rs 1 crore on renovation of Adviser’s residence, tenders floated</a></li></ul>
-											</div></div><div class="main-part" id="dvCity_1929746" style="display:none;"><div class="temprature">Today’s Forecast : <span> Smoke, 30  </span></div><div class="headlines">
-												<div class="info">
-													<div class="heading">
-													<a href="http://indianexpress.com/article/cities/ahmedabad/babloo-aide-gets-bail-in-threat-call-case-but-still-remains-in-jail/">Babloo aide gets bail in threat call case, but still remains in jail</a></div>
-													<div class="image"><a href="http://indianexpress.com/article/cities/ahmedabad/babloo-aide-gets-bail-in-threat-call-case-but-still-remains-in-jail/"><img src="//images.indianexpress.com/2014/02/jail-thumb1.jpg?w=209" alt="Babloo aide gets bail in threat call case, but still remains in jail"></a></div>
-													<p>After the firing incident, Montu along with his two sharpshooters went to Mumbai and later to Uttar Pradesh.</p>
-												</div>
-											</div>
-											<div class="news">
-												<ul><li><a href="http://indianexpress.com/article/cities/ahmedabad/nine-more-die-of-swine-flu-toll-touches-256/">Nine more die of Swine flu, toll touches 256</a></li><li><a href="http://indianexpress.com/article/cities/ahmedabad/bharatsinh-solanki-to-take-over-as-gpcc-chief-on-friday/">Bharatsinh Solanki to take over as GPCC chief on Friday</a></li><li><a href="http://indianexpress.com/article/cities/ahmedabad/no-special-package-for-farmer-suicides-damaged-crops-govt/">No special package for farmer suicides, damaged crops: Govt</a></li><li><a href="http://indianexpress.com/article/cities/ahmedabad/bjp-youth-wing-leader-found-dead-in-bharuch/">BJP youth wing leader found dead in Bharuch</a></li></ul>
-											</div></div><div class="main-part" id="dvCity_1929745" style="display:none;"><div class="temprature">Today’s Forecast : <span> Haze, 22  </span></div><div class="headlines">
-												<div class="info">
-													<div class="heading">
-													<a href="http://indianexpress.com/article/india/india-others/dalit-tonsured-paraded-for-burning-holika-pyre/">Dalit tonsured, paraded for burning holika pyre</a></div>
-													<div class="image"><a href="http://indianexpress.com/article/india/india-others/dalit-tonsured-paraded-for-burning-holika-pyre/"><img src="//images.indianexpress.com/2015/03/holika1.jpg?w=450" alt="Dalit tonsured, paraded for burning holika pyre"></a></div>
-													<p>With Holi to be celebrated on Friday, PAC personnel have been deployed in the village to maintain calm.</p>
-												</div>
-											</div>
-											<div class="news">
-												<ul><li><a href="http://indianexpress.com/article/cities/lucknow/bjp-calls-isolated-leaders-for-2-day-chintan-baithak/">BJP calls ‘isolated’ leaders for 2-day ‘chintan baithak’</a></li><li><a href="http://indianexpress.com/article/cities/lucknow/cm-flags-off-varanasi-kathmandu-bus-service/">CM flags off Varanasi-Kathmandu bus service</a></li><li><a href="http://indianexpress.com/article/cities/lucknow/holi-assignment-for-state-bjp-mps-clear-the-air-over-land-acquisition-bill/">Holi assignment for state BJP MPs: Clear the air over land acquisition bill</a></li><li><a href="http://indianexpress.com/article/cities/lucknow/kerala-based-sunni-body-to-set-up-100-schools-in-up/">Kerala-based Sunni body to set up 100 schools in UP</a></li></ul>
-											</div></div><div class="main-part" id="dvCity_1929744" style="display:none;"><div class="temprature">Today’s Forecast : <span> Drizzle, 18  </span></div><div class="headlines">
-												<div class="info">
-													<div class="heading">
-													<a href="http://indianexpress.com/article/cities/ludhiana/belan-brigade-launches-drive-against-liquor-vends/">Belan Brigade launches drive against liquor vends</a></div>
-													<div class="image"><a href="http://indianexpress.com/article/cities/ludhiana/belan-brigade-launches-drive-against-liquor-vends/"><img src="//images.indianexpress.com/2015/03/belan-thumb.jpg?w=450" alt="Belan Brigade launches drive against liquor vends"></a></div>
-													<p>The brigade members seemed to have carefully chosen the time for launching their campaign.</p>
-												</div>
-											</div>
-											<div class="news">
-												<ul><li><a href="http://indianexpress.com/article/cities/ludhiana/expenditure-on-welfare-of-labourers-hiked-from-rs-2-cr-to-10-cr-bhagat/">Expenditure on welfare of labourers hiked from Rs 2 cr to 10 cr: Bhagat</a></li><li><a href="http://indianexpress.com/article/cities/ludhiana/three-men-from-bengaluru-arrested-for-duping-2-city-residents-of-rs-1-35-crore/">Three men from Bengaluru arrested for duping 2 city residents of Rs 1.35 crore</a></li><li><a href="http://indianexpress.com/article/cities/ludhiana/take-special-care-of-pet-dogs-during-holi-doctor/">Take special care of pet dogs during Holi: Doctor</a></li></ul>
-											</div></div>
-										</div>
-										</div><script>
-			var selectedEffect = "#dvCity_1929751";
-			jQuery("#cmdindiacity").change(function() {
-				if ( selectedEffect != "undefined" ) {
-					jQuery(selectedEffect).hide();
-				}
-				selectedEffect = "#dvCity_" + jQuery("#cmdindiacity").val();
-				jQuery(selectedEffect).show();
-			} );
-
-			var cty = "Delhi";
-
-			jQuery("#cmdindiacity option").each(function() {
-				if ( jQuery(this).text().toUpperCase().indexOf( ( cty.toUpperCase().replace("new".toUpperCase(), "") ) ) > -1 ) {
-					jQuery(this).attr("selected", true);
-					selectedEffect = "#dvCity_" + jQuery(this).val();
-					jQuery(selectedEffect).show();
-				}
-			} );
-		</script><div class="only-express"><h4>Only In The Express</h4><div class="wrapper"><div class="lead-story"><div class="snap"><a href="http://indianexpress.com/article/cities/delhi/arvind-remarkable-but-has-some-weaknesses-need-people-who-can-stand-up-to-him-prashant-bhushan/"> <img alt="Arvind sometimes wrong... need people who can stand up to him: Prashant Bhushan" title="Arvind sometimes wrong... need people who can stand up to him: Prashant Bhushan" src="//images.indianexpress.com/2015/02/prashant-bhushan-m.jpg"></a></div><div class="links"><a href="http://indianexpress.com/article/cities/delhi/arvind-remarkable-but-has-some-weaknesses-need-people-who-can-stand-up-to-him-prashant-bhushan/"> Arvind sometimes wrong... need people who can stand up to him: Prashant Bhushan</a></div><p><a href="http://indianexpress.com/article/cities/delhi/arvind-remarkable-but-has-some-weaknesses-need-people-who-can-stand-up-to-him-prashant-bhushan/"> Prashant Bhushan, removed along with Yogendra Yadav fom AAP&#039;s decision-making panel, expresses disappointment and hope in this inteview.</a></p><div class="points"><ul><li><a href="http://indianexpress.com/article/cities/mumbai/fadnavis-govt-scraps-quota-for-muslims-in-education/">Fadnavis govt scraps quota for Muslims in education</a></li><li><a href="http://indianexpress.com/article/india/india-others/i-wear-glasses-am-not-marriage-material-wont-grow-long-hair/">‘I wear glasses, am not marriage material, won’t grow long hair’</a></li></div></div></div></div><div class='add-first' >					<iframe src="http://www.bhaskar.com/bhaskarnews/indianexpress/" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:100px;" allowTransparency="true"></iframe>
-				</div>		<div class="editor-pic"><h4><p>Best of Express</p>
-</h4><ul><li><a href="http://indianexpress.com/article/india/india-others/modi-takes-land-law-impasse-to-public/"><img alt="PM’s land Bill pitch: UPA blocked your roads, homes and schools" title="PM’s land Bill pitch: UPA blocked your roads, homes and schools" src="//images.indianexpress.com/2015/02/modi-s6.jpg?w=450"></a><a href="http://indianexpress.com/india/" class="name">India</a><a href="http://indianexpress.com/article/india/india-others/modi-takes-land-law-impasse-to-public/" class="padding">PM’s land Bill pitch: UPA blocked your roads, homes and schools</a></li><li><a href="http://indianexpress.com/article/india/india-others/nagaland-mob-break-into-prison-drag-out-and-lynch-rape-accused-to-death/"><img alt="Nagaland: Mob raids Dimapur jail, lynches 35-year-old rape accused" title="Nagaland: Mob raids Dimapur jail, lynches 35-year-old rape accused" src="//images.indianexpress.com/2015/03/nagaland-thumb.jpg?w=450"></a><a href="http://indianexpress.com/india/" class="name">India</a><a href="http://indianexpress.com/article/india/india-others/nagaland-mob-break-into-prison-drag-out-and-lynch-rape-accused-to-death/" class="padding">Nagaland: Mob raids Dimapur jail, lynches 35-year-old rape accused</a></li><li><a href="http://indianexpress.com/article/technology/technology-others/leapfrogging-smartphone-majors-showcase-affordable-4g-devices-for-india/"><img alt="Leapfrogging: Smartphone majors showcase affordable 4G devices for India at MWC" title="Leapfrogging: Smartphone majors showcase affordable 4G devices for India at MWC" src="//images.indianexpress.com/2015/03/lumaia.jpg?w=450"></a><a href="http://indianexpress.com/technology/" class="name">Technology</a><a href="http://indianexpress.com/article/technology/technology-others/leapfrogging-smartphone-majors-showcase-affordable-4g-devices-for-india/" class="padding">Leapfrogging: Smartphone majors showcase affordable 4G devices for India at MWC</a></li><li><a href="http://indianexpress.com/article/opinion/columns/from-congress-to-aap/"><img alt="OPINION: From Congress to AAP" title="OPINION: From Congress to AAP" src="//images.indianexpress.com/2015/03/aap-s.jpg?w=450"></a><a href="http://indianexpress.com/opinion/" class="name">Opinion</a><a href="http://indianexpress.com/article/opinion/columns/from-congress-to-aap/" class="padding">OPINION: From Congress to AAP</a></li><li><pre class="photo"> </pre><a href="http://indianexpress.com/photos/entertainment-gallery/farhan-akhtar-shabana-azmi-javed-akhtar-celebrate-holi-with-aplomb/"><img alt="PHOTOS: Farhan Akhtar, Shabana Azmi, Javed Akhtar celebrate Holi with aplomb" title="PHOTOS: Farhan Akhtar, Shabana Azmi, Javed Akhtar celebrate Holi with aplomb" src="//images.indianexpress.com/2015/03/farhan-shabana-javed-holi-2.jpg?w=212"></a><a href="" class="name"></a><a href="http://indianexpress.com/photos/entertainment-gallery/farhan-akhtar-shabana-azmi-javed-akhtar-celebrate-holi-with-aplomb/" class="padding">PHOTOS: Farhan Akhtar, Shabana Azmi, Javed Akhtar celebrate Holi with aplomb</a></li></ul></div><div class='add-first' id='div-gpt-ad-1383904327704-23' style='width:300px; height:250px;'>					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-23');</script>
+			<div class="trending-now"><div class="titles"><h4>Trending Now</h4><h5><a href="http://indianexpress.com/article/cities/ahmedabad/my-uncles-raped-me-repeatedly-killed-and-buried-my-baby-claims-23-year-old/">My uncles raped me repeatedly, killed and buried my baby, claims 23-year-old</a></h5></div><div class="snaps"><a href="http://indianexpress.com/article/cities/ahmedabad/my-uncles-raped-me-repeatedly-killed-and-buried-my-baby-claims-23-year-old/"><img alt="My uncles raped me repeatedly, killed and buried my baby, claims 23-year-old" title="My uncles raped me repeatedly, killed and buried my baby, claims 23-year-old" src="//images.indianexpress.com/2015/04/rape-representational-pti-s.jpg?w=450"></a></div></div><div class='add-first' id='div-gpt-ad-1383904327704-22' >					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-22');</script>
+				</div>		<div class="only-express"><h4>Explained</h4><div class="wrapper"><div class="lead-story"><div class="snap"><a href="http://indianexpress.com/article/sports/cricket/cricket-boards-shadow-wars/"> <img alt="BCCI’s shadow wars" title="BCCI’s shadow wars" src="//images.indianexpress.com/2015/04/bcci-thumb.jpg?w=450"></a></div><div class="links"><a href="http://indianexpress.com/article/sports/cricket/cricket-boards-shadow-wars/"> BCCI’s shadow wars</a></div><p><a href="http://indianexpress.com/article/sports/cricket/cricket-boards-shadow-wars/"> As Srinivasan v Thakur hots up, SHAMIK CHAKRABARTY chronicles the playing, missing and hitting in BCCI.</a></p></div></div></div><div class="photos"><h4>Photos</h4><div class="first-story">
+							<div class="sto-img"><a href="http://indianexpress.com/photos/entertainment-gallery/amitabh-bachchan-alia-bhatt-anushka-sharma-gauri-khan-party-with-karan-johar/"><img alt="Inside pics from Karan Johar&#039;s grand bash" src="//images.indianexpress.com/2015/04/gaurikhan-anushka-alia-410.jpg?w=410"></a></div>
+							<div class="slugs"><a class="text" href="http://indianexpress.com/photos/entertainment-gallery/amitabh-bachchan-alia-bhatt-anushka-sharma-gauri-khan-party-with-karan-johar/">Inside pics from Karan Johar&#039;s grand bash</a></div> 
+						</div><div class="other-stories"><ul><li><a href="http://indianexpress.com/photos/entertainment-gallery/salman-khan-leaves-jodhpur-court-after-recording-statement-in-arms-act-case/"><img width="140" height="93" alt="Salman Khan leaves Jodhpur Court after recording statement in Arms Act case" src="//images.indianexpress.com/2015/04/salmankhan-court-410.jpg?w=410"></a>
+						<a href="http://indianexpress.com/photos/entertainment-gallery/salman-khan-leaves-jodhpur-court-after-recording-statement-in-arms-act-case/">Salman Khan leaves Jodhpur Court after recording statement in Arms Act case</a>
+						</li><li><a href="http://indianexpress.com/photos/entertainment-gallery/piku-deepika-padukones-date-with-irrfan/"><img width="140" height="93" alt="&#039;Piku&#039; Deepika Padukone&#039;s date with Irrfan" src="//images.indianexpress.com/2015/04/deepikairffan-410.jpg?w=410"></a>
+						<a href="http://indianexpress.com/photos/entertainment-gallery/piku-deepika-padukones-date-with-irrfan/">&#039;Piku&#039; Deepika Padukone&#039;s date with Irrfan</a>
+						</li></ul></div><div class="other-stories  no-dis"><ul><li><a href="http://indianexpress.com/photos/entertainment-gallery/gabbar-akshay-kumar-and-neil-nitin-mukesh-are-stylish-on-ramp/"><img width="140" height="93" alt="&#039;Gabbar&#039; Akshay Kumar and Neil Nitin Mukesh are stylish on ramp" src="//images.indianexpress.com/2015/04/akshayneil410.jpg?w=410"></a>
+						<a href="http://indianexpress.com/photos/entertainment-gallery/gabbar-akshay-kumar-and-neil-nitin-mukesh-are-stylish-on-ramp/">&#039;Gabbar&#039; Akshay Kumar and Neil Nitin Mukesh are stylish on ramp</a>
+						</li><li><a href="http://indianexpress.com/photos/entertainment-gallery/ranbir-kapoor-anushka-sharmas-fun-filled-evening-on-indias-got-talent-sets/"><img width="140" height="93" alt="Ranbir Kapoor, Anushka Sharma&#039;s fun-filled evening on &#039;India&#039;s Got Talent&#039; sets" src="//images.indianexpress.com/2015/04/ranbir-anushka-kiss-410.jpg?w=410"></a>
+						<a href="http://indianexpress.com/photos/entertainment-gallery/ranbir-kapoor-anushka-sharmas-fun-filled-evening-on-indias-got-talent-sets/">Ranbir Kapoor, Anushka Sharma&#039;s fun-filled evening on &#039;India&#039;s Got Talent&#039; sets</a>
+						</li></ul></div></div><div class="only-express"><h4>Only In The Express</h4><div class="wrapper"><div class="lead-story"><div class="snap"><a href="http://indianexpress.com/article/world/neighbours/nepal-earthquake-painful-to-see-my-brother-gasping-for-air/"> <img alt="Nepal Earthquake: Painful to see my brother gasping for air" title="Nepal Earthquake: Painful to see my brother gasping for air" src="//images.indianexpress.com/2013/12/300x200.jpg"></a></div><div class="links"><a href="http://indianexpress.com/article/world/neighbours/nepal-earthquake-painful-to-see-my-brother-gasping-for-air/"> Nepal Earthquake: Painful to see my brother gasping for air</a></div><p><a href="http://indianexpress.com/article/world/neighbours/nepal-earthquake-painful-to-see-my-brother-gasping-for-air/"> NDRF, China rescue teams work to recover body of Army Major and free another man stuck under the rubble.</a></p><div class="points"><ul><li><a href="http://indianexpress.com/article/india/india-others/flood-of-help-in-nepal-but-it-is-barely-trickling-down/">Nepal earthquake: Flood of help in Nepal, but it is barely trickling down</a></li><li><a href="http://indianexpress.com/article/world/neighbours/trauma-centre-a-gift-from-india-treating-thousands/">Trauma centre, a ‘gift’ from India, treating thousands</a></li><li><a href="http://indianexpress.com/article/world/neighbours/nepal-earthquake-meet-ndrfs-canine-heroes-golu-and-tanu/">Nepal Earthquake: Meet NDRF’s canine heroes Golu and Tanu</a></li><li><a href="http://indianexpress.com/article/world/neighbours/dalit-village-wonders-if-modi-govts-help-will-ever-reach-us/">Dalit village wonders, if Modi govt’s help will ever reach us</a></li></div></div></div></div><div class="editor-pic"><h4>Best of Express</h4><ul><li><a href="http://indianexpress.com/article/world/neighbours/nepal-earthquake-1200-bodies-in-three-days-pashupatinath-pyres-keep-burning/"><img alt="Nepal Earthquake: 1,200 bodies in three days, Pashupatinath pyres keep burning" title="Nepal Earthquake: 1,200 bodies in three days, Pashupatinath pyres keep burning" src="//images.indianexpress.com/2015/04/temple-m.jpg?w=450"></a><a href="http://indianexpress.com/world/" class="name">World</a><a href="http://indianexpress.com/article/world/neighbours/nepal-earthquake-1200-bodies-in-three-days-pashupatinath-pyres-keep-burning/" class="padding">Nepal Earthquake: 1,200 bodies in three days, Pashupatinath pyres keep burning</a></li><li><a href="http://indianexpress.com/article/india/india-others/cji-refuses-to-be-part-of-panel-to-select-njac-members-sc-told/"><img alt="Government and Supreme Court face off: CJI says won’t join panel" title="Government and Supreme Court face off: CJI says won’t join panel" src="//images.indianexpress.com/2015/03/dattu.jpg?w=450"></a><a href="http://indianexpress.com/india/" class="name">India</a><a href="http://indianexpress.com/article/india/india-others/cji-refuses-to-be-part-of-panel-to-select-njac-members-sc-told/" class="padding">Government and Supreme Court face off: CJI says won’t join panel</a></li><li><a href="http://indianexpress.com/article/explained/why-congress-bjp-are-fighting-over-jawaharlal-nehru-subhas-chandra-bose/"><img alt="Explained: Why Congress, BJP are fighting over Jawaharlal Nehru, Subhas Chandra Bose" title="Explained: Why Congress, BJP are fighting over Jawaharlal Nehru, Subhas Chandra Bose" src="//images.indianexpress.com/2015/04/nehru-bose-m.jpg?w=450"></a><a href="" class="name"></a><a href="http://indianexpress.com/article/explained/why-congress-bjp-are-fighting-over-jawaharlal-nehru-subhas-chandra-bose/" class="padding">Explained: Why Congress, BJP are fighting over Jawaharlal Nehru, Subhas Chandra Bose</a></li><li><a href="http://indianexpress.com/article/entertainment/bollywood/anurag-kashyap-files-fir-after-radhika-aptes-nude-video-goes-viral/"><img alt="Anurag Kashyap files FIR with cyber cell after Radhika Apte&#039;s nude video goes viral" title="Anurag Kashyap files FIR with cyber cell after Radhika Apte&#039;s nude video goes viral" src="//images.indianexpress.com/2015/04/radhikaapte-anurag4801.jpg?w=450"></a><a href="http://indianexpress.com/entertainment/" class="name">Entertainment</a><a href="http://indianexpress.com/article/entertainment/bollywood/anurag-kashyap-files-fir-after-radhika-aptes-nude-video-goes-viral/" class="padding">Anurag Kashyap files FIR with cyber cell after Radhika Apte&#039;s nude video goes viral</a></li><li><a href="http://indianexpress.com/article/india/india-others/government-looks-at-a-law-on-net-neutrality/"><img alt="Government looks at a law on net neutrality" title="Government looks at a law on net neutrality" src="//images.indianexpress.com/2015/04/internet_reuters_new.jpg?w=450"></a><a href="http://indianexpress.com/india/" class="name">India</a><a href="http://indianexpress.com/article/india/india-others/government-looks-at-a-law-on-net-neutrality/" class="padding">Government looks at a law on net neutrality</a></li></ul></div><div class='add-first' id='div-gpt-ad-1383904327704-23' style='width:300px; height:250px;'>					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-23');</script>
 				</div>		<div class='add-poll'  >					<h6></h6>
-					<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8704717.js"></script>
+					<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8832193.js"></script>
 				</div>		<div class='add-first no-dis' id='div-gpt-ad-1406019564938-0' >					<script type="text/javascript">googletag.display('div-gpt-ad-1406019564938-0');</script>
 				</div>		<div class='add' >					<iframe width='300' height='320' frameborder='0' src='http://embed.videoplay.in/api/widget.php?cat=1|4&#038;pid=90&#038;color=b40505&#038;mute=1&#038;lang=1' frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" scrolling="no" style="overflow:hidden;"></iframe>
 				</div>		<div  >					<div class="chatroom">
 						<div class="video">
-							<a href="https://www.youtube.com/watch?v=bcQG4QjK7EQ">
+							<a href="https://www.youtube.com/watch?v=nzTSqJ2eQ1M">
 								<span style="text-align:center; display: block;" class="embed-youtube">
-									<iframe width="280" height="188" frameborder="0" src="http://www.youtube.com/embed/bcQG4QjK7EQ?version=3&#038;rel=1&#038;fs=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=0&#038;wmode=transparent" type="text/html" class="youtube-player"></iframe>
+									<iframe width="280" height="188" frameborder="0" src="http://www.youtube.com/embed/nzTSqJ2eQ1M?version=3&#038;rel=1&#038;fs=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=0&#038;wmode=transparent" type="text/html" class="youtube-player"></iframe>
 								</span>
 							</a>
 						</div>
 						<div class="name">
-							<a href="https://www.youtube.com/watch?v=bcQG4QjK7EQ">Narendra Modi&#039;s working style</a></div>
+							<a href="https://www.youtube.com/watch?v=nzTSqJ2eQ1M">Express News Videos</a></div>
 					</div>
 				</div>		<div class='add-poll nodis' >					<div class='aside'>
 						<div style="width:300px; height:400px;" breakingburner-widget="IndianExpress/india-news"><script src="http://widget.breakingburner.com/js/jwidget.js"></script>
@@ -679,22 +660,22 @@ jQuery("div[class~='dropdown-right']").hide();
 				</div>		<div  id='div-gpt-ad-1383904327704-33' style='width:1px; height:1px;'>					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-33');</script>
 				</div>		<div class='latest-news' >				<h3>Videos</h3>
 					<ul>
-							<li class="last">									<a href="/videos/sponsored/vid2854f932f03b4d5405571296/here-holi-is-steeped-in-mythology"><pre class="video-left">&nbsp;</pre></a>
-									<a href="/videos/sponsored/vid2854f932f03b4d5405571296/here-holi-is-steeped-in-mythology"><img src="http://videoplay.networkplaymedia.netdna-cdn.com/thumb_img/4bhi/img1954f932f03b4ef635705766.jpg" alt="HERE HOLI IS STEEPED IN MYTHOLOGY " /></a>
+							<li class="last">									<a href="/videos/sponsored/vid355540f9297ba3a663904118/arms-act-salmans-heroic-statement-he-is-just-an-indian-update"><pre class="video-left">&nbsp;</pre></a>
+									<a href="/videos/sponsored/vid355540f9297ba3a663904118/arms-act-salmans-heroic-statement-he-is-just-an-indian-update"><img src="http://videoplay.networkplaymedia.netdna-cdn.com/thumb_img/4bhq/img595540f9297ba48289401862.jpg" alt="ARMS ACT: SALMAN’S HEROIC STATEMENT- HE IS JUST AN INDIAN! (update)" /></a>
 									<a href="" class="padding slug"></a>
-									<a href="/videos/sponsored/vid2854f932f03b4d5405571296/here-holi-is-steeped-in-mythology" class="padding">Here Holi Is Steeped In Mythology </a>
-									</li><li>									<a href="/videos/sponsored/vid7054f932dd30837282387641/holi-celebrations-in-jagannath-temple"><pre class="video-left">&nbsp;</pre></a>
-									<a href="/videos/sponsored/vid7054f932dd30837282387641/holi-celebrations-in-jagannath-temple"><img src="http://videoplay.networkplaymedia.netdna-cdn.com/thumb_img/4bhi/img7254f932dd30851882052234.jpg" alt="HOLI CELEBRATIONS IN JAGANNATH TEMPLE" /></a>
+									<a href="/videos/sponsored/vid355540f9297ba3a663904118/arms-act-salmans-heroic-statement-he-is-just-an-indian-update" class="padding">Arms Act: Salman’s Heroic Statement- He Is Just An Indian! (update)</a>
+									</li><li>									<a href="/videos/sponsored/vid355540f1b2dcdbc721400503/paperless-work-is-the-name-of-the-game-haryana-cm"><pre class="video-left">&nbsp;</pre></a>
+									<a href="/videos/sponsored/vid355540f1b2dcdbc721400503/paperless-work-is-the-name-of-the-game-haryana-cm"><img src="http://videoplay.networkplaymedia.netdna-cdn.com/thumb_img/4bhq/img905540f1b2dcdd4147859483.jpg" alt="PAPERLESS WORK IS THE NAME OF THE GAME – HARYANA CM" /></a>
 									<a href="" class="padding slug"></a>
-									<a href="/videos/sponsored/vid7054f932dd30837282387641/holi-celebrations-in-jagannath-temple" class="padding">Holi Celebrations In Jagannath Temple</a>
-									</li><li>									<a href="/videos/sponsored/vid8254f932d3e0026572916201/many-colours-of-barsana-as-holi-returns"><pre class="video-left">&nbsp;</pre></a>
-									<a href="/videos/sponsored/vid8254f932d3e0026572916201/many-colours-of-barsana-as-holi-returns"><img src="http://videoplay.networkplaymedia.netdna-cdn.com/thumb_img/4bhi/img9454f932d3e0042796052010.jpg" alt="MANY COLOURS OF BARSANA, AS HOLI RETURNS" /></a>
+									<a href="/videos/sponsored/vid355540f1b2dcdbc721400503/paperless-work-is-the-name-of-the-game-haryana-cm" class="padding">Paperless Work Is The Name Of The Game – Haryana Cm</a>
+									</li><li>									<a href="/videos/sponsored/vid215540f1a0be7b7444736938/no-one-can-run-a-shop-fairly-prahlad-modi-pms-brother"><pre class="video-left">&nbsp;</pre></a>
+									<a href="/videos/sponsored/vid215540f1a0be7b7444736938/no-one-can-run-a-shop-fairly-prahlad-modi-pms-brother"><img src="http://videoplay.networkplaymedia.netdna-cdn.com/thumb_img/4bhq/img815540f1a0be7d0264884279.jpg" alt="NO ONE CAN RUN A SHOP FAIRLY, PRAHLAD MODI, PM’s BROTHER" /></a>
 									<a href="" class="padding slug"></a>
-									<a href="/videos/sponsored/vid8254f932d3e0026572916201/many-colours-of-barsana-as-holi-returns" class="padding">Many Colours Of Barsana, As Holi Returns</a>
-									</li><li class="last">									<a href="/videos/sponsored/vid1254f932c00f464104037966/filled-with-awe-and-joy-people-witness-vibrant-barsana-holi"><pre class="video-left">&nbsp;</pre></a>
-									<a href="/videos/sponsored/vid1254f932c00f464104037966/filled-with-awe-and-joy-people-witness-vibrant-barsana-holi"><img src="http://videoplay.networkplaymedia.netdna-cdn.com/thumb_img/4bhi/img1254f932c00f479472100188.jpg" alt="FILLED WITH AWE AND JOY, PEOPLE WITNESS VIBRANT BARSANA HOLI" /></a>
+									<a href="/videos/sponsored/vid215540f1a0be7b7444736938/no-one-can-run-a-shop-fairly-prahlad-modi-pms-brother" class="padding">No One Can Run A Shop Fairly, Prahlad Modi, Pm’s Brother</a>
+									</li><li class="last">									<a href="/videos/sponsored/vid955540f18a61e40974534547/haryana-to-ban-misuse-of-sports-complexes"><pre class="video-left">&nbsp;</pre></a>
+									<a href="/videos/sponsored/vid955540f18a61e40974534547/haryana-to-ban-misuse-of-sports-complexes"><img src="http://videoplay.networkplaymedia.netdna-cdn.com/thumb_img/4bhq/img225540f18a61e51536003858.jpg" alt="HARYANA TO BAN MISUSE OF SPORTS COMPLEXES" /></a>
 									<a href="" class="padding slug"></a>
-									<a href="/videos/sponsored/vid1254f932c00f464104037966/filled-with-awe-and-joy-people-witness-vibrant-barsana-holi" class="padding">Filled With Awe And Joy, People Witness Vibrant Barsana Holi</a>
+									<a href="/videos/sponsored/vid955540f18a61e40974534547/haryana-to-ban-misuse-of-sports-complexes" class="padding">Haryana To Ban Misuse Of Sports Complexes</a>
 									</li>								</ul>
 				</div>		<div  id='div-gpt-ad-1383904327704-32' style='width:1px; height:1px;'>					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-32');</script>
 				</div>					</div>
@@ -705,7 +686,7 @@ jQuery("div[class~='dropdown-right']").hide();
 <div class="clear"></div>
 	<script type="text/javascript">
 jQuery(document).ready(function() {
-	jQuery('body').append(jQuery('<div class="popup hiding" id="article-finished"><span class="close">X</span><div class="article-story"><img src="//images.indianexpress.com/2015/03/mufti-cm.jpg?w=450" alt="Why Mufti felt he needed to ‘thank’ Pak and separatists"><h4 class="recommendedclass">Recommended for you</h4><a href="http://indianexpress.com/article/india/india-others/why-mufti-felt-he-needed-to-thank-pak-and-separatists/">Why Mufti felt he needed to ‘thank’ Pak and separatists</a></div></div>'));
+	jQuery('body').append(jQuery('<div class="popup hiding" id="article-finished"><span class="close">X</span><div class="article-story"><img src="//images.indianexpress.com/2015/04/mumbai-21.jpg?w=450" alt="Explained: How safe are the 3,400 highrises in Delhi, Mumbai?"><h4 class="recommendedclass">Recommended for you</h4><a href="http://indianexpress.com/article/explained/how-safe-are-the-3400-highrises-in-delhi-mumbai/">Explained: How safe are the 3,400 highrises in Delhi, Mumbai?</a></div></div>'));
 	jQuery('#section').waypoint(function(direction) {
 		jQuery('#article-finished').toggleClass('hiding', direction === "up");
 	}, {
@@ -733,20 +714,20 @@ jQuery(document).ready(function() {
 		<a href="/section/india/">All India</a>
 	</div>
 	<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/india/india-others/mppeb-scam-governor-moves-high-court-to-quash-fir-against-him/"><img src="//images.indianexpress.com/2015/03/protest-480.jpg?w=450?w=140" alt="MPPEB scam: Governor moves high court to quash FIR against him" /></a>
-						<strong><a href="http://indianexpress.com/article/india/india-others/mppeb-scam-governor-moves-high-court-to-quash-fir-against-him/">MPPEB scam: Governor moves high court to quash FIR against him</a></strong>
+						<a href="http://indianexpress.com/article/cities/ahmedabad/gujarat-hc-reserves-order-in-sabarmati-express-carnage-case/"><img src="//images.indianexpress.com/2015/04/sbrmati.jpg?w=450?w=140" alt="Sabarmati Express carnage case: Gujarat HC reserves order on petition challening trial court&#039;s order" /></a>
+						<strong><a href="http://indianexpress.com/article/cities/ahmedabad/gujarat-hc-reserves-order-in-sabarmati-express-carnage-case/">Sabarmati Express carnage case: Gujarat HC reserves order on petition challening trial court&#039;s order</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/india/india-others/pakistan-arrests-45-indian-fishermen/"><img src="//images.indianexpress.com/2015/03/fishermen_480.jpg?w=450?w=140" alt="Pakistan arrests 45 Indian fishermen" /></a>
-						<strong><a href="http://indianexpress.com/article/india/india-others/pakistan-arrests-45-indian-fishermen/">Pakistan arrests 45 Indian fishermen</a></strong>
+						<a href="http://indianexpress.com/article/india/india-others/himachals-joginder-nagar-to-be-first-free-wi-fi-town/"><img src="//images.indianexpress.com/2015/03/virbhadra-singh-thumb.jpg?w=450?w=140" alt="Joginder Nagar to be Himachal&#039;s first free Wi-Fi town" /></a>
+						<strong><a href="http://indianexpress.com/article/india/india-others/himachals-joginder-nagar-to-be-first-free-wi-fi-town/">Joginder Nagar to be Himachal&#039;s first free Wi-Fi town</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/india/india-others/police-rescue-pentecostal-pastor-from-angry-right-wing-workers/"><img src="//images.indianexpress.com/2015/03/bajrangdal.jpg?w=450?w=140" alt="Police rescue Pentecostal pastor from angry right-wing workers" /></a>
-						<strong><a href="http://indianexpress.com/article/india/india-others/police-rescue-pentecostal-pastor-from-angry-right-wing-workers/">Police rescue Pentecostal pastor from angry right-wing workers</a></strong>
+						<a href="http://indianexpress.com/article/india/india-others/mughal-road-soon-to-be-declared-as-an-alternative-highway-between-jammu-and-kashmir/"><img src="//images.indianexpress.com/2015/03/highway-s1.jpg?w=450?w=140" alt="Mughal road to be an alternative highway between Jammu and Kashmir" /></a>
+						<strong><a href="http://indianexpress.com/article/india/india-others/mughal-road-soon-to-be-declared-as-an-alternative-highway-between-jammu-and-kashmir/">Mughal road to be an alternative highway between Jammu and Kashmir</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/india/india-others/pcc-urges-rahul-gandhi-to-take-charge-of-aicc/"><img src="//images.indianexpress.com/2015/02/rahul-m.jpg?w=450?w=140" alt="Puducherry state unit urges Rahul Gandhi to take charge of AICC" /></a>
-						<strong><a href="http://indianexpress.com/article/india/india-others/pcc-urges-rahul-gandhi-to-take-charge-of-aicc/">Puducherry state unit urges Rahul Gandhi to take charge of AICC</a></strong>
+						<a href="http://indianexpress.com/article/india/india-others/bihar-village-waits-for-nepal-migrants-to-return/"><img src="//images.indianexpress.com/2015/04/nepal-quake1-e1430324702989.jpg?w=450?w=140" alt="Bihar village waits for Nepal migrants to return" /></a>
+						<strong><a href="http://indianexpress.com/article/india/india-others/bihar-village-waits-for-nepal-migrants-to-return/">Bihar village waits for Nepal migrants to return</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/india/india-others/andhra-pradesh-still-waiting-for-centres-help-post-bifurcation-governor/"><img src="//images.indianexpress.com/2015/03/narasimhanmed.jpg?w=450?w=140" alt="Andhra Pradesh still waiting for centre&#039;s help post bifurcation: Governor" /></a>
-						<strong><a href="http://indianexpress.com/article/india/india-others/andhra-pradesh-still-waiting-for-centres-help-post-bifurcation-governor/">Andhra Pradesh still waiting for centre&#039;s help post bifurcation: Governor</a></strong>
+						<a href="http://indianexpress.com/article/india/india-others/ne-cms-seek-modi-intervention-to-continue-special-states-category-status/"><img src="//images.indianexpress.com/2013/01/modi-m9.jpg?w=450?w=140" alt="NE CMs seek Modi intervention to continue Special States Category status" /></a>
+						<strong><a href="http://indianexpress.com/article/india/india-others/ne-cms-seek-modi-intervention-to-continue-special-states-category-status/">NE CMs seek Modi intervention to continue Special States Category status</a></strong>
 					</div> </div>
 </div>
 <div class="dropdown-3columns" id="menu-world">
@@ -760,20 +741,20 @@ jQuery(document).ready(function() {
 		<a href="/section/world/">All World</a>
 	</div>
 	<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/world/middle-east-africa/mali-nightclub-attack-kills-five-in-bamako/"><img src="//images.indianexpress.com/2015/03/mali-attack-759.jpg?w=140" alt="Mali nightclub attack kills five in Bamako" /></a>
-						<strong><a href="http://indianexpress.com/article/world/middle-east-africa/mali-nightclub-attack-kills-five-in-bamako/">Mali nightclub attack kills five in Bamako</a></strong>
+						<a href="http://indianexpress.com/article/world/neighbours/delhi-not-reciprocating-our-desire-for-good-ties-nawaz-sharif/"><img src="//images.indianexpress.com/2015/04/nawaz-sharif_480.jpg?w=140" alt="Delhi not reciprocating our desire for good ties: Nawaz Sharif" /></a>
+						<strong><a href="http://indianexpress.com/article/world/neighbours/delhi-not-reciprocating-our-desire-for-good-ties-nawaz-sharif/">Delhi not reciprocating our desire for good ties: Nawaz Sharif</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/world/asia/russia-2-suspects-detained-in-murder-of-boris-nemtsov/"><img src="//images.indianexpress.com/2015/03/russian-opposition-7591-e1425729772476.jpg?w=450?w=140" alt="Russia: 2 suspects detained in murder of Boris Nemtsov" /></a>
-						<strong><a href="http://indianexpress.com/article/world/asia/russia-2-suspects-detained-in-murder-of-boris-nemtsov/">Russia: 2 suspects detained in murder of Boris Nemtsov</a></strong>
+						<a href="http://indianexpress.com/article/world/middle-east-africa/nigeria-army-rescues-300-girls-from-boko-haram-stronghold/"><img src="//images.indianexpress.com/2015/04/boko-haram-480.jpg?w=450?w=140" alt="Nigeria army rescues 300 girls from Boko Haram stronghold, none from Chibok" /></a>
+						<strong><a href="http://indianexpress.com/article/world/middle-east-africa/nigeria-army-rescues-300-girls-from-boko-haram-stronghold/">Nigeria army rescues 300 girls from Boko Haram stronghold, none from Chibok</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/world/americas/islamic-state-expelled-from-iraq-town-al-baghdadi-us/"><img src="//images.indianexpress.com/2015/03/iraq-s.jpg?w=450?w=140" alt="Islamic State expelled from Iraq town Al-Baghdadi: US" /></a>
-						<strong><a href="http://indianexpress.com/article/world/americas/islamic-state-expelled-from-iraq-town-al-baghdadi-us/">Islamic State expelled from Iraq town Al-Baghdadi: US</a></strong>
+						<a href="http://indianexpress.com/article/world/europe/french-school-bans-muslim-girls-long-skirt-as-against-law/"><img src="//images.indianexpress.com/2015/04/skirt1.jpg?w=450?w=140" alt="French school bans Muslim girl&#039;s long skirt as against law" /></a>
+						<strong><a href="http://indianexpress.com/article/world/europe/french-school-bans-muslim-girls-long-skirt-as-against-law/">French school bans Muslim girl&#039;s long skirt as against law</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/world/asia/under-the-dome-controversial-film-on-chinas-air-pollution-disappears-from-sites/"><img src="//images.indianexpress.com/2015/03/china-pollution-2.jpg?w=450?w=140" alt="Under The Dome: Controversial film on China&#039;s air pollution disappears from sites" /></a>
-						<strong><a href="http://indianexpress.com/article/world/asia/under-the-dome-controversial-film-on-chinas-air-pollution-disappears-from-sites/">Under The Dome: Controversial film on China&#039;s air pollution disappears from sites</a></strong>
+						<a href="http://indianexpress.com/article/world/americas/hillary-clinton-to-discuss-reforms-in-us-justice-system-after-baltimore-protests/"><img src="//images.indianexpress.com/2015/04/baltimore_riots_480.jpg?w=450?w=140" alt="Hillary Clinton to discuss reforms in US Justice system after Baltimore protests" /></a>
+						<strong><a href="http://indianexpress.com/article/world/americas/hillary-clinton-to-discuss-reforms-in-us-justice-system-after-baltimore-protests/">Hillary Clinton to discuss reforms in US Justice system after Baltimore protests</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/world/asia/well-wishing-s-korean-offers-dog-meet-to-injured-us-envoy/"><img src="//images.indianexpress.com/2015/03/s-korea-s.jpg?w=450?w=140" alt="Well-wishing S. Korean offers dog meat to injured US envoy" /></a>
-						<strong><a href="http://indianexpress.com/article/world/asia/well-wishing-s-korean-offers-dog-meet-to-injured-us-envoy/">Well-wishing S. Korean offers dog meat to injured US envoy</a></strong>
+						<a href="http://indianexpress.com/article/world/middle-east-africa/saudi-arabias-crown-prince-dismissed-royal-decree/"><img src="//images.indianexpress.com/2015/02/saudi.jpg?w=450?w=140" alt="Saudi Arabia&#039;s crown prince dismissed: royal decree" /></a>
+						<strong><a href="http://indianexpress.com/article/world/middle-east-africa/saudi-arabias-crown-prince-dismissed-royal-decree/">Saudi Arabia&#039;s crown prince dismissed: royal decree</a></strong>
 					</div> </div>
 	</div>
 <div class="dropdown-4columns" id="menu-business">
@@ -786,20 +767,20 @@ jQuery(document).ready(function() {
 		<a href="http://indianexpress.com/section/business/">All Business</a>
 	</div>
 	<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://www.financialexpress.com/article/economy/narendra-modi-govt-rbi-heading-for-potential-clash-over-who-decides-rates/51035/"><img src="//images.indianexpress.com/2013/12/raghuram-pti.jpg?w=140" alt="Narendra Modi govt, RBI heading for potential clash over who decides rates" /></a>
-						<strong><a href="http://www.financialexpress.com/article/economy/narendra-modi-govt-rbi-heading-for-potential-clash-over-who-decides-rates/51035/">Narendra Modi govt, RBI heading for potential clash over who decides rates</a></strong>
+						<a href="http://www.financialexpress.com/article/industry/banking-finance/hdfc-q4-consolidated-net-crawls-up-9-6-on-deferred-tax-outgo/68072/"><img src="//images.indianexpress.com/2013/12/hdfc-re-480.jpg?w=140" alt="HDFC Q4 consolidated net crawls up 9.6% on deferred tax outgo" /></a>
+						<strong><a href="http://www.financialexpress.com/article/industry/banking-finance/hdfc-q4-consolidated-net-crawls-up-9-6-on-deferred-tax-outgo/68072/">HDFC Q4 consolidated net crawls up 9.6% on deferred tax outgo</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/business/economy/india-gets-time-till-sept-30-for-deal-on-tax-evasion-with-us/"><img src="//images.indianexpress.com/2014/06/rupee1.jpg?w=450?w=140" alt="India gets time till Sept 30 for deal on tax evasion with US" /></a>
-						<strong><a href="http://indianexpress.com/article/business/economy/india-gets-time-till-sept-30-for-deal-on-tax-evasion-with-us/">India gets time till Sept 30 for deal on tax evasion with US</a></strong>
+						<a href="http://www.financialexpress.com/article/economy/pm-narendra-modi-cabinet-gives-nod-to-policy-on-development-of-12-reliance-industries-ongc-gas-finds/67956/"><img src="//images.indianexpress.com/2015/04/modismall5.jpg?w=140" alt="Narendra Modi led CCEA gives nod to policy on development of 12 Reliance Industries, ONGC gas finds" /></a>
+						<strong><a href="http://www.financialexpress.com/article/economy/pm-narendra-modi-cabinet-gives-nod-to-policy-on-development-of-12-reliance-industries-ongc-gas-finds/67956/">Narendra Modi led CCEA gives nod to policy on development of 12 Reliance Industries, ONGC gas finds</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/business/companies/full-service-airlines-go-full-tilt-at-loyalty-programmes/"><img src="//images.indianexpress.com/2013/12/vistara2-ie.jpg?w=450?w=140" alt="Full-service airlines go full tilt at loyalty programmes" /></a>
-						<strong><a href="http://indianexpress.com/article/business/companies/full-service-airlines-go-full-tilt-at-loyalty-programmes/">Full-service airlines go full tilt at loyalty programmes</a></strong>
+						<a href="http://www.financialexpress.com/article/miscellaneous/what-rahul-gandhi-wont-see/67596/"><img src="//images.indianexpress.com/2015/04/rahul-m1.jpg?w=140" alt="What Rahul Gandhi won’t see" /></a>
+						<strong><a href="http://www.financialexpress.com/article/miscellaneous/what-rahul-gandhi-wont-see/67596/">What Rahul Gandhi won’t see</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/business/business-others/major-banks-will-soon-reduce-rates-others-to-follow-sinha/"><img src="//images.indianexpress.com/2013/12/rbu.jpg?w=140" alt="Major banks will soon reduce rates, others to follow: Sinha" /></a>
-						<strong><a href="http://indianexpress.com/article/business/business-others/major-banks-will-soon-reduce-rates-others-to-follow-sinha/">Major banks will soon reduce rates, others to follow: Sinha</a></strong>
+						<a href="http://www.financialexpress.com/article/economy/anil-ambanis-reliance-power-terminates-3960-mw-tilaiya-ultra-mega-power-project/67558/"><img src="//images.indianexpress.com/2015/03/anil-ambani-480.jpg?w=140" alt="Anil Ambani’s Reliance Power terminates 3,960 MW Tilaiya ultra mega power project" /></a>
+						<strong><a href="http://www.financialexpress.com/article/economy/anil-ambanis-reliance-power-terminates-3960-mw-tilaiya-ultra-mega-power-project/67558/">Anil Ambani’s Reliance Power terminates 3,960 MW Tilaiya ultra mega power project</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://www.financialexpress.com/article/industry/companies/spectrum-auction-for-2g-3g-airwaves-resumes-airtel-vodafone-locked-in-battle-with-mukesh-ambanis-reliance-jio/50570/"><img src="//images.indianexpress.com/2013/12/spectrum.jpg?w=140" alt="Spectrum auction for 2G, 3G airwaves resumes; Airtel, Vodafone locked in battle with Reliance Jio" /></a>
-						<strong><a href="http://www.financialexpress.com/article/industry/companies/spectrum-auction-for-2g-3g-airwaves-resumes-airtel-vodafone-locked-in-battle-with-mukesh-ambanis-reliance-jio/50570/">Spectrum auction for 2G, 3G airwaves resumes; Airtel, Vodafone locked in battle with Reliance Jio</a></strong>
+						<a href="http://indianexpress.com/article/business/market/bse-sensex-down-over-200-pts-ahead-of-april-derivatives-expiry/"><img src="//images.indianexpress.com/2015/01/sensex-s.jpg?w=209?w=140" alt="BSE Sensex falls 170 pts ahead of derivatives expiry, Fed meet" /></a>
+						<strong><a href="http://indianexpress.com/article/business/market/bse-sensex-down-over-200-pts-ahead-of-april-derivatives-expiry/">BSE Sensex falls 170 pts ahead of derivatives expiry, Fed meet</a></strong>
 					</div> </div>
  </div>
 <div class="dropdown-5columns" id="menu-cities">
@@ -816,20 +797,20 @@ jQuery(document).ready(function() {
 		<a href="/section/cities/bangalore/">Bangalore</a>   
 	</div>
 	<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/cities/delhi/plan-to-make-colonies-legal-to-start-all-over-again/"><img src="//images.indianexpress.com/2015/03/colonies-2.jpg?w=450?w=140" alt="Plan to make colonies legal to start all over again" /></a>
-						<strong><a href="http://indianexpress.com/article/cities/delhi/plan-to-make-colonies-legal-to-start-all-over-again/">Plan to make colonies legal to start all over again</a></strong>
+						<a href="http://indianexpress.com/article/cities/pune/malegaon-blast-accused-was-sent-cellphone-hidden-in-a-book-cops/"><img src="//images.indianexpress.com/2015/04/jail-21.jpg?w=450?w=140" alt="Malegaon blast accused was sent cellphone hidden in a book: Cops" /></a>
+						<strong><a href="http://indianexpress.com/article/cities/pune/malegaon-blast-accused-was-sent-cellphone-hidden-in-a-book-cops/">Malegaon blast accused was sent cellphone hidden in a book: Cops</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/cities/delhi/interview-of-dec-16-rapist-ib-ministry-asks-channels-not-to-air-documentary-fir-filed/"><img src="//images.indianexpress.com/2015/03/december-gangrape_480.jpg?w=450?w=140" alt="Court orders restraint on broadcast of Dec 16 rape documentary, FIR filed" /></a>
-						<strong><a href="http://indianexpress.com/article/cities/delhi/interview-of-dec-16-rapist-ib-ministry-asks-channels-not-to-air-documentary-fir-filed/">Court orders restraint on broadcast of Dec 16 rape documentary, FIR filed</a></strong>
+						<a href="http://indianexpress.com/article/cities/lucknow/governor-seeks-cm-akhilesh-yadavs-clarification-on-23-lokayukta-reports/"><img src="//images.indianexpress.com/2014/01/up.jpg?w=450?w=140" alt="Governor seeks CM Akhilesh Yadav&#039;s clarification on 23 Lokayukta reports" /></a>
+						<strong><a href="http://indianexpress.com/article/cities/lucknow/governor-seeks-cm-akhilesh-yadavs-clarification-on-23-lokayukta-reports/">Governor seeks CM Akhilesh Yadav&#039;s clarification on 23 Lokayukta reports</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/cities/mumbai/ban-on-beef-bjp-govt-prodded-by-rss-has-deprived-muslim-dealers-of-a-source-of-income/"><img src="//images.indianexpress.com/2013/01/beef_mum.jpg?w=450?w=140" alt="Ban On Beef: ‘BJP govt, prodded by RSS, has deprived Muslim dealers of a source of income’" /></a>
-						<strong><a href="http://indianexpress.com/article/cities/mumbai/ban-on-beef-bjp-govt-prodded-by-rss-has-deprived-muslim-dealers-of-a-source-of-income/">Ban On Beef: ‘BJP govt, prodded by RSS, has deprived Muslim dealers of a source of income’</a></strong>
+						<a href="http://indianexpress.com/article/cities/kolkata/106-from-state-stuck-in-nepal-trying-to-trace-them-mamata/"><img src="//images.indianexpress.com/2015/04/mamata-s2.jpg?w=450?w=140" alt="106 from state stuck in Nepal, trying to trace them: Mamata" /></a>
+						<strong><a href="http://indianexpress.com/article/cities/kolkata/106-from-state-stuck-in-nepal-trying-to-trace-them-mamata/">106 from state stuck in Nepal, trying to trace them: Mamata</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/cities/delhi/bjp-mlas-go-to-jung-against-speaker-bias/"><img src="//images.indianexpress.com/2015/02/bjp-assam-m.jpg?w=450?w=140" alt="BJP MLAs go to Jung against Speaker ‘bias’" /></a>
-						<strong><a href="http://indianexpress.com/article/cities/delhi/bjp-mlas-go-to-jung-against-speaker-bias/">BJP MLAs go to Jung against Speaker ‘bias’</a></strong>
+						<a href="http://indianexpress.com/article/cities/delhi/family-friends-mourn-death-of-mountaineer-on-everest/"><img src="//images.indianexpress.com/2015/04/everest-480.jpg?w=450?w=140" alt="Family, friends mourn death of mountaineer on Everest" /></a>
+						<strong><a href="http://indianexpress.com/article/cities/delhi/family-friends-mourn-death-of-mountaineer-on-everest/">Family, friends mourn death of mountaineer on Everest</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/cities/delhi/residents-to-get-executive-powers/"><img src="//images.indianexpress.com/2015/03/dmc.jpg?w=450?w=140" alt="Residents to get executive powers" /></a>
-						<strong><a href="http://indianexpress.com/article/cities/delhi/residents-to-get-executive-powers/">Residents to get executive powers</a></strong>
+						<a href="http://indianexpress.com/article/india/india-others/iit-seismologist-says-sundays-jolt-in-nepal-was-a-fresh-quake-not-an-aftershock/"><img src="//images.indianexpress.com/2013/01/nepal-lead.jpg?w=450?w=140" alt="‘Sunday’s tremor earthquake, not aftershock’" /></a>
+						<strong><a href="http://indianexpress.com/article/india/india-others/iit-seismologist-says-sundays-jolt-in-nepal-was-a-fresh-quake-not-an-aftershock/">‘Sunday’s tremor earthquake, not aftershock’</a></strong>
 					</div> </div>
  </div>
 <div class="dropdown-6columns" id="menu-sports">
@@ -843,20 +824,20 @@ jQuery(document).ready(function() {
 			<a href="/section/sports/">All Sports</a>                
 		</div>
 		<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/sports/cricket-world-cup/2310444/live-cricket-score-pakistan-vs-south-africa/"><img src="//images.indianexpress.com/2015/03/pakistanap-m1.jpg?w=140" alt="Pak &#039;catch&#039; crucial win" /></a>
-						<strong><a href="http://indianexpress.com/article/sports/cricket-world-cup/2310444/live-cricket-score-pakistan-vs-south-africa/">Pak &#039;catch&#039; crucial win</a></strong>
+						<a href="http://indianexpress.com/article/sports/ipl/2355776/sarafraz-khan-blitz-in-vain-as-rain-forces-rcb-rr-to-share-points/"><img src="//images.indianexpress.com/2015/04/sarfrazkhanbcci-m.jpg?w=140" alt="Sarafraz blitz in vain after rain" /></a>
+						<strong><a href="http://indianexpress.com/article/sports/ipl/2355776/sarafraz-khan-blitz-in-vain-as-rain-forces-rcb-rr-to-share-points/">Sarafraz blitz in vain after rain</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/sports/cricket-world-cup/2310769/live-cricket-score-zimbabwe-vs-ireland/"><img src="//images.indianexpress.com/2015/03/livecricketscore15.jpg?w=140" alt="Ireland pip Zimbabwe in thriller" /></a>
-						<strong><a href="http://indianexpress.com/article/sports/cricket-world-cup/2310769/live-cricket-score-zimbabwe-vs-ireland/">Ireland pip Zimbabwe in thriller</a></strong>
+						<a href="http://indianexpress.com/article/sports/cricket/ton-up-mohammad-hafeez-leads-pakistans-strong-reply-against-bangladesh-on-day-2/"><img src="//images.indianexpress.com/2015/04/hafeez_ap_m.jpg?w=140" alt="Hafeez leads Pak&#039;s strong reply against Bangladesh" /></a>
+						<strong><a href="http://indianexpress.com/article/sports/cricket/ton-up-mohammad-hafeez-leads-pakistans-strong-reply-against-bangladesh-on-day-2/">Hafeez leads Pak&#039;s strong reply against Bangladesh</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/sports/sport-others/saina-nehwal-beats-yihan-wang-21-19-21-6-marches-into-all-england-semis/"><img src="//images.indianexpress.com/2015/03/sainanehwall.jpg?w=140" alt="Saina beats Yihan Wang, marches into All England semis" /></a>
-						<strong><a href="http://indianexpress.com/article/sports/sport-others/saina-nehwal-beats-yihan-wang-21-19-21-6-marches-into-all-england-semis/">Saina beats Yihan Wang, marches into All England semis</a></strong>
+						<a href="http://indianexpress.com/article/sports/ipl/2355490/sunil-narine-barred-from-bowling-off-spin-in-ipl/"><img src="//images.indianexpress.com/2013/12/sunilnarineppl.jpg?w=140" alt="Sunil Narine barred from bowling off-spin in IPL" /></a>
+						<strong><a href="http://indianexpress.com/article/sports/ipl/2355490/sunil-narine-barred-from-bowling-off-spin-in-ipl/">Sunil Narine barred from bowling off-spin in IPL</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/sports/cricket-world-cup/2310694/kept-calm-carried-on/"><img src="//images.indianexpress.com/2015/03/indiawestindiesshamireuters.jpg?w=140" alt="India kept calm, carried on" /></a>
-						<strong><a href="http://indianexpress.com/article/sports/cricket-world-cup/2310694/kept-calm-carried-on/">India kept calm, carried on</a></strong>
+						<a href="http://indianexpress.com/article/sports/ipl/2355730/revised-ipl-play-offs-schedule-announced-ranchi-to-host-second-qualifier/"><img src="//images.indianexpress.com/2015/04/kkr-t.jpg?w=140" alt="Revised IPL play-offs schedule announced" /></a>
+						<strong><a href="http://indianexpress.com/article/sports/ipl/2355730/revised-ipl-play-offs-schedule-announced-ranchi-to-host-second-qualifier/">Revised IPL play-offs schedule announced</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/sports/cricket-world-cup/2310603/ravindra-jadeja-needs-to-improve-and-needs-to-step-up-says-ms-dhoni/"><img src="//images.indianexpress.com/2015/03/ravindrajadejareutersl.jpg?w=140" alt="Jadeja needs to improve and step up: Dhoni" /></a>
-						<strong><a href="http://indianexpress.com/article/sports/cricket-world-cup/2310603/ravindra-jadeja-needs-to-improve-and-needs-to-step-up-says-ms-dhoni/">Jadeja needs to improve and step up: Dhoni</a></strong>
+						<a href="http://indianexpress.com/article/sports/ipl/2355061/no-resources-no-problem-for-strategist-gambhir/"><img src="//images.indianexpress.com/2013/12/gg_pti-m1.jpg?w=140" alt="No resources? No problem for strategist Gambhir" /></a>
+						<strong><a href="http://indianexpress.com/article/sports/ipl/2355061/no-resources-no-problem-for-strategist-gambhir/">No resources? No problem for strategist Gambhir</a></strong>
 					</div> </div>
 </div>              
 <div class="dropdown-7columns" id="menu-entertainment">
@@ -867,26 +848,25 @@ jQuery(document).ready(function() {
 		<a href="/section/entertainment/television/">Television</a>
 		<a href="/section/entertainment/music/">Music</a>
 		<a href="/section/entertainment/movie-review/">Reviews</a>
-		<a href="/section/entertainment/screen/">Screen</a>
 		<a href="/section/entertainment/play/">Play</a>
 		<a href="/section/entertainment/regional/">Regional</a>
 		<a href="/section/entertainment/">All Entertainment</a>                
 	 </div>
 	<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/entertainment/bollywood/rumoured-lovers-alia-bhatt-and-sidharth-malhotra-celebrated-holi-together/"><img src="//images.indianexpress.com/2015/03/alia-sidharth-holi-290.jpg?w=140" alt="&#039;Rumoured&#039; lovers Alia Bhatt and Sidharth Malhotra celebrate Holi together" /></a>
-						<strong><a href="http://indianexpress.com/article/entertainment/bollywood/rumoured-lovers-alia-bhatt-and-sidharth-malhotra-celebrated-holi-together/">&#039;Rumoured&#039; lovers Alia Bhatt and Sidharth Malhotra celebrate Holi together</a></strong>
+						<a href="http://indianexpress.com/article/entertainment/bollywood/raees-director-rahul-dholakia-happy-after-shooting-first-sequence-with-srk-mahira-khan/"><img src="//images.indianexpress.com/2013/12/srk-new-290.jpg?w=140" alt="&#039;Raees&#039; director Rahul Dholakia happy after shooting first sequence with SRK - Mahira Khan" /></a>
+						<strong><a href="http://indianexpress.com/article/entertainment/bollywood/raees-director-rahul-dholakia-happy-after-shooting-first-sequence-with-srk-mahira-khan/">&#039;Raees&#039; director Rahul Dholakia happy after shooting first sequence with SRK - Mahira Khan</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/entertainment/bollywood/priyanka-chopra-to-be-paired-opposite-jake-mclaughlin-in-quantico/"><img src="//images.indianexpress.com/2015/03/priyanka-mclaughlin-480.jpg?w=450?w=140" alt="Priyanka Chopra to be paired opposite Jake McLaughlin in ‘Quantico’?" /></a>
-						<strong><a href="http://indianexpress.com/article/entertainment/bollywood/priyanka-chopra-to-be-paired-opposite-jake-mclaughlin-in-quantico/">Priyanka Chopra to be paired opposite Jake McLaughlin in ‘Quantico’?</a></strong>
+						<a href="http://indianexpress.com/article/entertainment/bollywood/ranbir-kapoor-anushka-sharma-campaign-for-donations-for-nepal/"><img src="//images.indianexpress.com/2015/04/ranbir-anushka-bv-480.jpg?w=450?w=140" alt="Ranbir Kapoor, Anushka Sharma campaign for donations for Nepal" /></a>
+						<strong><a href="http://indianexpress.com/article/entertainment/bollywood/ranbir-kapoor-anushka-sharma-campaign-for-donations-for-nepal/">Ranbir Kapoor, Anushka Sharma campaign for donations for Nepal</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/entertainment/bollywood/sonam-kapoor-discharged-from-hospital/"><img src="//images.indianexpress.com/2015/02/sonamkapoor4802.jpg?w=450?w=140" alt="Sonam Kapoor discharged from hospital" /></a>
-						<strong><a href="http://indianexpress.com/article/entertainment/bollywood/sonam-kapoor-discharged-from-hospital/">Sonam Kapoor discharged from hospital</a></strong>
+						<a href="http://indianexpress.com/article/entertainment/bollywood/my-style-is-a-lot-like-piku-deepika-padukone/"><img src="//images.indianexpress.com/2015/04/deepika-padukone-piku-480.jpg?w=450?w=140" alt="My style is a lot like Piku: Deepika Padukone" /></a>
+						<strong><a href="http://indianexpress.com/article/entertainment/bollywood/my-style-is-a-lot-like-piku-deepika-padukone/">My style is a lot like Piku: Deepika Padukone</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/entertainment/bollywood/even-god-cant-bring-srk-salman-and-aamir-together-farah-khan/"><img src="//images.indianexpress.com/2015/03/srk-salman-aamir-farah480.jpg?w=450?w=140" alt="Even God can&#039;t bring SRK, Salman and Aamir together: Farah Khan" /></a>
-						<strong><a href="http://indianexpress.com/article/entertainment/bollywood/even-god-cant-bring-srk-salman-and-aamir-together-farah-khan/">Even God can&#039;t bring SRK, Salman and Aamir together: Farah Khan</a></strong>
+						<a href="http://indianexpress.com/article/entertainment/television/comedy-nights-with-kapil-actor-chandan-prabhakar-marries/"><img src="//images.indianexpress.com/2015/04/chandan-prabhakar-480.jpg?w=450?w=140" alt="&#039;Comedy Nights with Kapil&#039; actor Chandan Prabhakar marries" /></a>
+						<strong><a href="http://indianexpress.com/article/entertainment/television/comedy-nights-with-kapil-actor-chandan-prabhakar-marries/">&#039;Comedy Nights with Kapil&#039; actor Chandan Prabhakar marries</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/entertainment/bollywood/udta-punjab-takes-off-shahid-kapoor-asks-for-love-and-wishes/"><img src="//images.indianexpress.com/2015/03/shahid-kapoor-udta-punjab75.jpg?w=450?w=140" alt="&#039;Udta Punjab&#039; takes off; Shahid Kapoor asks for love and wishes" /></a>
-						<strong><a href="http://indianexpress.com/article/entertainment/bollywood/udta-punjab-takes-off-shahid-kapoor-asks-for-love-and-wishes/">&#039;Udta Punjab&#039; takes off; Shahid Kapoor asks for love and wishes</a></strong>
+						<a href="http://indianexpress.com/article/entertainment/bollywood/nepal-quake-situation-makes-me-speechless-sushmita-sen/"><img src="//images.indianexpress.com/2015/04/nepal-sushmita-480.jpg?w=450?w=140" alt="Nepal quake situation makes me speechless: Sushmita Sen" /></a>
+						<strong><a href="http://indianexpress.com/article/entertainment/bollywood/nepal-quake-situation-makes-me-speechless-sushmita-sen/">Nepal quake situation makes me speechless: Sushmita Sen</a></strong>
 					</div> </div>
 </div>
 <div class="dropdown-8columns" id="menu-lifestyle">
@@ -900,20 +880,20 @@ jQuery(document).ready(function() {
 		<a href="/section/lifestyle/destination-of-the-week/">Destination</a>
 	</div>
 	<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/lifestyle/feelings/an-open-letter-from-a-mother-after-ban-on-nirbhaya-documentary/"><img src="//images.indianexpress.com/2015/03/letter-main.jpg?w=140" alt="An open letter from a mother after ban on Nirbhaya documentary" /></a>
-						<strong><a href="http://indianexpress.com/article/lifestyle/feelings/an-open-letter-from-a-mother-after-ban-on-nirbhaya-documentary/">An open letter from a mother after ban on Nirbhaya documentary</a></strong>
+						<a href="http://indianexpress.com/article/lifestyle/feelings/watch-video-more-than-money-your-love-can-change-the-world/"><img src="//images.indianexpress.com/2015/04/life-main.jpg?w=140" alt="Watch video: More than money, your love can change the world" /></a>
+						<strong><a href="http://indianexpress.com/article/lifestyle/feelings/watch-video-more-than-money-your-love-can-change-the-world/">Watch video: More than money, your love can change the world</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/lifestyle/health/how-feeding-birds-could-be-dangerous-for-your-lungs/"><img src="//images.indianexpress.com/2015/03/birds-main.jpg?w=140" alt="How feeding birds could be dangerous for your lungs" /></a>
-						<strong><a href="http://indianexpress.com/article/lifestyle/health/how-feeding-birds-could-be-dangerous-for-your-lungs/">How feeding birds could be dangerous for your lungs</a></strong>
+						<a href="http://indianexpress.com/article/lifestyle/food-wine/express-recipes-how-to-make-the-super-delicious-mocha-syrup-pudding/"><img src="//images.indianexpress.com/2015/04/pudding-main1.jpg?w=140" alt="Express Recipes: How to make the super-delicious Mocha Syrup Pudding" /></a>
+						<strong><a href="http://indianexpress.com/article/lifestyle/food-wine/express-recipes-how-to-make-the-super-delicious-mocha-syrup-pudding/">Express Recipes: How to make the super-delicious Mocha Syrup Pudding</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/lifestyle/food-wine/express-recipe-go-green-with-mint-and-almond-pesto-pasta-salad/"><img src="//images.indianexpress.com/2015/03/pasta-salad-main.jpg?w=140" alt="Express recipe: Go green with Mint and almond pesto pasta salad" /></a>
-						<strong><a href="http://indianexpress.com/article/lifestyle/food-wine/express-recipe-go-green-with-mint-and-almond-pesto-pasta-salad/">Express recipe: Go green with Mint and almond pesto pasta salad</a></strong>
+						<a href="http://indianexpress.com/photos/lifestyle-gallery/9-simple-home-remedies-to-avoid-tanning/"><img src="//images.indianexpress.com/2015/04/tanning-660.jpg?w=140" alt="9 simple home remedies to avoid tanning" /></a>
+						<strong><a href="http://indianexpress.com/photos/lifestyle-gallery/9-simple-home-remedies-to-avoid-tanning/">9 simple home remedies to avoid tanning</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/lifestyle/life-style/how-to-calm-your-pets-during-festivities/"><img src="//images.indianexpress.com/2015/03/pet-main.jpg?w=140" alt="How to calm your pets during festivities" /></a>
-						<strong><a href="http://indianexpress.com/article/lifestyle/life-style/how-to-calm-your-pets-during-festivities/">How to calm your pets during festivities</a></strong>
+						<a href="http://indianexpress.com/article/lifestyle/fashion/jewellery-designer-suhani-pittie-reveals-her-inspiration-behind-anamika-khannas-sculpt/"><img src="//images.indianexpress.com/2015/04/suhani-main.jpg?w=140" alt="Jewellery designer Suhani Pittie reveals her inspiration behind Anamika Khanna&#039;s &#039;Sculpt&#039;" /></a>
+						<strong><a href="http://indianexpress.com/article/lifestyle/fashion/jewellery-designer-suhani-pittie-reveals-her-inspiration-behind-anamika-khannas-sculpt/">Jewellery designer Suhani Pittie reveals her inspiration behind Anamika Khanna&#039;s &#039;Sculpt&#039;</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/lifestyle/health/male-smokers-at-higher-risk-for-osteoporosis/"><img src="//images.indianexpress.com/2014/09/smoking-main.jpg?w=140" alt="Male smokers at higher risk for osteoporosis" /></a>
-						<strong><a href="http://indianexpress.com/article/lifestyle/health/male-smokers-at-higher-risk-for-osteoporosis/">Male smokers at higher risk for osteoporosis</a></strong>
+						<a href="http://indianexpress.com/article/lifestyle/fashion/makeup-mogul-bobbi-brown-on-why-her-make-up-is-best-on-indian-skin/"><img src="//images.indianexpress.com/2015/04/bobbi-brown-main.jpg?w=140" alt="Makeup mogul Bobbi Brown on why her make-up is best on Indian skin" /></a>
+						<strong><a href="http://indianexpress.com/article/lifestyle/fashion/makeup-mogul-bobbi-brown-on-why-her-make-up-is-best-on-indian-skin/">Makeup mogul Bobbi Brown on why her make-up is best on Indian skin</a></strong>
 					</div> </div>
 </div>
 <div class="dropdown-9columns" id="menu-technology">
@@ -924,20 +904,20 @@ jQuery(document).ready(function() {
 		<a href="http://indianexpress.com/section/technology/mobile-tabs/">Mobile & Tabs</a>
 	</div>
 	<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/technology/technology-others/leapfrogging-smartphone-majors-showcase-affordable-4g-devices-for-india/"><img src="//images.indianexpress.com/2015/03/lumaia.jpg?w=450?w=140" alt="Leapfrogging: Smartphone majors showcase affordable 4G devices for India at MWC" /></a>
-						<strong><a href="http://indianexpress.com/article/technology/technology-others/leapfrogging-smartphone-majors-showcase-affordable-4g-devices-for-india/">Leapfrogging: Smartphone majors showcase affordable 4G devices for India at MWC</a></strong>
+						<a href="http://indianexpress.com/article/technology/tech-reviews/infocus-m330-review-a-good-buy/"><img src="//images.indianexpress.com/2015/04/infocus-m330-snapdeal-smartphone.jpg?w=450?w=140" alt="InFocus M330 Review: A good buy" /></a>
+						<strong><a href="http://indianexpress.com/article/technology/tech-reviews/infocus-m330-review-a-good-buy/">InFocus M330 Review: A good buy</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/technology/gadgets/sony-a6000-camera-review/"><img src="//images.indianexpress.com/2015/03/sony-a6000-review.jpg?w=450?w=140" alt="Sony A6000 Express review: Don’t think, just buy" /></a>
-						<strong><a href="http://indianexpress.com/article/technology/gadgets/sony-a6000-camera-review/">Sony A6000 Express review: Don’t think, just buy</a></strong>
+						<a href="http://indianexpress.com/article/technology/mobile-tabs/lg-g4-vs-samsung-galaxy-s6-tech-specs-battle-of-the-android-flagships/"><img src="//images.indianexpress.com/2015/04/s6-lg4-feat.jpg?w=450?w=140" alt="LG G4 vs Samsung Galaxy S6: Tech specs battle of the Android flagships" /></a>
+						<strong><a href="http://indianexpress.com/article/technology/mobile-tabs/lg-g4-vs-samsung-galaxy-s6-tech-specs-battle-of-the-android-flagships/">LG G4 vs Samsung Galaxy S6: Tech specs battle of the Android flagships</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/technology/technology-others/bus-simulator-2015-game-review-horn-not-ok-please/"><img src="//images.indianexpress.com/2015/03/bus2.jpg?w=450?w=140" alt="Bus Simulator 2015 game review: Horn not OK please" /></a>
-						<strong><a href="http://indianexpress.com/article/technology/technology-others/bus-simulator-2015-game-review-horn-not-ok-please/">Bus Simulator 2015 game review: Horn not OK please</a></strong>
+						<a href="http://indianexpress.com/article/technology/mobile-tabs/samsungs-profit-sinks-39-percent-as-more-people-switch-to-bigger-iphones/"><img src="//images.indianexpress.com/2015/04/samsung_s6_new.jpg?w=450?w=140" alt="Samsung&#039;s profit sinks 39 percent as more people switch to bigger iPhones" /></a>
+						<strong><a href="http://indianexpress.com/article/technology/mobile-tabs/samsungs-profit-sinks-39-percent-as-more-people-switch-to-bigger-iphones/">Samsung&#039;s profit sinks 39 percent as more people switch to bigger iPhones</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/technology/technology-others/mwc-2015-wrap-up-big-launches-could-be-headed-for-india-soon/"><img src="//images.indianexpress.com/2015/03/mwc-2015.jpg?w=450?w=140" alt="MWC 2015 wrap up: Big launches could be headed for India soon" /></a>
-						<strong><a href="http://indianexpress.com/article/technology/technology-others/mwc-2015-wrap-up-big-launches-could-be-headed-for-india-soon/">MWC 2015 wrap up: Big launches could be headed for India soon</a></strong>
+						<a href="http://indianexpress.com/article/technology/mobile-tabs/lg-unveils-flagship-g4/"><img src="//images.indianexpress.com/2015/04/lg-g4-launch.jpg?w=450?w=140" alt="LG G4 is here with leather on the back, and Snapdragon 808" /></a>
+						<strong><a href="http://indianexpress.com/article/technology/mobile-tabs/lg-unveils-flagship-g4/">LG G4 is here with leather on the back, and Snapdragon 808</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/technology/technology-others/iphone-6-lg-g3-moto-e-are-the-best-smartphones-samsung-galaxy-s6-edge-best-new-entrant-2015-global-mobile-awards/"><img src="//images.indianexpress.com/2015/03/2015-global-mobile-awards.jpg?w=450?w=140" alt="iPhone 6, LG G3, Moto E are the best smartphones; Samsung Galaxy S6 Edge best new entrant:  2015 Global Mobile Awards" /></a>
-						<strong><a href="http://indianexpress.com/article/technology/technology-others/iphone-6-lg-g3-moto-e-are-the-best-smartphones-samsung-galaxy-s6-edge-best-new-entrant-2015-global-mobile-awards/">iPhone 6, LG G3, Moto E are the best smartphones; Samsung Galaxy S6 Edge best new entrant:  2015 Global Mobile Awards</a></strong>
+						<a href="http://indianexpress.com/article/technology/technology-others/48-subscribers-find-no-difference-between-2g-and-3g-speeds-ericsson/"><img src="//images.indianexpress.com/2015/04/ericsson-mobile-broadband-report.jpg?w=450?w=140" alt="48% subscribers find no difference between 2G and 3G speeds: Ericsson" /></a>
+						<strong><a href="http://indianexpress.com/article/technology/technology-others/48-subscribers-find-no-difference-between-2g-and-3g-speeds-ericsson/">48% subscribers find no difference between 2G and 3G speeds: Ericsson</a></strong>
 					</div> </div>
 </div>
 <div class="dropdown-11columns" id="menu-opinion">
@@ -948,20 +928,20 @@ jQuery(document).ready(function() {
 		<a href="/section/opinion/letters-to-editor/">Letters To The Editor</a>             
 	</div>
 	<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/opinion/columns/from-congress-to-aap/"><img src="//images.indianexpress.com/2015/03/aap-s.jpg?w=450?w=140" alt="From Congress to AAP" /></a>
-						<strong><a href="http://indianexpress.com/article/opinion/columns/from-congress-to-aap/">From Congress to AAP</a></strong>
+						<a href="http://indianexpress.com/article/opinion/columns/how-to-meet-a-quake/"><img src="//images.indianexpress.com/2015/04/earthquake480.jpg?w=140" alt="How to meet a quake" /></a>
+						<strong><a href="http://indianexpress.com/article/opinion/columns/how-to-meet-a-quake/">How to meet a quake</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/opinion/columns/border-in-the-middle/"><img src="//images.indianexpress.com/2015/02/modi_480.jpg?w=450?w=140" alt="Border in the middle" /></a>
-						<strong><a href="http://indianexpress.com/article/opinion/columns/border-in-the-middle/">Border in the middle</a></strong>
+						<a href="http://indianexpress.com/article/opinion/columns/for-those-marked-other/"><img src="//images.indianexpress.com/2014/06/transgender_m.jpg?w=450?w=140" alt="For those marked ‘Other’" /></a>
+						<strong><a href="http://indianexpress.com/article/opinion/columns/for-those-marked-other/">For those marked ‘Other’</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/opinion/columns/no-proof-required-so-why-not-ban-the-rss/"><img src="//images.indianexpress.com/2015/03/modi-s2.jpg?w=450?w=140" alt="No Proof Required: So why not ban the RSS?" /></a>
-						<strong><a href="http://indianexpress.com/article/opinion/columns/no-proof-required-so-why-not-ban-the-rss/">No Proof Required: So why not ban the RSS?</a></strong>
+						<a href="http://indianexpress.com/article/opinion/columns/untie-the-farmer/"><img src="//images.indianexpress.com/2015/04/farmer-cartoon-thumb.jpg?w=450?w=140" alt="Untie the farmer" /></a>
+						<strong><a href="http://indianexpress.com/article/opinion/columns/untie-the-farmer/">Untie the farmer</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/opinion/columns/face-the-truth/"><img src="//images.indianexpress.com/2015/03/rape-thumb1.jpg?w=450?w=140" alt="Face the truth" /></a>
-						<strong><a href="http://indianexpress.com/article/opinion/columns/face-the-truth/">Face the truth</a></strong>
+						<a href="http://indianexpress.com/article/opinion/columns/view-from-the-left-farmer-distress/"><img src="//images.indianexpress.com/2013/01/farmer_suicide_480.jpg?w=450?w=140" alt="View From The Left: Farmer Distress" /></a>
+						<strong><a href="http://indianexpress.com/article/opinion/columns/view-from-the-left-farmer-distress/">View From The Left: Farmer Distress</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/article/opinion/columns/a-lively-literary-lahore/"><img src="//images.indianexpress.com/2015/03/lit-fest.jpg?w=450?w=140" alt="A lively, literary Lahore" /></a>
-						<strong><a href="http://indianexpress.com/article/opinion/columns/a-lively-literary-lahore/">A lively, literary Lahore</a></strong>
+						<a href="http://indianexpress.com/article/opinion/columns/danger-looms/"><img src="//images.indianexpress.com/2015/04/sari-thumb.jpg?w=450?w=140" alt="Danger looms" /></a>
+						<strong><a href="http://indianexpress.com/article/opinion/columns/danger-looms/">Danger looms</a></strong>
 					</div> </div>
 </div>
 <div class="dropdown-12columns" id="menu-photos">
@@ -975,20 +955,20 @@ jQuery(document).ready(function() {
 			<a href="/photos/photo-archives/">Archives</a>
 		</div>
 		<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://indianexpress.com/photos/picture-gallery-others/mh17-next-of-kin-finally-view-wreckage-of-downed-flight/"><img src="//images.indianexpress.com/2015/03/mh17-660.jpg?w=140" alt="MH17 next of kin finally view wreckage of downed flight" /></a>
-						<strong><a href="http://indianexpress.com/photos/picture-gallery-others/mh17-next-of-kin-finally-view-wreckage-of-downed-flight/">MH17 next of kin finally view wreckage of downed flight</a></strong>
+						<a href="http://indianexpress.com/photos/picture-gallery-others/nepal-earthquake-angry-citizens-protest-against-slow-rescue-operations/"><img src="//images.indianexpress.com/2013/12/protests-660.jpg?w=140" alt="Nepal earthquake: Angry citizens protest against slow rescue operations" /></a>
+						<strong><a href="http://indianexpress.com/photos/picture-gallery-others/nepal-earthquake-angry-citizens-protest-against-slow-rescue-operations/">Nepal earthquake: Angry citizens protest against slow rescue operations</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/photos/entertainment-gallery/sunny-leone-celebrates-holi-with-tv-stars-ravi-dubey-rithvik-dhanjani-asha-negi/"><img src="//images.indianexpress.com/2015/03/sunny-tv-stars-holi660.jpg?w=140" alt="Sunny Leone celebrates Holi with TV stars Ravi Dubey, Rithvik Dhanjani, Asha Negi" /></a>
-						<strong><a href="http://indianexpress.com/photos/entertainment-gallery/sunny-leone-celebrates-holi-with-tv-stars-ravi-dubey-rithvik-dhanjani-asha-negi/">Sunny Leone celebrates Holi with TV stars Ravi Dubey, Rithvik Dhanjani, Asha Negi</a></strong>
+						<a href="http://indianexpress.com/photos/entertainment-gallery/salman-khan-leaves-jodhpur-court-after-recording-statement-in-arms-act-case/"><img src="//images.indianexpress.com/2015/04/salmankhan-court-410.jpg?w=410?w=140" alt="Salman Khan leaves Jodhpur Court after recording statement in Arms Act case" /></a>
+						<strong><a href="http://indianexpress.com/photos/entertainment-gallery/salman-khan-leaves-jodhpur-court-after-recording-statement-in-arms-act-case/">Salman Khan leaves Jodhpur Court after recording statement in Arms Act case</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/photos/picture-gallery-others/mob-in-nagaland-break-into-jail-lynch-rape-accused-curfew-ordered/"><img src="//images.indianexpress.com/2015/03/dimapur_660.jpg?w=140" alt="Mob in Nagaland break into jail, lynch rape accused; curfew ordered" /></a>
-						<strong><a href="http://indianexpress.com/photos/picture-gallery-others/mob-in-nagaland-break-into-jail-lynch-rape-accused-curfew-ordered/">Mob in Nagaland break into jail, lynch rape accused; curfew ordered</a></strong>
+						<a href="http://indianexpress.com/photos/entertainment-gallery/ranbir-kapoor-anushka-sharmas-fun-filled-evening-on-indias-got-talent-sets/"><img src="//images.indianexpress.com/2015/04/ranbir-anushka-kiss-660.jpg?w=140" alt="Ranbir Kapoor, Anushka Sharma&#039;s fun-filled evening on &#039;India&#039;s Got Talent&#039; sets" /></a>
+						<strong><a href="http://indianexpress.com/photos/entertainment-gallery/ranbir-kapoor-anushka-sharmas-fun-filled-evening-on-indias-got-talent-sets/">Ranbir Kapoor, Anushka Sharma&#039;s fun-filled evening on &#039;India&#039;s Got Talent&#039; sets</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/photos/entertainment-gallery/sonakshi-akshay-dia-mirza-celebrate-holi/"><img src="//images.indianexpress.com/2015/03/salman-akshay-sunny-660.jpg?w=140" alt="Salman Khan, Alia, Sidharth, Sonakshi, Akshay, Sunny Leone celebrate Holi" /></a>
-						<strong><a href="http://indianexpress.com/photos/entertainment-gallery/sonakshi-akshay-dia-mirza-celebrate-holi/">Salman Khan, Alia, Sidharth, Sonakshi, Akshay, Sunny Leone celebrate Holi</a></strong>
+						<a href="http://indianexpress.com/photos/entertainment-gallery/amitabh-bachchan-alia-bhatt-anushka-sharma-gauri-khan-party-with-karan-johar/"><img src="//images.indianexpress.com/2015/04/gaurikhan-anushka-alia-410.jpg?w=410?w=140" alt="Inside pics from Karan Johar&#039;s grand bash" /></a>
+						<strong><a href="http://indianexpress.com/photos/entertainment-gallery/amitabh-bachchan-alia-bhatt-anushka-sharma-gauri-khan-party-with-karan-johar/">Inside pics from Karan Johar&#039;s grand bash</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/photos/sports-gallery/india-vs-west-indies-bowlers-captain-ms-dhoni-come-to-party-as-india-extend-world-cup-streak/"><img src="//images.indianexpress.com/2015/03/worldcupindiawil.jpg?w=140" alt="Bowlers, MSD come to party as India extend World Cup streak" /></a>
-						<strong><a href="http://indianexpress.com/photos/sports-gallery/india-vs-west-indies-bowlers-captain-ms-dhoni-come-to-party-as-india-extend-world-cup-streak/">Bowlers, MSD come to party as India extend World Cup streak</a></strong>
+						<a href="http://indianexpress.com/photos/entertainment-gallery/piku-deepika-padukones-date-with-irrfan/"><img src="//images.indianexpress.com/2015/04/deepikairffan-410.jpg?w=410?w=140" alt="&#039;Piku&#039; Deepika Padukone&#039;s date with Irrfan" /></a>
+						<strong><a href="http://indianexpress.com/photos/entertainment-gallery/piku-deepika-padukones-date-with-irrfan/">&#039;Piku&#039; Deepika Padukone&#039;s date with Irrfan</a></strong>
 					</div> </div>
 	</div>
 <div class="dropdown-12columns" id="menu-videos">
@@ -1003,20 +983,20 @@ jQuery(document).ready(function() {
 			<a href="https://www.youtube.com/playlist?list=PLrDg7LoYgk9wFjI7k8qV_BtvEKWiiWb_p" target="_blank">Editors' Take</a>
 		</div>
 		<div class="menu-stories"><div class="dropdownbox3">
-						<a href="http://indianexpress.com/videos/technology-video/htc-one-m9-first-look/"><img src="//images.indianexpress.com/2015/03/m9.jpg?w=450?w=140" alt="FIRST LOOK: Everything you need to know about the HTC One M9 " /></a>
-						<strong><a href="http://indianexpress.com/videos/technology-video/htc-one-m9-first-look/">FIRST LOOK: Everything you need to know about the HTC One M9 </a></strong>
+						<a href="http://indianexpress.com/videos/technology-video/behind-the-indian-express-redesign/"><img src="//images.indianexpress.com/2015/04/cover.jpg?w=450?w=140" alt="Behind the Indian Express redesign" /></a>
+						<strong><a href="http://indianexpress.com/videos/technology-video/behind-the-indian-express-redesign/">Behind the Indian Express redesign</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/videos/news-video/budget-2015-an-analysis-by-financial-express-managing-editor-sunil-jain/"><img src="//images.indianexpress.com/2015/03/budgetanalysis.jpg?w=450?w=140" alt="Budget 2015: An Analysis by Financial Express Managing Editor Sunil Jain" /></a>
-						<strong><a href="http://indianexpress.com/videos/news-video/budget-2015-an-analysis-by-financial-express-managing-editor-sunil-jain/">Budget 2015: An Analysis by Financial Express Managing Editor Sunil Jain</a></strong>
+						<a href="http://indianexpress.com/videos/idea-exchange-video/rajiv-pratap-rudy-on-pm-modi/"><img src="//images.indianexpress.com/2014/01/rpr.jpg?w=140" alt="Rajiv Pratap Rudy on PM Modi" /></a>
+						<strong><a href="http://indianexpress.com/videos/idea-exchange-video/rajiv-pratap-rudy-on-pm-modi/">Rajiv Pratap Rudy on PM Modi</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/videos/technology-video/htc-grip-first-look/"><img src="//images.indianexpress.com/2015/03/grip.jpg?w=450?w=140" alt="The HTC Grip first look from the MWC2015, Barcelona " /></a>
-						<strong><a href="http://indianexpress.com/videos/technology-video/htc-grip-first-look/">The HTC Grip first look from the MWC2015, Barcelona </a></strong>
+						<a href="http://indianexpress.com/videos/news-video/its-free-no-one-has-to-pay-to-join-the-app-ankhi-das-facebook-india-on-internet-org/"><img src="//images.indianexpress.com/2015/04/adsmall.jpg?w=450?w=140" alt="It’s free, no one has to pay to join the app: Ankhi Das, Facebook India, on internet.org" /></a>
+						<strong><a href="http://indianexpress.com/videos/news-video/its-free-no-one-has-to-pay-to-join-the-app-ankhi-das-facebook-india-on-internet-org/">It’s free, no one has to pay to join the app: Ankhi Das, Facebook India, on internet.org</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/videos/sports-video/worldcupexpress-india-vs-south-africa-match-review/"><img src="//images.indianexpress.com/2015/02/wc2015.jpg?w=450?w=140" alt="#WorldCupExpress: India vs South Africa: Match Review" /></a>
-						<strong><a href="http://indianexpress.com/videos/sports-video/worldcupexpress-india-vs-south-africa-match-review/">#WorldCupExpress: India vs South Africa: Match Review</a></strong>
+						<a href="http://indianexpress.com/videos/news-video/there-should-be-no-prioritisation-of-one-brand-over-another-baijayant-jay-panda-on-net-neutrality/"><img src="//images.indianexpress.com/2015/04/jpsmall.jpg?w=450?w=140" alt="There should be no prioritisation of one brand over another: Baijayant Jay Panda on Net Neutrality" /></a>
+						<strong><a href="http://indianexpress.com/videos/news-video/there-should-be-no-prioritisation-of-one-brand-over-another-baijayant-jay-panda-on-net-neutrality/">There should be no prioritisation of one brand over another: Baijayant Jay Panda on Net Neutrality</a></strong>
 					</div> <div class="dropdownbox3">
-						<a href="http://indianexpress.com/videos/exclusive-video/exclusive-i-told-at-night-blow-the-pakistan-boat-off-says-coast-guard-dig/"><img src="//images.indianexpress.com/2015/02/pakboat.jpg?w=140" alt="EXCLUSIVE: I told at night, blow the Pakistan boat off, says Coast Guard DIG" /></a>
-						<strong><a href="http://indianexpress.com/videos/exclusive-video/exclusive-i-told-at-night-blow-the-pakistan-boat-off-says-coast-guard-dig/">EXCLUSIVE: I told at night, blow the Pakistan boat off, says Coast Guard DIG</a></strong>
+						<a href="http://indianexpress.com/videos/idea-exchange-video/giving-vajpayee-a-bharat-ratna-is-great-taking-a-leaf-from-his-book-is-different-jairam-ramesh/"><img src="//images.indianexpress.com/2015/04/jr1.jpg?w=450?w=140" alt="Giving Vajpayee a Bharat Ratna is great, taking a leaf from his book is different : Jairam Ramesh" /></a>
+						<strong><a href="http://indianexpress.com/videos/idea-exchange-video/giving-vajpayee-a-bharat-ratna-is-great-taking-a-leaf-from-his-book-is-different-jairam-ramesh/">Giving Vajpayee a Bharat Ratna is great, taking a leaf from his book is different : Jairam Ramesh</a></strong>
 					</div> </div>
 	</div>
 <div class="dropdown-1column dropdown-right" id="menu-all_sections">
@@ -1066,7 +1046,6 @@ jQuery(document).ready(function() {
 		<li><a href="/section/entertainment/television/">Television</a></li>
 		<li><a href="/section/entertainment/music/">Music</a></li>
 		<li><a href="/section/entertainment/movie-review/">Reviews</a></li>
-		<li><a href="/section/entertainment/screen/">Screen</a></li>
 		<li><a href="/section/entertainment/regional/">Regional</a></li>
 	</ul>
 	<ul class="levels">
@@ -1129,64 +1108,18 @@ jQuery(document).ready(function() {
   });
 </script>
 	<div class="editor-details" id="div_written_by1" style="display:none;">
-		<p><a href="http://indianexpress.com/profile/author/arun-sharma/">
-		</a><strong><a href="http://indianexpress.com/profile/author/arun-sharma/">Arun Sharma   </a></strong>...<a href="http://indianexpress.com/profile/author/arun-sharma/"> read more</a></p>
-	<ul><li><a href="http://indianexpress.com/article/india/india-others/mufti-govt-starts-process-for-hurriyat-hardliner-masarat-alams-release-from-jail/">Mufti govt releases Hurriyat hardliner Masarat Alam from&nbsp;jail</a></li><li><a href="http://indianexpress.com/article/india/india-others/mufti-demands-release-of-political-prisoners-who-have-no-criminal-charges/">Mufti orders release of political prisoners with no criminal&nbsp;charges</a></li><li><a href="http://indianexpress.com/article/india/india-others/upset-over-portfolio-lone-skips-office-drops-security/">Upset over portfolio, Lone skips office, drops&nbsp;security</a></li></ul>		</div>
+		<p><a href="http://indianexpress.com/profile/author/rakesh-sinha/">
+		<img width="200" height="200" src="http://images.indianexpress.com/2013/12/rakesh-sinha03.jpg?w=200" class="attachment-thumbnail wp-post-image" alt="Rakesh-Sinha03" /></a><strong><a href="http://indianexpress.com/profile/author/rakesh-sinha/">Rakesh Sinha</a></strong>...<a href="http://indianexpress.com/profile/author/rakesh-sinha/"> read more</a></p>
+	<ul><li><a href="http://indianexpress.com/article/india/india-others/after-death-its-disease-epidemic-fear-in-camps/">After death, it’s disease: epidemic fear in&nbsp;camps</a></li><li><a href="http://indianexpress.com/article/india/india-others/india-intensifies-relief-efforts-in-nepal-jaishankar-doval-to-visit-nepal-tomorrow/">India intensifies relief efforts in Nepal : Jaishankar, Doval to visit Nepal&nbsp;tomorrow</a></li><li><a href="http://indianexpress.com/article/india/india-others/meanwhile-a-little-india-china-aid-meeting/">Meanwhile, a little India, China aid&nbsp;meeting</a></li></ul>		</div>
+			<div class="editor-details" id="div_written_by2" style="display:none;">
+		<p><a href="http://indianexpress.com/profile/columnist/yubaraj-ghimire/">
+		<img width="200" height="200" src="http://images.indianexpress.com/2014/01/yubaraj_200.jpg?w=200" class="attachment-thumbnail wp-post-image" alt="yubaraj_200" /></a><strong><a href="http://indianexpress.com/profile/columnist/yubaraj-ghimire/">Yubaraj Ghimire</a></strong>...<a href="http://indianexpress.com/profile/columnist/yubaraj-ghimire/"> read more</a></p>
+	<ul><li><a href="http://indianexpress.com/article/india/india-others/after-death-its-disease-epidemic-fear-in-camps/">After death, it’s disease: epidemic fear in&nbsp;camps</a></li><li><a href="http://indianexpress.com/article/india/india-others/india-intensifies-relief-efforts-in-nepal-jaishankar-doval-to-visit-nepal-tomorrow/">India intensifies relief efforts in Nepal : Jaishankar, Doval to visit Nepal&nbsp;tomorrow</a></li><li><a href="http://indianexpress.com/article/india/india-others/meanwhile-a-little-india-china-aid-meeting/">Meanwhile, a little India, China aid&nbsp;meeting</a></li></ul>		</div>
 		 
  </div>
- <img src='http://pubads.g.doubleclick.net/gampad/ad?iu=/1050432/IE_Imp_Trk__ROS_1x1&sz=1x1&t=&c=123456789'/>
 	<footer>
-			<div class="editors-pics">
-				<div class="editor-pods first">
-					<div class='sections'><a href='http://indianexpress.com/section/india/'>INDIA</a></div>				<div class="short-img">
-				<a href="http://indianexpress.com/article/india/india-others/mppeb-scam-governor-moves-high-court-to-quash-fir-against-him/"><img src="//images.indianexpress.com/2015/03/protest-480.jpg?w=450?w=140" alt="MPPEB scam: Governor moves high court to quash FIR against him"  /></a>
-				</div>
-				<h5>
-					<a href="http://indianexpress.com/article/india/india-others/mppeb-scam-governor-moves-high-court-to-quash-fir-against-him/">MPPEB scam: Governor moves high court to quash FIR against him</a>
-				</h5>
-							</div>
-				<div class="editor-pods">
-					<div class='sections'><a href='http://indianexpress.com/section/world/'>WORLD</a></div>				<div class="short-img">
-				<a href="http://indianexpress.com/article/world/middle-east-africa/mali-nightclub-attack-kills-five-in-bamako/"><img src="//images.indianexpress.com/2015/03/mali-attack-759.jpg?w=140" alt="Mali nightclub attack kills five in Bamako"  /></a>
-				</div>
-				<h5>
-					<a href="http://indianexpress.com/article/world/middle-east-africa/mali-nightclub-attack-kills-five-in-bamako/">Mali nightclub attack kills five in Bamako</a>
-				</h5>
-							</div>
-				<div class="editor-pods">
-					<div class='sections'><a href='http://indianexpress.com/section/sports/'>SPORTS</a></div>				<div class="short-img">
-				<a href="http://indianexpress.com/article/sports/cricket-world-cup/2310444/live-cricket-score-pakistan-vs-south-africa/"><img src="//images.indianexpress.com/2015/03/pakistanap-m1.jpg?w=140" alt="Pak &#039;catch&#039; crucial win"  /></a>
-				</div>
-				<h5>
-					<a href="http://indianexpress.com/article/sports/cricket-world-cup/2310444/live-cricket-score-pakistan-vs-south-africa/">Pak &#039;catch&#039; crucial win</a>
-				</h5>
-							</div>
-				<div class="editor-pods">
-					<div class='sections'><a href='http://indianexpress.com/section/lifestyle/'>LIFESTYLE</a></div>				<div class="short-img">
-				<a href="http://indianexpress.com/article/lifestyle/feelings/an-open-letter-from-a-mother-after-ban-on-nirbhaya-documentary/"><img src="//images.indianexpress.com/2015/03/letter-main.jpg?w=140" alt="An open letter from a mother after ban on Nirbhaya documentary"  /></a>
-				</div>
-				<h5>
-					<a href="http://indianexpress.com/article/lifestyle/feelings/an-open-letter-from-a-mother-after-ban-on-nirbhaya-documentary/">An open letter from a mother after ban on Nirbhaya documentary</a>
-				</h5>
-							</div>
-				<div class="editor-pods">
-					<div class='sections'><a href='http://indianexpress.com/section/entertainment/'>ENTERTAINMENT</a></div>				<div class="short-img">
-				<a href="http://indianexpress.com/article/entertainment/bollywood/rumoured-lovers-alia-bhatt-and-sidharth-malhotra-celebrated-holi-together/"><img src="//images.indianexpress.com/2015/03/alia-sidharth-holi-290.jpg?w=140" alt="&#039;Rumoured&#039; lovers Alia Bhatt and Sidharth Malhotra celebrate Holi together"  /></a>
-				</div>
-				<h5>
-					<a href="http://indianexpress.com/article/entertainment/bollywood/rumoured-lovers-alia-bhatt-and-sidharth-malhotra-celebrated-holi-together/">&#039;Rumoured&#039; lovers Alia Bhatt and Sidharth Malhotra celebrate Holi together</a>
-				</h5>
-							</div>
-				<div class="editor-pods">
-					<div class='sections'><a href='http://indianexpress.com/section/technology/'>TECHNOLOGY</a></div>				<div class="short-img">
-				<a href="http://indianexpress.com/article/technology/technology-others/leapfrogging-smartphone-majors-showcase-affordable-4g-devices-for-india/"><img src="//images.indianexpress.com/2015/03/lumaia.jpg?w=450?w=140" alt="Leapfrogging: Smartphone majors showcase affordable 4G devices for India at MWC"  /></a>
-				</div>
-				<h5>
-					<a href="http://indianexpress.com/article/technology/technology-others/leapfrogging-smartphone-majors-showcase-affordable-4g-devices-for-india/">Leapfrogging: Smartphone majors showcase affordable 4G devices for India at MWC</a>
-				</h5>
-							</div>
-		</div>
-				<div class="footer-group">
+		<div class="footer-group">
+		  <div style="height:1px;"><img src='http://pubads.g.doubleclick.net/gampad/ad?iu=/1050432/IE_Imp_Trk__ROS_1x1&sz=1x1&t=&c=123456789'/></div>
 			<div class="details">
 								<div class="social-icons">
 					<ul>
@@ -1208,7 +1141,6 @@ jQuery(document).ready(function() {
 				<div class="group">
 					<ul>
 						<li><a href="http://www.expressindia.com/news/expressgroup/" target="_blank">The Express Group</a></li>
-						<li><a href="http://www.expressindia.com/" target="_blank">Expressindia</a></li>
 						<li><a href="http://www.indianexpress.com/" target="_blank">The Indian Express</a></li>
 						<li><a href="http://www.financialexpress.com/" target="_blank">The Financial Express</a></li>
 						<li><a href="http://www.loksatta.com/" target="_blank">Loksatta</a></li>
@@ -1239,7 +1171,7 @@ jQuery(document).ready(function() {
 								<div class="express-group">&nbsp;</div>
 				<div class="copyright">
 					<div class="privacy">Copyright &copy; 2015 The Indian Express ltd. All Rights Reserved </div>
-					<div class="wp"><a href="http://vip.wordpress.com/" rel="generator nofollow" class="powered-by-wpcom"><img src="http://s1.wp.com/wp-content/themes/vip/plugins/vip-do-not-include-on-wpcom/vip-powered-wpcom/images/vip-powered-dark-small.png?m=1401974073g" width="187" height="26" alt="Powered by WordPress.com VIP" /></a></div>
+					<div class="wp"><a href="https://vip.wordpress.com/" rel="generator nofollow" class="powered-by-wpcom"><img src="http://s1.wp.com/wp-content/themes/vip/plugins/vip-do-not-include-on-wpcom/vip-powered-wpcom/images/vip-powered-dark-small.png?m=1401974073g" width="187" height="26" alt="Powered by WordPress.com VIP" /></a></div>
 				</div>
 			</div>
 		</div>
@@ -1266,7 +1198,7 @@ jQuery(document).ready(function() {
 				}
 			}(document,"script","twitter-wjs");
 		</script>
-		<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201510x'></script>
+		<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201518x'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var WPGroHo = {"my_hash":""};
@@ -1296,18 +1228,14 @@ var WPGroHo = {"my_hash":""};
 
 		<div style="display:none">
 	</div>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/indianexpressonline.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/indianexpressonline.wordpress.com\/wp-login.php?action=logout&_wpnonce=08a85fc659","homeURL":"http:\/\/indianexpress.com\/","postID":"2310718","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"1","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1424115551j'></script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??/wp-content/js/devicepx.js,/wp-content/themes/vip/indianexpress/microsites/responsive/js/responsive-infooter.js?m=1429298047j'></script>
+<script type='text/javascript' src='http://2982.tm.zedo.com/v1/bbf105a4-6884-44ff-92f4-d8e0653c48bb/tm.js?ver=4.2-alpha-31564'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"1","is_front_page":"0","is_archive":"0","percentToTrack":"1"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://s2.wp.com/_static/??-eJxdjUEOwjAMBD9EsFKBUA+It0SpAUeNY8VuWn5PygXEcTTaWVjFxcKGbJAUJmwUUbZj0gP8KHtiRoVGAsQTBcZNKqpCpliLknXZWQorNdxLX3LE91IM6380L07m5UGsMLg9nT4PLnCYX0ZR++CWr/7k/WU8j35Ib8MuQKc='></script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/mu-plugins/2-vip/js/vip-analytics.js?m=1411795912g'></script>
 <script type="text/javascript">
 // <![CDATA[
 (function() {
@@ -1325,15 +1253,15 @@ try{
 }catch(e){}
 })();
 // ]]>
-</script><script src="//stats.wp.com/w.js?43" type="text/javascript" async defer></script>
+</script><script src="//stats.wp.com/w.js?46" type="text/javascript" async defer></script>
 <script type="text/javascript">
 _tkq = window._tkq || [];
 _stq = window._stq || [];
 _tkq.push(['storeContext', {'blog_id':'53855017','blog_tz':'5','user_lang':'en','blog_lang':'en','user_id':'0'}]);
-_stq.push(['view', {'blog':'53855017','v':'wpcom','tz':'5','user_id':'0','post':'2310718','subd':'indianexpressonline'}]);
-function st_vt() {var x=document.createElement("img");x.src="http://pixel.wp.com/g.gif?blog=53855017&v=wpcomvt&tz=5&user_id=0&post=2310718&subd=indianexpressonline&rand="+Math.random();}
-_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtib2E/SzdEJm0lUEtbdFU0fFk4cHZvcUFrZT90Tn4yQm1+R3NyNTdRYmxPT0k4VXdkJnFvVDlmWWNHK2FpVnRRfkl6N3d4VXdJek95SWNLaXJOay1EQ2RPSH44MjRzZGxOV1taRlV1NWtCcE5hWnJQWnl2S0xTP2ssMSVWYnBUKz8xS3IvaEc4dzh6YXMvJktERHklfltob3ZXMnlrelErRWxvZzZGQzlJV2o9LnUvV1RjVVoxb2JlQldISHFEY1YzSjhsNHBYYlBnSTRXVVVbK09qYlRaejRILXR2dkk9LndYbl8lcE5dJQ=='}]);
-_stq.push([ 'clickTrackerInit', '53855017', '2310718' ]);
+_stq.push(['view', {'blog':'53855017','v':'wpcom','tz':'5','user_id':'0','post':'2355993','subd':'indianexpressonline'}]);
+function st_vt() {var x=document.createElement("img");x.src="http://pixel.wp.com/g.gif?blog=53855017&v=wpcomvt&tz=5&user_id=0&post=2355993&subd=indianexpressonline&rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtib2E/SzdEJm0lUEtbdFU0fFk4cHZvcUFrZT90Tn4yQm1+R3NyNTdRYmxPT0k4VXdkJnFvVDlmWWNHK2FpVnRRfkl6N3d4VXdJek95SWNLaXJOay1ZQ2RrMSV4QWYtJklDdUFNblhZTywtT1huN0xqL0dzJjJWUjglUkFEZEVCOUlfUjItLDFbZmhkRjdpS3lddiYsQXI0bW9Ga3pobEJWZ0tNYzBwfC95dS5rNUh2Zy9FTlQmWlJPdlBFY1JRZ2kyZTJfQUViJkUuS0xweXwwTXRQVS9tWDYuRE8vUVJyWXA/ajZ2amJhOQ=='}]);
+_stq.push([ 'clickTrackerInit', '53855017', '2355993' ]);
 	</script>
 <noscript><img src="http://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
 <script>
@@ -1379,3 +1307,9 @@ if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
 	</script> 
 </body>
 </html>
+<!--
+	generated 79 seconds ago
+	generated in 0.350 seconds
+	served from batcache in 0.002 seconds
+	expires in 221 seconds
+-->

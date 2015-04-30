@@ -66,13 +66,13 @@ sub to_href {
 
     return {
         source      => $self->source,
-        title       => $self->title,
+        title       => encode_utf8( $self->title() ),
         story_id    => $self->get_id(),
-        author      => $self->author,
-        content     => $self->content,
+        author      => encode_utf8( $self->author() ),
+        content     => encode_utf8( $self->content() ),
         time        => $self->time,
         url         => $self->url,
-        description => $self->description,
+        description => encode_utf8( $self->description() ),
         image_url   => $self->image_url,
         tags        => $self->tags,
     };
