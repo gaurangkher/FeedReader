@@ -57,24 +57,27 @@ sub get_id {
     my ($self) = @_;
 
     my $string = $self->source . encode_utf8($self->title);
-    return md5_hex($string);
+    return hex( md5_hex($string) );
 }
 
 
 sub to_href {
     my ($self) = @_;
 
+    my @tags = map { $_ =~ s/^\s+|\s+$//g } split q{,}, $self->tags;
+    my @authors = map { $_ =~ s/^\s+|\s+$//g } split q{,}, $self->author();
+
     return {
         source      => $self->source,
         title       => encode_utf8( $self->title() ),
         story_id    => $self->get_id(),
-        author      => encode_utf8( $self->author() ),
+        author      => [ @authors ],
         content     => encode_utf8( $self->content() ),
         time        => $self->time,
         url         => $self->url,
         description => encode_utf8( $self->description() ),
         image_url   => $self->image_url,
-        tags        => $self->tags,
+        tags        => [ @tags ],
     };
 }
 

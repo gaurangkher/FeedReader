@@ -4,7 +4,6 @@ use FindBin;
 use lib "$FindBin::Bin/../lib";
 use Data::Dumper;
 use Test::More;
-use Test::Moose;
 
 {
     package Test;
@@ -12,6 +11,13 @@ use Test::Moose;
     use Moose;
     with 'ParserRole';
 
-    
+    sub parse {
+        my ($self, $args) = @_;
+        return $args;
+    }    
     1;
 }
+
+new_ok('Test');
+
+done_testing();
