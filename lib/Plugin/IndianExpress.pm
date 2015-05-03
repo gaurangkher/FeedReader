@@ -31,6 +31,7 @@ sub parse {
     for my $story (@{ $stories }) {    
         
         my $url = $story->get('url');
+        print Dumper $url;
         my $pd  = $self->get_url($url);
         my $time = $story->get('pubDate');
         my $title = $story->get('title');
@@ -59,10 +60,10 @@ sub parse_page {
     
     my $author = $page->find('div.editor')->first->find('a')->map('text')->join(", ");
     $author = "$author";
-    my $tags = $page->find('meta[name="news_keywords"]')->first->tree->[2]->{content};
+    my $tags = $page->find('meta[name="keywords"]')->first->tree->[2]->{content};
     my $description = $page->find('meta[name="description"]')->first->tree->[2]->{content};
    
-    my $image_url = $page->find('div.story-image')->first->find('img')->first->tree->[2]->{src};
+    my $image_url = try {$page->find('div.story-image')->first->find('img')->first->tree->[2]->{src} };
  
     return {
         author      => $author,
