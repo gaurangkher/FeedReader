@@ -4,6 +4,7 @@ use Moose::Role;
 use Carp;
 use Data::Dumper;
 use LWP::Simple;
+use Log::Log4perl qw(:easy);
 use XML::RSS::Parser::Lite;
 use Action::Retry qw(retry);
 
@@ -28,6 +29,7 @@ sub extract {
 
     my @content;
     for my $feed ( @{ $self->feeds }) {
+        INFO qq{Converting to xml :  $feed};
         my $xml = $self->get_url($feed);
         
         my $parsed_feed = $self->rss_parser->parse($xml);

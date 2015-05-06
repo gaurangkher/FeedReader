@@ -6,6 +6,8 @@ use Class::Load ':all';
 use XML::RSS::Parser::Lite;
 use Moose;
 use MongoDB;
+use Log::Log4perl qw(:easy);
+Log::Log4perl->easy_init({ log_level => 'INFO' });
 
 with 'MooseX::Runnable';
 with 'MooseX::Getopt';
@@ -55,8 +57,13 @@ sub _build_dumper {
 sub run {
     my ($self, %args) = @_;
 
+    INFO q{Start extract};
     my $data = $self->parser->extract();
+
+    INFO q{Got all feeds XML parsed};
     my $parsed_data = $self->parser->parse($data);
+
+    INFO q{Start Persisting};
     $self->dumper->persist($parsed_data);
 }
 

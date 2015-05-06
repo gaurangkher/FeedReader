@@ -7,8 +7,7 @@ use Mojo::DOM;
 use LWP::Simple;
 use HTML::HeadParser;
 use Story;
-use Story;
-use Story;
+use Log::Log4perl qw(:easy);
 
 with 'ParserRole';
 
@@ -33,8 +32,8 @@ sub parse {
     for my $story (@{ $stories }) {    
         
         my $url   = $story->get('url');
+        INFO qq{$url};
         my $pd    = $self->get_url($url);
-        print Dumper $url;
         my $title = $story->get('title');
         my $args  = $self->parse_page($pd); 
         my $story = Story->new(

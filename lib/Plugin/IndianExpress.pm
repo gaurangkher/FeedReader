@@ -7,6 +7,7 @@ use Mojo::DOM;
 use LWP::Simple;
 use HTML::HeadParser;
 use Story;
+use Log::Log4perl qw(:easy);
 
 with 'ParserRole';
 
@@ -31,7 +32,8 @@ sub parse {
     for my $story (@{ $stories }) {    
         
         my $url = $story->get('url');
-        print Dumper $url;
+        INFO qq{$url};
+
         my $pd  = $self->get_url($url);
         my $time = $story->get('pubDate');
         my $title = $story->get('title');
