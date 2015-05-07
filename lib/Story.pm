@@ -57,7 +57,7 @@ sub get_id {
     my ($self) = @_;
 
     my $string = $self->source . encode_utf8($self->title);
-    return hex( md5_hex($string) );
+    return md5_hex($string);
 }
 
 

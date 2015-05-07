@@ -5,6 +5,7 @@ use Moose;
 use DBI;
 use DBD::Pg;
 use LWP::Simple;
+use Data::Dumper;
 
 with 'DestRole';
 
@@ -35,7 +36,7 @@ sub persist {
     my $tags      = $hash->{tags};
     my $time      = $hash->{time};
 
-    $self->insert(q{article}, $id, $title, $desc, $image_url, $url, $time);
+    $self->insert(q{article}, $id, $title, $time, $source, $desc, $image_url, $url );
 
     for my $a (@{ $author }) {
         $self->insert(q{author}, $id, $a);
@@ -44,7 +45,6 @@ sub persist {
         $self->insert(q{metatags}, $id, $t);
     }
     $self->insert(q{content}, $id, $content);
-    $self->insert(q{source}, $id, $source);
 }
 
 sub insert {
@@ -53,8 +53,8 @@ sub insert {
     my $sth;
     if ($table eq q{article}) {
         $sth = $self->dbh->prepare(
-            qq{INSERT INTO article(id, title, description, image_url, }
-            . qq{story_url, date) VALUES (?,?,?,?,?,?)}
+            qq{INSERT INTO article(id, title, date, source, }
+            . qq{description, image_url, url) VALUES (?,?,?,?,?,?,?)}
         );
     }
     elsif ($table eq q{author}) {
@@ -77,7 +77,6 @@ sub insert {
             qq{INSERT INTO source(id, source) VALUES (?, ?)}
         );
     }
-
     $sth->execute(@params);
 }
 

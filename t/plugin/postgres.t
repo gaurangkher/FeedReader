@@ -41,12 +41,13 @@ for my $st (@{ $dbh->{mock_all_history} }) {
     }
 }
 
+print Dumper \@expected;
 is_deeply(
     [ @expected ],
     [
         {
-            statement => 'INSERT INTO article(id, title, description, image_url, story_url, date) VALUES (?,?,?,?,?,?)',
-            params => [ 1234567890, 'This is Title', 'desc', 'http:/img', 'http:/url', '01/01/2015 01:11::00' ],
+            statement => 'INSERT INTO article(id, title, date, source, description, image_url, url) VALUES (?,?,?,?,?,?,?)',
+            params => [ 1234567890, 'This is Title', '01/01/2015 01:11::00', 'Source', 'desc', 'http:/img', 'http:/url' ],
         },
         {
             statement => 'INSERT INTO author(id, name) VALUES (?, ?)',
@@ -67,10 +68,6 @@ is_deeply(
         {
             statement => 'INSERT INTO content(id, content) VALUES (?, ?)',
             params => [ 1234567890, 'This is content' ],
-        },
-        {
-            statement => 'INSERT INTO source(id, source) VALUES (?, ?)',
-            params => [ 1234567890, 'Source' ],
         },
     ],
     q{got all sqls executed}
