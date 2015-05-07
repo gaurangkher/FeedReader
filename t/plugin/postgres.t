@@ -41,10 +41,13 @@ for my $st (@{ $dbh->{mock_all_history} }) {
     }
 }
 
-print Dumper \@expected;
 is_deeply(
     [ @expected ],
     [
+        {
+            'params' => [],
+            'statement' => "select 1 from article where id = '1234567890'"
+        },
         {
             statement => 'INSERT INTO article(id, title, date, source, description, image_url, url) VALUES (?,?,?,?,?,?,?)',
             params => [ 1234567890, 'This is Title', '01/01/2015 01:11::00', 'Source', 'desc', 'http:/img', 'http:/url' ],

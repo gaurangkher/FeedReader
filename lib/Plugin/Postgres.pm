@@ -5,6 +5,7 @@ use Moose;
 use DBI;
 use DBD::Pg;
 use LWP::Simple;
+use Log::Log4perl qw(:easy);
 use Data::Dumper;
 
 with 'DestRole';
@@ -36,6 +37,10 @@ sub persist {
     my $tags      = $hash->{tags};
     my $time      = $hash->{time};
 
+    if( $self->exists_id($id) ) {
+        INFO qq{$id already persisted};
+        return;
+    }
     $self->insert(q{article}, $id, $title, $time, $source, $desc, $image_url, $url );
 
     for my $a (@{ $author }) {
@@ -78,6 +83,19 @@ sub insert {
         );
     }
     $sth->execute(@params);
+}
+
+sub exists_id {
+    my ($self, $id) = @_;
+
+    my $sth = $self->dbh->prepare("select 1 from article where id = '$id'");
+    $sth->execute;
+    my @arr = $sth->fetchrow_array();
+
+    if(scalar @arr > 0) {
+        return 1;
+    }
+    return 0;
 }
 
 1;
