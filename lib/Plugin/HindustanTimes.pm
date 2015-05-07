@@ -50,7 +50,6 @@ sub parse_page {
     my $description = $hp->header('X-Meta-Description');
     my $tags = $hp->header('X-Meta-keywords');
     my $time = $hp->header('Last-Modified'); 
-    print Dumper $hp;
     my ($day, @arr) = split q{ }, $time;
     $time = join q{ }, @arr;
     

@@ -64,15 +64,14 @@ sub run {
     INFO q{Got all feeds XML parsed};
     for my $story (@{ $stories}) {
 
-        my $parsed_data = try { 
-            $self->parser->parse($story) 
+        try {
+            my $parsed_data = $self->parser->parse($story); 
+            $self->dumper->persist($parsed_data);
         }
         catch { 
             INFO q{Failed : } . $story->get('url');
-            next; 
         };
 
-        $self->dumper->persist($parsed_data);
     }
     INFO q{Done persisting all stories};
 }
