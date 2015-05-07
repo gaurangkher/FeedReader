@@ -31,7 +31,7 @@ $mock->mock(to_href => sub {
 });
 
 
-$plugin->persist([$mock]);
+$plugin->persist($mock);
 
 my @expected;
 for my $st (@{ $dbh->{mock_all_history} }) {

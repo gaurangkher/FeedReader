@@ -24,29 +24,22 @@ sub source_name {
 }
 
 sub parse {
-    my ($self, $stories) = @_;
+    my ($self, $story) = @_;
 
-    my @parsed_data;
+    my $url   = $story->get('url');
+    INFO qq{$url};
 
-    for my $story (@{ $stories }) {    
-        
-        my $url   = $story->get('url');
-        INFO qq{$url};
+    my $pd    = $self->get_url($url);
+    my $title = $story->get('title');
+    my $args  = $self->parse_page($pd); 
+    my $obj = Story->new(
+        title   => $title,
+        source  => $self->source_name(),
+        url     => $url,
+        %{ $args },
+    );
 
-        my $pd    = $self->get_url($url);
-        my $title = $story->get('title');
-        my $args  = $self->parse_page($pd); 
-        my $story = Story->new(
-            title   => $title,
-            source  => $self->source_name(),
-            url     => $url,
-            %{ $args },
-        );
-
-        push @parsed_data, $story;
-    }
-
-    return \@parsed_data;
+    return $obj;
 }
 
 sub parse_page {

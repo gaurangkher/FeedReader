@@ -1,6 +1,7 @@
 package FeedRunner;
 
 use Carp;
+use Try::Tiny;
 use LWP::Simple;
 use Class::Load ':all';
 use XML::RSS::Parser::Lite;
@@ -58,13 +59,22 @@ sub run {
     my ($self, %args) = @_;
 
     INFO q{Start extract};
-    my $data = $self->parser->extract();
+    my $stories = $self->parser->extract();
 
     INFO q{Got all feeds XML parsed};
-    my $parsed_data = $self->parser->parse($data);
+    for my $story (@{ $stories}) {
 
-    INFO q{Start Persisting};
-    $self->dumper->persist($parsed_data);
+        my $parsed_data = try { 
+            $self->parser->parse($story) 
+        }
+        catch { 
+            INFO q{Failed : } . $story->get('url');
+            next; 
+        };
+
+        $self->dumper->persist($parsed_data);
+    }
+    INFO q{Done persisting all stories};
 }
 
 1;

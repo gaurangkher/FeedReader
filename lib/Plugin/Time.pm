@@ -25,30 +25,23 @@ sub source_name {
 }
 
 sub parse {
-    my ($self, $stories) = @_;
+    my ($self, $story) = @_;
 
-    my @parsed_data;
+    my $url = $story->get('url');
+    INFO qq{$url};
 
-    for my $story (@{ $stories }) {    
-        
-        my $url = $story->get('url');
-        INFO qq{$url};
+    my $pd  = $self->get_url($url);
+    next if (!defined $pd);
+    my $args = $self->parse_page($pd); 
+    my @check =  map { lc($_) =~ /india/} split q{,}, $args->{tags};
+    next if (scalar @check == 0);
+    my $obj = Story->new(
+        source  => $self->source_name(),
+        url     => $url,
+        %{ $args },
+    );
 
-        my $pd  = $self->get_url($url);
-        next if (!defined $pd);
-        my $args = $self->parse_page($pd); 
-        my @check =  map { lc($_) =~ /india/} split q{,}, $args->{tags};
-        next if (scalar @check == 0);
-        my $story = Story->new(
-            source  => $self->source_name(),
-            url     => $url,
-            %{ $args },
-        );
-
-        push @parsed_data, $story;
-    }
-
-    return \@parsed_data;
+    return $obj;
 }
 
 sub parse_page {

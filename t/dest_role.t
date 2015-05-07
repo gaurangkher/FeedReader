@@ -28,7 +28,8 @@ my $dest = Test->new();
 
 does_ok($dest, 'DestRole', 'Does DestRole');
 
-$dest->persist(\@test_data);
+
+map { $dest->persist($_) } @test_data;
 
 is_deeply(\@persisted_data, \@test_data, 'persisted test data');
 
