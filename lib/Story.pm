@@ -65,7 +65,6 @@ sub get_id {
 sub to_href {
     my ($self) = @_;
 
-    my @tags = map { $_ =~ s/^\s+|\s+$//g } split q{,}, $self->tags;
     my @authors = map { $_ =~ s/^\s+|\s+$//g } split q{,}, $self->author();
 
     return {
@@ -78,7 +77,7 @@ sub to_href {
         url         => $self->url,
         description => encode_utf8( $self->description() ),
         image_url   => $self->image_url,
-        tags        => [ @tags ],
+        tags        => $self->tags,
     };
 }
 

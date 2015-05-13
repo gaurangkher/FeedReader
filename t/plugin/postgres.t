@@ -5,10 +5,19 @@ use lib "$FindBin::Bin/../../lib";
 use Test::More;
 use Test::MockObject; 
 use DBI;
+use File::Temp qw/ tempfile tempdir /;
 use Data::Dumper;
 use Plugin::Postgres;
+use File::Slurp;
 
-my $dbh = DBI->connect( 'DBI:Mock:', '', '' );
+my ($fh, $filename) = tempfile("", UNLINK => 1);
+
+my $dbh = DBI->connect("dbi:SQLite:dbname=$filename","","");
+
+my $fn = "$FindBin::Bin/../misc/table.txt";
+print "$fn\n";
+$dbh->prepare(read_file("$FindBin::Bin/../misc/table.txt"));
+$dbh->execute();
 
 my $plugin = Plugin::Postgres->new(
     dbh => $dbh,
@@ -33,47 +42,17 @@ $mock->mock(to_href => sub {
 
 $plugin->persist($mock);
 
-my @expected;
-for my $st (@{ $dbh->{mock_all_history} }) {
-    push @expected, {
-        statement => $st->statement,
-        params    => $st->bound_params,
-    }
-}
+my $result;
+my $sth;
+for my $table ('article', 'source', 'metatags','content','author') {
 
-is_deeply(
-    [ @expected ],
-    [
-        {
-            'params' => [],
-            'statement' => "select 1 from article where id = '1234567890'"
-        },
-        {
-            statement => 'INSERT INTO article(id, title, date, source, description, image_url, url) VALUES (?,?,?,?,?,?,?)',
-            params => [ 1234567890, 'This is Title', '01/01/2015 01:11::00', 'Source', 'desc', 'http:/img', 'http:/url' ],
-        },
-        {
-            statement => 'INSERT INTO author(id, name) VALUES (?, ?)',
-            params =>  [ 1234567890, 'This' ],
-        },
-        {
-            statement => 'INSERT INTO author(id, name) VALUES (?, ?)',
-            params => [ 1234567890, 'That' ],
-        },
-        {
-            statement => 'INSERT INTO metatags(id, tag) VALUES (?, ?)',
-            params => [ 1234567890, 'tag1' ],
-        },
-        {
-            statement => 'INSERT INTO metatags(id, tag) VALUES (?, ?)',
-            params => [ 1234567890, 'tag2' ],
-        },
-        {
-            statement => 'INSERT INTO content(id, content) VALUES (?, ?)',
-            params => [ 1234567890, 'This is content' ],
-        },
-    ],
-    q{got all sqls executed}
-);
+    $sth = $dbh->prepare(q{select * from article});
+    $sth->execute;
+    while( my @arr = $sth->fetchrow_array() ) {
+        push @{ $result->{$table} }, [ @arr ];
+    }
+
+}
+print Dumper $result;
 
 done_testing;
