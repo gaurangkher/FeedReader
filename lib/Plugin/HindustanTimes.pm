@@ -55,7 +55,7 @@ sub parse_page {
     
     my $page = Mojo::DOM->new($pd);
 
-    my $stream =  $page->find('p')->map('text')->join("\n");
+    my $stream =  $page->find('p')->map('text')->join("\n\n");
     my $content = "$stream";
     my $pg_content = $page->at('.page_update')->content;
 

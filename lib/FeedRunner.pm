@@ -68,8 +68,11 @@ sub run {
             my $parsed_data = $self->parser->parse($story); 
             $self->dumper->persist($parsed_data);
         }
-        catch { 
-            INFO q{Failed : } . Dumper $story;
+        catch {
+            my $url = $story->{link}
+                ? $story->{link}
+                : $self->source . q{ : } . $story->{title};
+            INFO qq{Failed : $url};
         };
 
     }

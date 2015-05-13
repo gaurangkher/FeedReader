@@ -21,7 +21,7 @@ has feeds => (
 );
 
 sub source_name {
-    return q{The Economist};
+    return q{Indian Express};
 }
 
 sub parse {
@@ -50,7 +50,7 @@ sub parse_page {
 
     my $page = Mojo::DOM->new($pd);
     
-    my $content = $page->find('div.main-body-content')->first->find('p')->map('text')->join(" ");
+    my $content = $page->find('div.main-body-content')->first->find('p')->map('text')->join("\n\n");
     $content = "$content";
     
     my $author = $page->find('div.editor')->first->find('a')->map('text')->join(", ");

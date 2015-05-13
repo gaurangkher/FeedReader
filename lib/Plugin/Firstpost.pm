@@ -51,7 +51,7 @@ sub parse_page {
     $time = $time->tree->[2]->{content};
     
     my $content = $page->find('div.fullCont1')->first;
-    $content = $content->find('p')->map('text')->join("\n");
+    $content = $content->find('p')->map('text')->join("\n\n");
     $content = $content->to_string;
     my $author = $page->find('span.by')->first;
     $author = $author->find('a')->map('text')->first;

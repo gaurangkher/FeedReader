@@ -45,7 +45,7 @@ sub parse_page {
     my ($self, $pd) = @_;
 
     my $page = Mojo::DOM->new($pd);
-    my $content = $page->find('div.p')->map('text')->join("\n");
+    my $content = $page->find('div.p')->map('text')->join("\n\n");
     $content = "$content";
     my $auths = $page->at('.sty_author')->find('a')->map('text');
     my $author = $auths->first;

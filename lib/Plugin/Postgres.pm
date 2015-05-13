@@ -2,6 +2,7 @@ package Plugin::Postgres;
 
 use v5.14;
 use Moose;
+use Carp;
 use DBI;
 use DBD::Pg;
 use LWP::Simple;
@@ -16,7 +17,7 @@ has dbh => (
     lazy    => 1,
     default => sub {
         return DBI->connect(
-            "dbi:Pg:dbname='Vartaa';host='localhost';port=5432;", 
+            "dbi:Pg:dbname='vartaa';host='localhost';port=5432;", 
             "admin", "admin"
         );
     },
@@ -41,15 +42,15 @@ sub persist {
         INFO qq{$id already persisted};
         return;
     }
-    $self->insert(q{article}, $id, $title, $time, $source, $desc, $image_url, $url );
 
-    for my $a (@{ $author }) {
-        $self->insert(q{author}, $id, $a);
-    }
-    for my $t (@{ $tags }) {
-        $self->insert(q{metatags}, $id, $t);
-    }
+    my $source_id  = $self->source_id($source);
+    my $author_ids = $self->author_ids($author);
+
+    $self->insert(q{article}, $id, $title, $time, $source_id, $author_ids, $desc, $image_url, $url, 0 );
+
+    $self->insert(q{metatags}, $id, $tags);
     $self->insert(q{content}, $id, $content);
+    return;
 }
 
 sub insert {
@@ -58,13 +59,8 @@ sub insert {
     my $sth;
     if ($table eq q{article}) {
         $sth = $self->dbh->prepare(
-            qq{INSERT INTO article(id, title, date, source, }
-            . qq{description, image_url, url) VALUES (?,?,?,?,?,?,?)}
-        );
-    }
-    elsif ($table eq q{author}) {
-        $sth = $self->dbh->prepare(
-            qq{INSERT INTO author(id, name) VALUES (?, ?)}
+            qq{INSERT INTO article(id, title, date, source_id, author_ids, }
+            . qq{description, photo_url, url, category_id) VALUES (?,?,?,?,?,?,?,?,?)}
         );
     }
     elsif ($table eq q{content}) {
@@ -74,13 +70,11 @@ sub insert {
     }
     elsif ($table eq q{metatags}) {
         $sth = $self->dbh->prepare(
-            qq{INSERT INTO metatags(id, tag) VALUES (?, ?)}
+            qq{INSERT INTO metatags(id, tags) VALUES (?, ?)}
         );
     }
     else {
-        $sth = $self->dbh->prepare(
-            qq{INSERT INTO source(id, source) VALUES (?, ?)}
-        );
+        croak qq{Wrong option $table};
     }
     $sth->execute(@params);
 }
@@ -88,7 +82,7 @@ sub insert {
 sub exists_id {
     my ($self, $id) = @_;
 
-    my $sth = $self->dbh->prepare("select 1 from article where id = '$id'");
+    my $sth = $self->dbh->prepare("select 1 from article where id = '$id' ");
     $sth->execute;
     my @arr = $sth->fetchrow_array();
 
@@ -96,6 +90,70 @@ sub exists_id {
         return 1;
     }
     return 0;
+}
+
+sub source_id {
+    my ($self, $source) = @_;
+
+    my $sth = $self->dbh->prepare("select id from source where name = '$source'");
+    $sth->execute;
+    my ($id) = $sth->fetchrow_array();
+
+    return $id if ( defined $id );
+
+    $sth = $self->dbh->prepare("select max(id) from source");
+    $sth->execute;
+    ($id) =  $sth->fetchrow_array();
+    $sth = $self->dbh->prepare(
+        qq{INSERT INTO source(id, name) VALUES (?, ?)}
+    );
+    $id++;
+    $sth->execute($id, $source);
+
+    return $id;
+}
+
+sub author_ids {
+    my ($self, $author) = @_;
+    
+    my @authors;
+    if (ref($author) eq q{ARRAY}) {
+        @authors = @{ $author };
+    }
+    else {
+        @authors = split q{,}, $author;
+    }
+
+    my @ids;
+    for my $aut (@authors) {
+        my $sth = $self->dbh->prepare(
+            "select id,count from author where name = '$aut'"
+        );
+        $sth->execute;
+        my ($id, $count) = $sth->fetchrow_array();
+        if (defined $id) {
+            $count++;
+            my $sth = $self->dbh->prepare(
+                "update author set count = $count where name = '$aut' "
+            );
+            $sth->execute;
+            push @ids, $id;
+        }
+        else {
+            my $sth = $self->dbh->prepare("select max(id) from author");
+            $sth->execute;
+            my ($id) = $sth->fetchrow_array();
+            $sth = $self->dbh->prepare(
+                qq{INSERT INTO author(id, name, count) VALUES (?, ?, ?)}
+            );
+            $id++;
+            $sth->execute($id, $aut, 0);
+
+            push @ids, $id;
+        }
+    }
+
+    return join q{,}, @ids;
 }
 
 1;
