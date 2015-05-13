@@ -6,7 +6,7 @@ use LWP::Simple;
 use Class::Load ':all';
 use XML::RSS::Parser::Lite;
 use Moose;
-use MongoDB;
+use Data::Dumper;
 use Log::Log4perl qw(:easy);
 Log::Log4perl->easy_init({ log_level => 'INFO' });
 
@@ -69,7 +69,7 @@ sub run {
             $self->dumper->persist($parsed_data);
         }
         catch { 
-            INFO q{Failed : } . $story->get('url');
+            INFO q{Failed : } . Dumper $story;
         };
 
     }

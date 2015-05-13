@@ -26,13 +26,13 @@ sub source_name {
 
 sub parse {
     my ($self, $story) = @_;
-
-    my $url = $story->get('url');
+    
+    my $url = $story->{'link'};
     INFO qq{$url};
 
     my $pd  = $self->get_url($url);
-    my $time = $story->get('pubDate');
-    my $title = $story->get('title');
+    my $time = $story->{'pubDate'};
+    my $title = $story->{'title'};
     my $args = $self->parse_page($pd); 
     my $obj = Story->new(
         source  => $self->source_name(),

@@ -5,7 +5,7 @@ use Carp;
 use Data::Dumper;
 use LWP::Simple;
 use Log::Log4perl qw(:easy);
-use XML::RSS::Parser::Lite;
+use XML::RSS;
 use Action::Retry qw(retry);
 
 requires 'parse';
@@ -17,11 +17,11 @@ has feeds => (
     default  => sub { [] },
 );
 
-has rss_parser => (
+has xml_rss => (
     is      => 'ro',
     isa     => 'Object',
     lazy    => 1,
-    default => sub { return new XML::RSS::Parser::Lite;},
+    default => sub { return XML::RSS->new(); },
 );
 
 sub extract {
@@ -32,9 +32,9 @@ sub extract {
         INFO qq{Converting to xml :  $feed};
         my $xml = $self->get_url($feed);
         
-        my $parsed_feed = $self->rss_parser->parse($xml);
-        for (my $i = 0; $i < $self->rss_parser->count(); $i++) {
-            push @content, $self->rss_parser->get($i);
+        $self->xml_rss->parse($xml);
+        for my $item ( @{ $self->xml_rss->{'items'} } ) {
+            push @content, $item;
         }
     }
     return \@content;

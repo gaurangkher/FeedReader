@@ -26,8 +26,8 @@ sub source_name {
 
 sub parse {
     my ($self, $story) = @_;
-
-    my $url = $story->get('url');
+    
+    my $url = $story->{'link'};
     INFO qq{$url};
     my $pd  = $self->get_url($url);
     next if (!defined $pd);
