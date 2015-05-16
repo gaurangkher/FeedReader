@@ -13,7 +13,7 @@ has collection => (
     lazy    => 1,
     default => sub {
         return MongoDB::MongoClient->new(
-            host => 'localhost', 
+            host => 'localhost',
             port => 27017
         )->get_database('test')->get_collection('vaarta');
     },
@@ -25,20 +25,21 @@ has img_col => (
     lazy    => 1,
     default => sub {
         return MongoDB::MongoClient->new(
-            host => 'localhost', 
+            host => 'localhost',
             port => 27017
         )->get_database('test')->get_gridfs;
     },
 );
 
 sub persist {
-    my ($self, $data) = @_;
+    my ( $self, $data ) = @_;
 
     my $hash = $data->to_href();
-    my @result = $self->collection->find({ title_id => $hash->{title_id}})->all;
-    if (scalar @result == 0 ) {
+    my @result =
+      $self->collection->find( { title_id => $hash->{title_id} } )->all;
+    if ( scalar @result == 0 ) {
         $self->collection->insert($hash);
-        
+
         my $image_url = $hash->{image_url};
 
         if ($image_url) {
@@ -50,7 +51,7 @@ sub persist {
 }
 
 sub save_image {
-    my ($self, $hash) = @_;
+    my ( $self, $hash ) = @_;
 }
 
 1;

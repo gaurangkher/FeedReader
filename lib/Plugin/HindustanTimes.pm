@@ -14,9 +14,9 @@ has feeds => (
     is       => 'ro',
     isa      => 'ArrayRef',
     required => 1,
-    default  => sub { [
-        'http://feeds.hindustantimes.com/HT-HomePage-TopStories',
-    ] },
+    default  => sub {
+        [ 'http://feeds.hindustantimes.com/HT-HomePage-TopStories', ];
+    },
 );
 
 sub source_name {
@@ -24,50 +24,50 @@ sub source_name {
 }
 
 sub parse {
-    my ($self, $story) = @_;
+    my ( $self, $story ) = @_;
 
-    my $url   = $story->get('link');
+    my $url = $story->get('link');
     INFO qq{$url};
 
     my $pd    = $self->get_url($url);
     my $title = $story->{'title'};
-    my $args  = $self->parse_page($pd); 
-    my $obj = Story->new(
-        title   => $title,
-        source  => $self->source_name(),
-        url     => $url,
-        %{ $args },
+    my $args  = $self->parse_page($pd);
+    my $obj   = Story->new(
+        title  => $title,
+        source => $self->source_name(),
+        url    => $url,
+        %{$args},
     );
 
     return $obj;
 }
 
 sub parse_page {
-    my ($self, $pd) = @_;
+    my ( $self, $pd ) = @_;
 
     my $hp = HTML::HeadParser->new();
     $hp->parse($pd);
     my $description = $hp->header('X-Meta-Description');
-    my $tags = $hp->header('X-Meta-keywords');
-    my $time = $hp->header('Last-Modified'); 
-    my ($day, @arr) = split q{ }, $time;
+    my $tags        = $hp->header('X-Meta-keywords');
+    my $time        = $hp->header('Last-Modified');
+    my ( $day, @arr ) = split q{ }, $time;
     $time = join q{ }, @arr;
-    
+
     my $page = Mojo::DOM->new($pd);
 
-    my $stream =  $page->find('p')->map('text')->join("\n\n");
-    my $content = "$stream";
+    my $stream     = $page->find('p')->map('text')->join("\n\n");
+    my $content    = "$stream";
     my $pg_content = $page->at('.page_update')->content;
 
-    my $find = $page->at('div.news_photo')->content;
-    my $temp = Mojo::DOM->new($find);
+    my $find      = $page->at('div.news_photo')->content;
+    my $temp      = Mojo::DOM->new($find);
     my $image_url = $temp->at('img')->tree->[2]->{src};
-    
-    my $dm1 =  Mojo::DOM->new($pg_content);
-    my $coll = $dm1->find('b')->map('text');
-    my $prob_authors =  $coll->first;
-    my @aut = split q{,}, $prob_authors;
-    my $author =  $aut[0];
+
+    my $dm1          = Mojo::DOM->new($pg_content);
+    my $coll         = $dm1->find('b')->map('text');
+    my $prob_authors = $coll->first;
+    my @aut          = split q{,}, $prob_authors;
+    my $author       = $aut[0];
 
     return {
         time        => $time,
