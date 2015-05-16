@@ -17,7 +17,7 @@ has dbh => (
     lazy    => 1,
     default => sub {
         return DBI->connect(
-            "dbi:Pg:dbname='vartaa';host='localhost';port=5432;", 
+            "dbi:Pg:dbname='vartaa';host='207.181.217.150';port=5432;", 
             "admin", "admin"
         );
     },
