@@ -43,6 +43,7 @@ is_deeply(
         'title'    => 'title',
         'category' => 'hi',
         'author'   => 'HT Correspondent,, Guwahati',
+        'category' => 'india news',
     },
     q{got all non content href}
 );

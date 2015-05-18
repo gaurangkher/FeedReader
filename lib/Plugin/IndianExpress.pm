@@ -60,6 +60,10 @@ sub parse_page {
     $author = "$author";
     my $tags =
       $page->find('meta[name="keywords"]')->first->tree->[2]->{content};
+
+    my $category =
+      $page->find('meta[itemprop="articleSection"]')->first->tree->[2]->{content};
+
     my $description =
       $page->find('meta[name="description"]')->first->tree->[2]->{content};
 
@@ -74,6 +78,7 @@ sub parse_page {
         description => $description,
         image_url   => $image_url,
         tags        => $tags,
+        category    => $category,
     };
 }
 1;
