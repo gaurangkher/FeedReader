@@ -26,9 +26,10 @@ is_deeply(
         'description' => 'In a shocking twist to the Nagaland lynching case, Assam Chief Minister Tarun Gogoi on Saturday said that \'unconfirmed medical reports\' claim the complainant in the case was not raped.',
         'author' => 'FP Staff',
    
-        'image_url' => 'http://s2.firstpost.in/wp-content/uploads/2015/03/Tarun-Gogoi-PTI-July26.jpg'
+        'image_url' => 'http://s2.firstpost.in/wp-content/uploads/2015/03/Tarun-Gogoi-PTI-July26.jpg',
+        'category' => 'India',
     },
-    q{got tags, time, descrription, author, image_url}
+    q{got tags, time, descrription, author, image_url, category}
 );
 
 done_testing();

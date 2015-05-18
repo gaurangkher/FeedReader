@@ -56,6 +56,8 @@ sub parse_page {
     my $author = $page->find('span.by')->first;
     $author = $author->find('a')->map('text')->first;
 
+    my $category = $page->find('meta[property="article:section"]')->first;
+    $category = $category->tree->[2]->{content};
     my $image_url = $page->find('meta[property="og:image"]')->first;
     $image_url = $image_url->tree->[2]->{content};
 
@@ -71,6 +73,7 @@ sub parse_page {
         description => $description,
         image_url   => $image_url,
         tags        => $tags,
+        category    => $category,
     };
 }
 
