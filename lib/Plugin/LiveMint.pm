@@ -52,6 +52,8 @@ sub parse_page {
     my $image_url = $page->at('.sty_main_pic_sml1')->find('img')->first;
     $image_url = q{http://www.livemint.com} . $image_url->attr('src');
 
+    my $category = $page->at('.sty_brd_box')->find('a')->map('text')->last;
+    
     my $hp = HTML::HeadParser->new();
     $hp->parse($pd);
     my $tags        = $hp->header('X-Meta-keywords');
@@ -67,6 +69,7 @@ sub parse_page {
         description => $description,
         image_url   => $image_url,
         tags        => $tags,
+        category    => $category,
     };
 }
 1;

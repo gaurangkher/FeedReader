@@ -61,6 +61,7 @@ sub parse_page {
 
     my $author = $aut->find('a')->first->content;
 
+    my $category = $page->at('.section-tag')->content;
     my $time  = $page->find('.publish-date')->first->tree->[2]->{datetime};
     my $try   = $page->find('meta[property="og:title"]')->first;
     my $title = $try->tree->[2]->{content};
@@ -75,6 +76,7 @@ sub parse_page {
         description => $description,
         image_url   => $image_url,
         tags        => $tags,
+        category    => $category,
     };
 }
 1;
