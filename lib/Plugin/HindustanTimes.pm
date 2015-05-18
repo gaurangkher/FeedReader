@@ -26,16 +26,18 @@ sub source_name {
 sub parse {
     my ( $self, $story ) = @_;
 
-    my $url = $story->get('link');
+    my $url = $story->{'link'};
     INFO qq{$url};
-
     my $pd    = $self->get_url($url);
     my $title = $story->{'title'};
+    my @args  = split q{-}, $story->{feed}; 
+    my $category = $args[-1];
     my $args  = $self->parse_page($pd);
     my $obj   = Story->new(
         title  => $title,
         source => $self->source_name(),
         url    => $url,
+        category => $category,
         %{$args},
     );
 
@@ -65,10 +67,7 @@ sub parse_page {
 
     my $dm1          = Mojo::DOM->new($pg_content);
     my $coll         = $dm1->find('b')->map('text');
-    my $prob_authors = $coll->first;
-    my @aut          = split q{,}, $prob_authors;
-    my $author       = $aut[0];
-
+    my $author       = $page->at('.page_update')->find('b')->map('text')->first;
     return {
         time        => $time,
         author      => $author,

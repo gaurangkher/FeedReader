@@ -34,6 +34,7 @@ sub extract {
         
         $self->xml_rss->parse($xml);
         for my $item ( @{ $self->xml_rss->{'items'} } ) {
+            $item->{feed} = $feed;
             push @content, $item;
         }
     }

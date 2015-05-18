@@ -72,7 +72,7 @@ sub run {
             my $url = $story->{link}
                 ? $story->{link}
                 : $self->source . q{ : } . $story->{title};
-            INFO qq{Failed : $url};
+            INFO qq{Failed : $url : $_};
         };
 
     }

@@ -36,19 +36,20 @@ sub persist {
     my $image_url = $hash->{image_url};
     my $tags      = $hash->{tags};
     my $time      = $hash->{time};
-
+    my $category  = $hash->{category};
     if ( $self->exists_id($id) ) {
         INFO qq{$id already persisted};
         return;
     }
 
+    my $category_id  = $self->category_id($category);
     my $source_id  = $self->source_id($source);
     my $author_ids = $self->author_ids($author);
 
     $self->insert(
         q{article}, $id,         $title, $time,
         $source_id, $author_ids, $desc,  $image_url,
-        $url,       0
+        $url,       $category_id
     );
 
     $self->insert( q{metatags}, $id, $tags );
@@ -110,6 +111,27 @@ sub source_id {
       $self->dbh->prepare( qq{INSERT INTO source(id, name) VALUES (?, ?)} );
     $id++;
     $sth->execute( $id, $source );
+
+    return $id;
+}
+
+sub category_id {
+    my ( $self, $name ) = @_;
+
+    my $sth =
+      $self->dbh->prepare("select id from category where name = '$name'");
+    $sth->execute;
+    my ($id) = $sth->fetchrow_array();
+
+    return $id if ( defined $id );
+
+    $sth = $self->dbh->prepare("select max(id) from category");
+    $sth->execute;
+    ($id) = $sth->fetchrow_array();
+    $sth =
+      $self->dbh->prepare( qq{INSERT INTO category(id, name) VALUES (?, ?)} );
+    $id++;
+    $sth->execute( $id, $name );
 
     return $id;
 }

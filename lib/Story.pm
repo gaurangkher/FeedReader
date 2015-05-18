@@ -53,6 +53,11 @@ has tags => (
     isa      => 'Maybe[Str]', 
 ); 
 
+has category => (
+    is       => 'ro', 
+    isa      => 'Maybe[Str]', 
+); 
+
 sub get_id {
     my ($self) = @_;
 
@@ -65,19 +70,18 @@ sub get_id {
 sub to_href {
     my ($self) = @_;
 
-    my @authors = map { $_ =~ s/^\s+|\s+$//g } split q{,}, $self->author();
-
     return {
         source      => $self->source,
         title       => encode_utf8( $self->title() ),
         story_id    => $self->get_id(),
-        author      => [ @authors ],
+        author      => $self->author,
         content     => encode_utf8( $self->content() ),
         time        => $self->time,
         url         => $self->url,
         description => encode_utf8( $self->description() ),
         image_url   => $self->image_url,
         tags        => $self->tags,
+        category    => $self->category || q{Home},
     };
 }
 
