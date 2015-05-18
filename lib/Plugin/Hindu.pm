@@ -52,6 +52,9 @@ sub parse_page {
     my $image_url =
       try { $page->at('img.main-image')->tree->[2]->{src} } || undef;
 
+    my $category = $page->find('meta[property="article:section"]')->first;
+    $category = $category->tree->[2]->{content};
+
     my $time = try { $page->at('div.artPubUpdate')->text; };
     $time =~ s/Updated: //g;
 
@@ -69,6 +72,7 @@ sub parse_page {
         description => $description,
         image_url   => $image_url,
         tags        => $tags,
+        category    => $category,
     };
 }
 1;
