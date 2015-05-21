@@ -15,7 +15,15 @@ has feeds => (
     isa      => 'ArrayRef',
     required => 1,
     default  => sub {
-        [ 'http://feeds.hindustantimes.com/HT-HomePage-TopStories', ];
+        [ 
+            'http://feeds.hindustantimes.com/HT-HomePage-TopStories', 
+            'http://feeds.hindustantimes.com/HT-Dontmiss',
+            'http://feeds.hindustantimes.com/HT-India',
+            'http://feeds.hindustantimes.com/HT-World',
+            'http://feeds.hindustantimes.com/HT-Sport',
+            'http://feeds.hindustantimes.com/HT-Analysis',
+            'http://feeds.hindustantimes.com/HT-Entertainment',
+        ];
     },
 );
 

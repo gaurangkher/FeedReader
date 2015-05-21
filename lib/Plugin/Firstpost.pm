@@ -16,7 +16,14 @@ has feeds => (
     isa      => 'ArrayRef',
     required => 1,
     default  => sub {
-        [ 'http://www.firstpost.com/india/feed', ];
+        [ 
+            'http://www.firstpost.com/india/feed', 
+            'http://www.firstpost.com/politics/feed',
+            'http://www.firstpost.com/economy/feed',
+            'http://www.firstpost.com/sports/feed',
+            'http://www.firstpost.com/business/feed',
+            'http://www.firstpost.com/tech/feed',
+        ];
     },
 );
 

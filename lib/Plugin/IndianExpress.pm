@@ -16,7 +16,15 @@ has feeds => (
     isa      => 'ArrayRef',
     required => 1,
     default  => sub {
-        [ 'http://indianexpress.com/print/front-page/feed/', ];
+        [ 
+            'http://indianexpress.com/print/front-page/feed/', 
+            'http://indianexpress.com/section/india/feed/',
+            'http://indianexpress.com/section/opinion/feed/',
+            'http://indianexpress.com/section/opinion/editorials/feed/',
+            'http://indianexpress.com/section/technology/feed/',
+            'http://indianexpress.com/section/sports/feed/',
+            'http://indianexpress.com/section/india/politics/feed/',
+        ];
     },
 );
 

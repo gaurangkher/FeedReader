@@ -15,7 +15,14 @@ has feeds => (
     isa      => 'ArrayRef',
     required => 1,
     default  => sub {
-        [ 'http://www.livemint.com/rss/homepage', ];
+        [ 
+            'http://www.livemint.com/rss/homepage', 
+            'http://www.livemint.com/rss/companies',
+            'http://www.livemint.com/rss/opinion',
+            'http://www.livemint.com/rss/money',
+            'http://www.livemint.com/rss/industry',
+            'http://www.livemint.com/rss/economy_politics',
+        ];
     },
 );
 

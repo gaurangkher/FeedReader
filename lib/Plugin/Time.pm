@@ -16,7 +16,10 @@ has feeds => (
     isa      => 'ArrayRef',
     required => 1,
     default  => sub {
-        [ 'http://feeds2.feedburner.com/time/world', ];
+        [ 
+            'http://feeds2.feedburner.com/time/world', 
+            'http://feeds2.feedburner.com/timeblogs/globalspin',
+        ];
     },
 );
 
