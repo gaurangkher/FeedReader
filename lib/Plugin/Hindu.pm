@@ -54,7 +54,7 @@ sub parse_page {
 
     my $category = $page->find('meta[property="article:section"]')->first;
     $category = $category->tree->[2]->{content};
-
+    $category = $self->regroup($category);
     my $time = try { $page->at('div.artPubUpdate')->text; };
     $time =~ s/Updated: //g;
 
@@ -75,4 +75,17 @@ sub parse_page {
         category    => $category,
     };
 }
+
+sub regroup {
+    my ($self, $cat) = @_;
+    if ($cat) {
+        if($cat eq "International") {
+            return q{World};
+        }
+    }
+    else {
+        return '';
+    }
+}
+
 1;
