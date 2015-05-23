@@ -52,9 +52,7 @@ sub parse_page {
     my $image_url =
       try { $page->at('img.main-image')->tree->[2]->{src} } || undef;
 
-    my $category = $page->find('meta[property="article:section"]')->first;
-    $category = $category->tree->[2]->{content};
-    $category = $self->regroup($category);
+    my $category = $page->find('.artbcrumb')->first->find('a')->first->content;
     my $time = try { $page->at('div.artPubUpdate')->text; };
     $time =~ s/Updated: //g;
 
@@ -74,18 +72,6 @@ sub parse_page {
         tags        => $tags,
         category    => $category,
     };
-}
-
-sub regroup {
-    my ($self, $cat) = @_;
-    if ($cat) {
-        if($cat eq "International") {
-            return q{World};
-        }
-    }
-    else {
-        return '';
-    }
 }
 
 1;

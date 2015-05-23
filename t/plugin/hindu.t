@@ -22,7 +22,7 @@ is_deeply(
     $story,
     {
         'title'    => 'India’s daughters and sons',
-        'category' => 'Free For All',
+        'category' => 'Blogs',
         'author'   => 'Radhika Santhanam',
         'description' =>
 'The state’s agitation over the film is alarming, for it doesn’t react so vehemently, so quickly, to the problem itself but is doing so to its portrayal.',
