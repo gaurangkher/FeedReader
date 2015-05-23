@@ -59,7 +59,8 @@ sub parse_page {
     my $image_url = $page->at('.sty_main_pic_sml1')->find('img')->first;
     $image_url = q{http://www.livemint.com} . $image_url->attr('src');
 
-    my $category = $page->at('.sty_brd_box')->find('a')->map('text')->last;
+    my $category = $page->find('meta[property="article:section"]')->first;
+    $category = $category->tree->[2]->{content};
     
     my $hp = HTML::HeadParser->new();
     $hp->parse($pd);
