@@ -16,8 +16,8 @@ has feeds => (
     isa      => 'ArrayRef',
     required => 1,
     default  => sub {
-        [ 
-            'http://indianexpress.com/print/front-page/feed/', 
+        [
+            'http://indianexpress.com/print/front-page/feed/',
             'http://indianexpress.com/section/india/feed/',
             'http://indianexpress.com/section/opinion/feed/',
             'http://indianexpress.com/section/opinion/editorials/feed/',
@@ -58,11 +58,7 @@ sub parse_page {
 
     my $page = Mojo::DOM->new($pd);
 
-    my $content =
-      $page->find('div.main-body-content')->first->find('p')->map('text')
-      ->join("\n\n");
-    $content = "$content";
-
+    my $content = $self->get_content($page);
     my $author =
       $page->find('div.editor')->first->find('a')->map('text')->join(", ");
     $author = "$author";
@@ -70,7 +66,8 @@ sub parse_page {
       $page->find('meta[name="keywords"]')->first->tree->[2]->{content};
 
     my $category =
-      $page->find('meta[itemprop="articleSection"]')->first->tree->[2]->{content};
+      $page->find('meta[itemprop="articleSection"]')->first->tree->[2]
+      ->{content};
 
     my $description =
       $page->find('meta[name="description"]')->first->tree->[2]->{content};
@@ -88,5 +85,34 @@ sub parse_page {
         tags        => $tags,
         category    => $category,
     };
+}
+
+sub get_content {
+    my ($self, $page) = @_;
+
+    my $content =
+      $page->find('div.main-body-content')->first->find('p')->map('text')
+      ->join("\n\n");
+    $content = "$content";
+
+    my $next = try {
+        $page->find('.continue')->first->find('a')->first->tree->[2]->{href}
+    };
+    while ( defined $next ) {
+
+        my $pg   = $self->get_url($next);
+        my $page = Mojo::DOM->new($pg);
+        $next = try {
+            $page->find('.continue')->first->find('a')->first->tree->[2]->{href}
+        };
+
+        my $test =
+          $page->find('div.main-body-content')->first->find('p')->map('text')
+          ->join("\n\n");
+        $test    = "$test";
+        $content = $content . $test;
+
+    }
+    return $content;
 }
 1;
