@@ -3,6 +3,7 @@ package Story;
 use Moose;
 use Digest::MD5 qw(md5 md5_hex md5_base64);
 use Encode qw(encode_utf8);
+use HTML::Entities;
 
 has source => (
     is       => 'ro', 
@@ -72,13 +73,13 @@ sub to_href {
 
     return {
         source      => $self->source,
-        title       => encode_utf8( $self->title() ),
+        title       => encode_entities( $self->title() ),
         story_id    => $self->get_id(),
         author      => $self->author,
-        content     => encode_utf8( $self->content() ),
+        content     => encode_entities( $self->content() ),
         time        => $self->time,
         url         => $self->url,
-        description => encode_utf8( $self->description() ),
+        description => encode_entities( $self->description() ),
         image_url   => $self->image_url,
         tags        => $self->tags,
         category    => $self->category || q{Home},
