@@ -18,12 +18,13 @@ has feeds => (
     required => 1,
     default  => sub {
         [ 
-            'http://www.firstpost.com/india/feed', 
-            'http://www.firstpost.com/politics/feed',
-            'http://www.firstpost.com/economy/feed',
-            'http://www.firstpost.com/sports/feed',
-            'http://www.firstpost.com/business/feed',
-            'http://www.firstpost.com/tech/feed',
+           'http://indiatoday.feedsportal.com/c/33614/f/589699/index.rss?http://indiatoday.intoday.in/rss/homepage-topstories.jsp', 
+           'http://indiatoday.feedsportal.com/c/33614/f/647964/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=150',
+           'http://indiatoday.feedsportal.com/c/33614/f/589701/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=30',
+           'http://indiatoday.feedsportal.com/c/33614/f/589704/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=34',
+           'http://indiatoday.feedsportal.com/c/33614/f/589705/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=61',
+           'http://indiatoday.feedsportal.com/c/33614/f/589711/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=25',
+           'http://indiatoday.feedsportal.com/c/33614/f/589706/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=84',  
         ];
     },
 );
@@ -41,6 +42,7 @@ sub parse {
     my $title = $story->{'title'};
     my $args  = $self->parse_page($pd);
     my $obj   = Story->new(
+        title  => $title,
         time   => $story->{'pubDate'},
         source => $self->source_name(),
         url    => $url,
