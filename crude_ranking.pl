@@ -44,7 +44,7 @@ for my $source (@sources) {
             INFO q{UPDATE};
         }
         else {
-            my $sth_i = $dbh->prepare("INSERT INTO ranking(id, auto, admin, page_rank) VALUES ('$id', 0, 0, $rank)");
+            my $sth_i = $dbh->prepare("INSERT INTO ranking(id, auto, admin, page_rank) VALUES ('$id', 0, 1000, $rank)");
             $sth_i->execute;
             INFO q{INSERT};
         }
