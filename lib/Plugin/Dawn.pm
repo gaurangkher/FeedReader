@@ -57,7 +57,7 @@ sub parse_page {
 
     my $page = Mojo::DOM->new($pd);
 
-    my $image_url = $page->find('meta[property="og:image"]')->first;
+    my $image_url = $page->find('meta[property="og:image"]')->last;
     $image_url = $image_url->tree->[2]->{content};
 
     my $author = $page->find('meta[name="author"]')->first;

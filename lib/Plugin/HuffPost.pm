@@ -30,9 +30,6 @@ sub parse {
     my ( $self, $story ) = @_;
 
     my $url = $story->{'link'};
-    my $img = $story->{'enclosure'}->{'url'}
-        ? $story->{'enclosure'}->{'url'}
-        : undef;
 
     INFO qq{$url};
     my $pd    = $self->get_url($url);
@@ -41,7 +38,6 @@ sub parse {
         time      => $story->{'pubDate'},
         title     => $story->{'title'},
         author    => $story->{'author'},
-        image_url => $img,
         source    => $self->source_name(),
         url       => $url,
         %{$args},
@@ -64,6 +60,9 @@ sub parse_page {
     my $tags = $page->find('meta[name="keywords"]')->first;
     $tags = $tags->tree->[2]->{content};
 
+    my $image_url = $page->find('meta[property="og:image"]')->first;
+    $image_url = $image_url->tree->[2]->{content};
+
     my $content = $page->find('div#mainentrycontent')->first;
     $content = $content->find('p')->map('text')->join("\n\n")->to_string;
 
@@ -72,6 +71,7 @@ sub parse_page {
         description => $description,
         tags        => $tags,
         category    => $category,
+        image_url   => $image_url,
     };
 }
 

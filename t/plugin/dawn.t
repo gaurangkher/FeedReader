@@ -24,7 +24,7 @@ is_deeply(
         'tags' => 'pakistan, india',
         'description' => q{There is still a lack of political will from both sides in addressing the issue of violations, say peace activists.},
         'author' => 'From the Newspaper',
-        'image_url' => 'http://i.dawn.com/thumbnail/2015/07/55b2d65e46e39.jpg?r=521664048',
+        'image_url' => 'http://i.dawn.com/medium/2015/07/55b2d65e46e39.jpg?r=1148891794',
         'category' => 'pakistan',
     },
     q{got tags, time, descrription, author, image_url, category}
