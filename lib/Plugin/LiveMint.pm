@@ -52,7 +52,7 @@ sub parse_page {
     my ( $self, $pd ) = @_;
 
     my $page    = Mojo::DOM->new($pd);
-    my $content;
+    my $content = '';
     for my $e ($page->find('div.p')->each) {
         my $string = $e->to_string();
         next if $string =~ /script type=\"text\/javascript\"/;
