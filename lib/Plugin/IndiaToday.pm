@@ -63,9 +63,10 @@ sub parse_page {
     my $tags = $page->find('meta[name="news_keywords"]')->first;
     $tags = $tags->tree->[2]->{content};
 
-    my $content = $page->find('div.right-story-container')->first;
-    $content = $content->find('p')->map('text')->join("\n\n");
-    $content = $content->to_string;
+    my $content = "";
+    for my $e ($page->find('div.right-story-container')->first->find('p')->each) {
+        $content = $content . "\n\n" . $e->all_text(0);
+    }
 
     my $image_url = $page->find('meta[property="og:image"]')->first;
     $image_url = $image_url->tree->[2]->{content};

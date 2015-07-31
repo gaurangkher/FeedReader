@@ -20,7 +20,7 @@ my $mock = Test::MockObject::Extends->new($plugin);
 $mock->mock( 'get_url', sub { return $page; } );
 
 my $result =
-  $plugin->parse( { link => 'test', title => 'title', feed => 'hello-hi' } );
+  $plugin->parse( { link => 'test', title => 'title', feed => 'hello-hi', pubDate => '2015-01-01' } );
 
 is ref($result), q{Story}, 'got story obj';
 
@@ -31,7 +31,7 @@ is_deeply(
     $no_content_href,
     {
         'source'   => 'Hindustan Times',
-        'time'     => '11 October 2013 06:27:01 PM',
+        'time'     => '2015-01-01',
         'story_id' => '0d29a4d63fca6eea903804b78e09aaf8',
         'tags' =>
 'Nagaland chief minister TR Zeliang, home minister Y Patton, social media, Dimapur, lynch mob, mob lynches rape accused, ',
@@ -43,7 +43,7 @@ is_deeply(
         'title'    => 'title',
         'category' => 'hi',
         'author'   => 'HT Correspondent,, Guwahati',
-        'category' => 'india news',
+        'category' => 'hi',
     },
     q{got all non content href}
 );

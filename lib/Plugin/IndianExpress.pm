@@ -90,10 +90,13 @@ sub parse_page {
 sub get_content {
     my ($self, $page) = @_;
 
-    my $content =
-      $page->find('div.main-body-content')->first->find('p')->map('text')
-      ->join("\n\n");
-    $content = "$content";
+    my $content = "";
+    
+    for my $e ($page->find('div.story-details')->first->find('p')->each) {
+        my $string = $e->to_string();
+        next if $string =~ /script type=\"text\/javascript\"/;
+        $content = $content . "\n\n" . $e->all_text(0);
+    }
 
     my $next = try {
         $page->find('.continue')->first->find('a')->first->tree->[2]->{href}
@@ -106,11 +109,11 @@ sub get_content {
             $page->find('.continue')->first->find('a')->first->tree->[2]->{href}
         };
 
-        my $test =
-          $page->find('div.main-body-content')->first->find('p')->map('text')
-          ->join("\n\n");
-        $test    = "$test";
-        $content = $content . $test;
+        for my $e ($page->find('div.story-details')->first->find('p')->each) {
+            my $string = $e->to_string();
+            next if $string =~ /script type=\"text\/javascript\"/;
+            $content = $content . "\n\n" . $e->all_text(0);
+        }
 
     }
     return $content;

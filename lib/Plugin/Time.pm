@@ -51,8 +51,14 @@ sub parse_page {
     my ( $self, $pd ) = @_;
 
     my $page    = Mojo::DOM->new($pd);
-    my $content = $page->find('p')->map('text')->join("\n\n");
-    $content = "$content";
+    my $content = "";
+    for my $e ($page->find('p')->each) {
+        my $string = $e->to_string();
+        next if $string =~ /script type=\"text\/javascript\"/;
+        next if $string =~ /Your browser is out of date/;
+        $content = $content . "\n" . $e->all_text(0);
+    }
+
     my $tags = $page->find('meta[name="keywords"]')->first;
     $tags = $tags->tree->[2]->{content};
 

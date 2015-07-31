@@ -52,8 +52,13 @@ sub parse_page {
     my ( $self, $pd ) = @_;
 
     my $page    = Mojo::DOM->new($pd);
-    my $content = $page->find('div.p')->map('text')->join("\n\n");
-    $content = "$content";
+    my $content;
+    for my $e ($page->find('div.p')->each) {
+        my $string = $e->to_string();
+        next if $string =~ /script type=\"text\/javascript\"/;
+        $content = $content . "\n" . $e->all_text(0);
+    }
+
     my $auths     = $page->at('.sty_author')->find('a')->map('text');
     my $author    = $auths->first;
     my $image_url = $page->at('.sty_main_pic_sml1')->find('img')->first;

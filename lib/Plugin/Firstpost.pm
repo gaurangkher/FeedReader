@@ -58,13 +58,14 @@ sub parse_page {
     $time = $time->tree->[2]->{content};
 
     my $content = $page->find('div.fullCont1')->first;
-    $content = $content->find('p')->map('text')->join("\n\n");
-    $content = $content->to_string;
+    $content = $content->all_text(0);
+
     my $author = $page->find('span.by')->first;
     $author = $author->find('a')->map('text')->first;
 
     my $category = $page->find('meta[property="article:section"]')->first;
     $category = $category->tree->[2]->{content};
+
     my $image_url = $page->find('meta[property="og:image"]')->first;
     $image_url = $image_url->tree->[2]->{content};
 

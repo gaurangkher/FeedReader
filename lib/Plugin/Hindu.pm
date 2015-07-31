@@ -45,8 +45,12 @@ sub parse_page {
     my ( $self, $pd ) = @_;
 
     my $page    = Mojo::DOM->new($pd);
-    my $content = $page->find('p.body')->map('text')->join("\n\n");
-    $content = "$content";
+    my $content = "";
+    for my $e ($page->find('p.body')->each) {
+        my $string = $e->to_string();
+        next if $string =~ /script type=\"text\/javascript\"/;
+        $content = $content . "\n" . $e->all_text(0);
+    }
     my $try   = $page->find('meta[property="og:title"]')->first;
     my $title = $try->tree->[2]->{content};
     my $image_url =

@@ -64,7 +64,8 @@ sub parse_page {
     $image_url = $image_url->tree->[2]->{content};
 
     my $content = $page->find('div#mainentrycontent')->first;
-    $content = $content->find('p')->map('text')->join("\n\n")->to_string;
+    $content->at('script')->remove;
+    $content = $content->all_text(0);
 
     return {
         content     => $content,

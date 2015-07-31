@@ -38,11 +38,13 @@ sub parse {
     INFO qq{$url};
     my $pd    = $self->get_url($url);
     my $title = $story->{'title'};
+    my $time  = $story->{'pubDate'}; 
     my @args  = split q{-}, $story->{feed}; 
     my $category = $args[-1];
     my $args  = $self->parse_page($pd);
     my $obj   = Story->new(
         title  => $title,
+        time   => $time,
         source => $self->source_name(),
         url    => $url,
         category => $category,
@@ -59,14 +61,15 @@ sub parse_page {
     $hp->parse($pd);
     my $description = $hp->header('X-Meta-Description');
     my $tags        = $hp->header('X-Meta-keywords');
-    my $time        = $hp->header('Last-Modified');
-    my ( $day, @arr ) = split q{ }, $time;
-    $time = join q{ }, @arr;
 
     my $page = Mojo::DOM->new($pd);
 
-    my $stream     = $page->find('p')->map('text')->join("\n\n");
-    my $content    = "$stream";
+    my $content    = "";
+    for my $e ($page->find('p')->each) {
+        my $string = $e->to_string();
+        next if $string =~ /script type=\"text\/javascript\"/;
+        $content = $content  . "\n" . $e->all_text(0);
+    }
     my $pg_content = $page->at('.page_update')->content;
 
     my $find      = $page->at('div.news_photo')->content;
@@ -77,7 +80,6 @@ sub parse_page {
     my $coll         = $dm1->find('b')->map('text');
     my $author       = $page->at('.page_update')->find('b')->map('text')->first;
     return {
-        time        => $time,
         author      => $author,
         content     => $content,
         description => $description,
