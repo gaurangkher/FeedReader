@@ -42,6 +42,8 @@ sub persist {
         return;
     }
 
+    $content =~ s/^\s+//g;
+ 
     my $category_id  = $self->category_id($category);
     my $source_id  = $self->source_id($source);
     my $author_ids = $self->author_ids($author);
