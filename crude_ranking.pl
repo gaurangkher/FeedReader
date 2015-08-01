@@ -15,14 +15,14 @@ my $dt = DateTime->now->subtract(days => 2);
 my $date = $dt->ymd;
 my $dbh;
 if (exists $ENV{v_env} && $ENV{v_env} eq 'test') {
-    DBI->connect(
+    $dbh = DBI->connect(
         "dbi:Pg:dbname='vartaatest';host='vartaa-test.cu829urpqqax.us-west-2.rds.amazonaws.com';port=5432;",
         "vartaa_test", "Vart1AdotIn" 
    
     );
 }
 else {
-    DBI->connect(
+    $dbh = DBI->connect(
         "dbi:Pg:dbname='vartaa';host='207.181.217.150';port=5432;",
         "admin", "admin" 
     );
