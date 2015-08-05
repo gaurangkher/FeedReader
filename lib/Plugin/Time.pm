@@ -56,7 +56,7 @@ sub parse_page {
         my $string = $e->to_string();
         next if $string =~ /script type=\"text\/javascript\"/;
         next if $string =~ /Your browser is out of date/;
-        $content = $content . "\n" . $e->all_text(0);
+        $content = $content . "\n\n" . $e->all_text(0);
     }
 
     my $tags = $page->find('meta[name="keywords"]')->first;

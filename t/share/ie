@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#"   xmlns:article="http://ogp.me/ns/article#" itemscope itemtype="http://schema.org/Article">
+<head profile="http://en.wordpress.com/vip-hosting">
+<script type='text/javascript'>
+//critio
+var crtg_nid = '3833';
+var crtg_cookiename = 'crtg_rta';
+var crtg_varname = 'crtg_content';
+function crtg_getCookie(c_name){ var i,x,y,ARRCookies=document.cookie.split(";");for(i=0;i<ARRCookies.length;i++){x=ARRCookies[i].substr(0,ARRCookies[i].indexOf("="));y=ARRCookies[i].substr(ARRCookies[i].indexOf("=")+1);x=x.replace(/^\s+|\s+$/g,"");if(x==c_name){return unescape(y);} }return'';}
+var crtg_content = crtg_getCookie(crtg_cookiename);
+var crtg_rnd=Math.floor(Math.random()*99999999999);
+(function(){
+var crtg_url=location.protocol+'//rtax.criteo.com/delivery/rta/rta.js?netId='+escape(crtg_nid);
+crtg_url +='&cookieName='+escape(crtg_cookiename);
+crtg_url +='&rnd='+crtg_rnd;
+crtg_url +='&varName=' + escape(crtg_varname);
+var crtg_script=document.createElement('script');crtg_script.type='text/javascript';crtg_script.src=crtg_url;crtg_script.async=true;
+if(document.getElementsByTagName("head").length>0)document.getElementsByTagName("head")[0].appendChild(crtg_script);
+else if(document.getElementsByTagName("body").length>0)document.getElementsByTagName("body")[0].appendChild(crtg_script);
+})();
+//critio
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!-- Vizury ads start-->
+<script type='text/javascript'>
+	(function() {
+		try {
+			var viz = document.createElement('script');
+			viz.type = 'text/javascript';
+			viz.async = true;
+			var rand = Math.random()*100000000;
+			viz.src = '//rtb-ap.vizury.com/bidrequest/rtbpam?v=1.1&id=6868&name=PAM_IND_PC_IndianExpress&r='+rand;
+
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(viz, s);
+		} catch (i) {}
+	})();
+</script>
+
+<script type='text/javascript'>
+	
+	var vizPAM = '';
+	var name = 'vizPAM=';
+	var sizes = new Array();
+	var itemp="0";
+	var ca = document.cookie.split(';');
+	
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i];
+		
+		while (c.charAt(0)==' ') c = c.substring(1);
+		if (c.indexOf(name) != -1){
+			vizPAM = c.substring(name.length,c.length);
+		}
+	}
+
+	try{
+		vizPAM = JSON.parse(vizPAM);
+	}catch(i){}
+
+	function isVizInterested(size){
+		try{
+			if(vizPAM.result[size]['int'] === 'yes'){
+				return true;
+			}else{
+				return false;
+			}
+
+		}catch(i){
+			
+			return false;
+		}
+	}
+
+	function getAdv(size){
+		try{
+			return vizPAM.result[size]['adv'];
+		}catch(i){
+			return '';
+		}
+	}
+
+	function getImpr(size){
+		try{
+			return vizPAM.result[size]['impid'];
+		}catch(i){
+			return '';
+		}
+	}
+
+	function getSizes(){
+		
+		try {
+			for( var size in vizPAM.result){
+				sizes[itemp]=size;
+				itemp++;
+			} return sizes;      
+		} catch (i) {
+				return '';
+		}
+	}
+</script>
+<!-- Visury ads end-->
+<script type="text/javascript">
+(function() {
+	var useSSL = 'https:' == document.location.protocol;
+	var src = (useSSL ? 'https:' : 'http:') +
+	'//www.googletagservices.com/tag/js/gpt.js';
+	document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+	})();
+</script>
+
+<meta name="description" content="Justin Gatlin won the 100 meters in a world-leading 9.74 seconds at the Diamond League opener." /><meta name="news_keywords" content="Justin Gatlin, Justin Gatlin 9.74, Justin Gatlin Bolt, Usain Bolt, Bolt Gatlin, Sports News, Sports" />
+<meta name="keywords" content="justin gatlin, justin gatlin 9.74, justin gatlin bolt, usain bolt, bolt gatlin, sports news, sports" /><meta name="robots" content="NOODP" />
+<meta name="majestic-site-verification" content="MJ12_ad7db024-a46c-482a-bb2f-e1ae09432a65">
+
+<meta name="google-site-verification" content="4VKBquZoU-tYqmCYVAiCwBrBzbXCXZO15lCeN1tnv2M" />
+<meta name="msvalidate.01" content="CCA9DA5B985004F4462DA743E776C636" />
+		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=indianexpress.com&amp;id=53855017&amp;t=1434234104&amp;back=http%3A%2F%2Findianexpress.com%2Farticle%2Fsports%2Fsport-others%2Fwith-9-74-dash-justin-gatlin-guns-for-usain-bolt%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s1.wp.com/wp-content/mu-plugins/likes/jetpack-likes.css?m=1424450955g' type='text/css' media='all' />
+<link rel='stylesheet' id='-1-css'  href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A700&#038;ver=4.2-RC4-32277#038;ver=3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='http://s2.wp.com/_static/??-eJyljFEKgzAQBS9kXduK9Ud6lhJXXEk2IW/RePsqeAN/BoaBoS09XFRjNbKZA4NWSSQ6yk+5pMwABXE5QuyIh6eokJUJtvuLtQMquruaPBd4GTmfv28Ynu27bfpP8+qWP7CeQAg=' type='text/css' media='all' />
+<link rel='stylesheet' id='10-css'  href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&#038;ver=4.2-RC4-32277' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-4' href='http://s2.wp.com/_static/??-eJx9jcEKg0AMRH/INNaK1IP0W9Zt0K1mDWYXf98oeCtehmF4j8FNwC8xUUzIGWTOQ4iKflnJdhaX0Aimb3A0Exv28KoF/tdYmss66uj8pHf8JkZD38tKqmDJITOk0Y5O78Pds35VbVXW7/K3A883PwA=' type='text/css' media='all' />
+<link rel='stylesheet' id='indianexpress-google-style-css'  href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A700&#038;ver=4.2-RC4-32277#038;ver=3.9' type='text/css' media='' />
+<link rel='stylesheet' id='indianexpress-google-style-roboto-css'  href='http://fonts.googleapis.com/css?family=Roboto+Condensed%3A400%2C700&#038;ver=4.2-RC4-32277' type='text/css' media='' />
+<link rel='stylesheet' id='all-css-8' href='http://s0.wp.com/_static/??-eJx9j1EKwkAMRC/kGloX/8SzbGvcRtJkaaK1t3dFkYrg3wx5byAwl9CrOIqDDziiwY0KkJwoCd7LhGZgvjDCnJaiJG7b3mwDBKJO1bVPeB1Wi+M1FL5mqkxGDax9clL5KuHMiaZ/6oQda64xQ6VW9Ud6fzBEyKxd4idwHA9NbGNsm13cXx40XllL' type='text/css' media='all' />
+<script type='text/javascript' src='http://s0.wp.com/_static/??-eJytkm1OwzAMhi9EWrUr4hfiBlxhCqk7XBInxG677vTzWPmBVg0GSJGixI9ff5ZTMkjODy1w2et5HyDPy1X0fFdeA0zAXbYCRUD6hF0kAZITG+ILejADQ7Y7/VOhLq5wKbIEYFZoxfo1JaQRYfoW60GSdW8mA+PhQlVeQeOVI6YSqUVLsE9KfhSIsLXtuPXI8mO3gC5HRlGjvlMkxhHOHWghEx5y4QaWGIqHqqnrv+suVXYe9uxRY5iVCfxa1s3Ow/9lucg5m6Ougl9bltu1z/00dLkL14bbKfN8m8tk5xSRhJe8n8Jj1Ww291Xd1E1/BB8iPSo='></script>
+<script type='text/javascript' src='http://adcdn.forkmedia.in/impulse3/indianexpressarticle.impulse.js?ver=4.2-RC4-32277'></script>
+<script type='text/javascript' src='http://w.sharethis.com/button/buttons.js?ver=4.2-RC4-32277'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://indianexpressonline.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Jol Nupur actor dies while out for&nbsp;swim' href='http://indianexpress.com/article/cities/kolkata/jol-nupur-actor-dies-while-out-for-swim/' />
+<link rel='next' title='Stranded in Bhavnagar, MEEM crew get Bombay High Court&nbsp;relief' href='http://indianexpress.com/article/cities/mumbai/stranded-in-bhavnagar-meem-crew-get-bombay-high-court-relief/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='http://wp.me/p3DY9j-9WET' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Findianexpress.com%2Farticle%2Fsports%2Fsport-others%2Fwith-9-74-dash-justin-gatlin-guns-for-usain-bolt%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Findianexpress.com%2Farticle%2Fsports%2Fsport-others%2Fwith-9-74-dash-justin-gatlin-guns-for-usain-bolt%2F&amp;for=wpcom-auto-discovery" /><link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/8e7929855c7783319ae1c24e33a8e271?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/8e7929855c7783319ae1c24e33a8e271?s=16" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="http://0.gravatar.com/blavatar/efe0300e7f891c5c802ed340f6b20b67?s=114" />
+<link rel='openid.server' href='http://indianexpressonline.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://indianexpressonline.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://indianexpress.com/osd.xml" title="The Indian Express" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style>
+			.wpcom-related-posts ul li {
+				list-style-type: none;
+				display: inline-block;
+			}
+		</style>
+		<meta name="application-name" content="The Indian Express" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Latest News, Breaking News Live, Current Headlines, India News Online" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://indianexpress.com/feed/;icon-uri=http://0.gravatar.com/blavatar/8e7929855c7783319ae1c24e33a8e271?s=16" /><link rel="canonical" href="http://indianexpress.com/article/sports/sport-others/with-9-74-dash-justin-gatlin-guns-for-usain-bolt/" />
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://s2.wp.com/?custom-css=1&#038;csblog=3DY9j&#038;cscache=6&#038;csrev=10" />
+		<link rel="publisher" href="https://plus.google.com/+indianexpress" /><meta property="og:type" content="article" />
+		<meta property="og:url" content="http://indianexpress.com/article/sports/sport-others/with-9-74-dash-justin-gatlin-guns-for-usain-bolt/" />
+					<meta property="og:site_name" content="The Indian Express" />
+					<meta property="og:title" content="With 9.74 dash, Justin Gatlin guns for Usain Bolt" />
+					<meta property="og:image" content="http://images.indianexpress.com/2015/05/justingatlinapt.jpg?w=480" />
+			<meta property="og:image:type" content="image/jpeg" />
+			<meta property="og:image:width" content="480" />
+			<meta property="og:image:height" content="267" />
+			<meta property="og:description" content="Justin Gatlin won the 100 meters in a world-leading 9.74 seconds at the Diamond League opener." />
+		<meta property="og:updated_time" content="May 17, 2015 12:45 am" /><meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@IndianExpress">
+		<meta name="twitter:url" content="http://indianexpress.com/article/sports/sport-others/with-9-74-dash-justin-gatlin-guns-for-usain-bolt/">
+		<meta name="twitter:title" content="With 9.74 dash, Justin Gatlin guns for Usain Bolt">
+		<meta name="twitter:description" content="Justin Gatlin won the 100 meters in a world-leading 9.74 seconds at the Diamond League opener.">
+		<meta name="twitter:image" content="http://images.indianexpress.com/2015/05/justingatlinapt.jpg?w=480">
+		<meta name="twitter:image:width" content="480"/>
+		<meta name="twitter:image:height" content="267"/>
+		<meta itemprop="description" content="Justin Gatlin won the 100 meters in a world-leading 9.74 seconds at the Diamond League opener."><meta itemprop="image" content="http://images.indianexpress.com/2015/05/justingatlinapt.jpg?w=480"><meta property="article:published_time" content="May 17, 2015 12:45 am" /><meta property="article:modified_time" content="May 17, 2015 12:45 am" />
+<meta itemprop="publisher" content="The Indian Express" />
+<meta itemprop="url" content="http://indianexpress.com/article/sports/sport-others/with-9-74-dash-justin-gatlin-guns-for-usain-bolt/" />
+<meta itemprop="headline" content="With 9.74 dash, Justin Gatlin guns for Usain Bolt" />
+<meta itemprop="datePublished" content="May 17, 2015 12:45 am" />
+<meta itemprop="dateModified" content="May 17, 2015 12:45 am" />
+<meta itemprop="inLanguage" content="English" />
+<meta itemprop="articleSection" content="sports news" /><meta http-equiv="Last-Modified" content="Sun, 14 Jun 2015 03:51:44 +0530"/><title>
+With 9.74 dash, Justin Gatlin guns for Usain Bolt | The Indian Express</title></head>
+<body class="single single-article postid-2370439 single-format-standard mp6 typekit-enabled customizer-styles-applied highlander-enabled highlander-light">
+<!-- Begin comScore Tag -->
+<script type="text/javascript">
+
+  var _comscore = _comscore || [];
+
+  _comscore.push({ c1: "2", c2: "8738137" });
+
+  (function() {
+
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+
+    el.parentNode.insertBefore(s, el);
+
+  })();
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&c2=8738137&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+<!-- IndianExpress - IN - RTA -->
+
+<div id="wrapper">
+<header id="common">
+<div class="top-menu">
+	<div class="container-header">
+			<div class="navi">
+			<ul>
+					<li class="mainnav">
+					<a href="javascript:void(0);" id="menu" class="nav_togle"></a>
+					<a href="javascript:void(0);" id="menuclose" class="nav_togle"></a>
+					<div class="menu-sub">
+					<div class="first-menu">
+					<div class="showmenu">
+					<ul>
+						<li><a href="/latest-news/"><span class="home"></span>Latest News</a></li>
+						<li><a href="/india/"><span class="nation"></span> Nation</a></li>
+						<li><a href="/world/"><span class="world"></span> World</a></li>
+						<li><a href="/business/"><span class="business"></span> Business</a></li>
+						<li><a href="/cities/"><span class="cities"></span> Cities</a></li>
+						<li><a href="/sports/"><span class="sports"></span> Sports</a></li>
+						<li><a href="/entertainment/"><span class="entertainment"></span> Entertainment</a></li>
+						<li><a href="/lifestyle/"><span class="lifestyle"></span> Lifestyle</a></li>
+						<li><a href="/technology/"><span class="technology"></span> Technology</a></li>
+						<li><a href="/opinion/"><span class="opinion"></span> Opinion</a></li>
+						<li><a href="/photos/"><span class="photos"></span> Photos</a></li>
+						<li><a href="/section/explained/"><span class="explained"></span>Explained</a></li>
+						<li><a href="/section/good-news/" target="_blank"><span class="good-news"></span>Good News</a></li>
+						<li><a href="/section/trending/"><span class="trending"></span> Trending</a></li>
+						<li><a href="/astrotype/daily/"><span class="astrology"></span> Astrology</a></li>
+					</ul>
+                  </div>
+                </div>
+                <div class="topnav-slide"> <a href="javascript:void(0);" id="navnext">See More</a> <a href="javascript:void(0);" id="navprev">See Less</a> </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="logo"><a href="/"></a></div>
+        <div class="social-header">
+          <ul>
+            <li>
+              <form role="search" method="get" id="searchform" class="searchform" action="http://indianexpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>            </li>
+            <li><a href="https://www.facebook.com/indianexpress" target="_blank" class="fb"></a></li>
+            <li><a href="/syndication/" class="rss"></a></li>
+            <li><a href="/apps/" class="apps"></a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+  <div id="banner-section">
+	<div id="showmenu">
+		<ul id="navigation-ipad"></ul>
+	</div>
+	 <div class="ipad"><div  id='div-gpt-ad-1383904327704-15' >					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-15');</script>
+				</div>		 </div> </div>	<nav>
+<ul>
+<li><a href='/'>Home</a></li><li><a href='/india/'>Nation</a></li><li><a href='/world/'>World</a></li><li><a href='/opinion/'>Opinion</a></li><li><a href='/sports/'>Sports</a></li><li><a href='/entertainment/'>Entertainment</a></li><li><a href='/lifestyle/'>Lifestyle</a></li><li><a href='/technology/'>Tech</a></li><li><a href='/section/trending/'>Viral</a></li><li><a href='/section/good-news/'>Good News</a></li><li><a href='/photos/'>Photos</a></li><li><a href='/videos/'>Videos</a></li><li><a href='/todays-paper/'>Today&#039;s Paper</a></li>	<li><a href="http://epaper.indianexpress.com/" target="_blank">ePaper</a></li>
+</ul>
+</nav>	</header>
+<div class="add-left">
+	<div  id='div-gpt-ad-1423651537237-2' >					<script type="text/javascript">googletag.display('div-gpt-ad-1423651537237-2');</script>
+				</div>		</div>
+<div class="add-right">
+	<div  id='div-gpt-ad-1423651537237-3' >					<script type="text/javascript">googletag.display('div-gpt-ad-1423651537237-3');</script>
+				</div>		</div>
+<script>
+	if (window.innerWidth) //if browser supports window.innerWidth
+	var page_w=window.innerWidth;
+	else if (document.all) //else if browser supports document.all (IE 4+)
+	var page_w=document.body.clientWidth;
+	//var page_w=screen.width;
+	if(page_w>=1280 ){
+		jQuery(".add-left,.add-right").show();
+	}else{
+		jQuery(".add-left,.add-right").hide();
+	}
+</script><div id="section">
+	<div class="container">
+		<div class="row">
+			<div class="heading-part">
+				<div class="breadcrumb">
+					<ul>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/" itemprop="url"> <span itemprop="title">Home</span></a></li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="first"><a  itemprop="url" href="http://indianexpress.com/section/sports/"><span itemprop="title">sports</span></a></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://indianexpress.com/section/sports/sport-others/"><span itemprop="title">sport-others</span></a></li>												<li><span>With 9.74 dash, Justin Gatlin guns for Usain&nbsp;Bolt</span></li>
+					</ul>
+				</div>
+				<h1>With 9.74 dash, Justin Gatlin guns for Usain&nbsp;Bolt</h1>
+									<h2 class="synopsis">Justin Gatlin won the 100 meters in a world-leading 9.74 seconds at the Diamond League opener.</h2>
+													<div class="comments">
+					<div class="social-icons">
+						<div class="icons">
+							<span class='st_fblike_hcount' displayText='Facebook Like'></span>
+							<span class='st_facebook_hcount' displayText='Facebook'></span>
+							<span class='st_twitter_hcount' displayText='Tweet'></span>
+							<span class='st_googleplus_hcount' displayText='Google +'></span>
+						</div></div>
+					<div class="email">
+						<ul>
+							<li>
+								<a class="comment" href="#comments" data-vuukle="2370439">Comments</a>
+							</li>
+							<li><a href="javascript:" onclick="return addthis_sendto('email');" class="email">Email</a></li>
+							<li><a class="print" href="javascript:window.print()">Print</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="leftpanel">
+				<div class="story-details">
+					<div class="text-add">
+						<div id='div-gpt-ad-1429260192255-0'>
+							<script type='text/javascript'>
+								googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429260192255-0'); });
+							</script>
+						</div>
+					</div>
+					<div class="main-story">
+						<div class="story-image punchline">
+							<img class="size-full wp-image-2370443" src="http://images.indianexpress.com/2015/05/justingatlinap.jpg" alt="Justin Gatlin, Justin Gatlin 9.74, Justin Gatlin Bolt, Usain Bolt, Bolt Gatlin, Sports News, Sports" width="759" height="422" /> Justin Gatlin won the 100 meters in a world-leading 9.74 seconds at the Diamond League opener. (Source: AP)						</div>
+					</div>
+											<div class="editor">By: <a href="/agency/associated-press/">Associated Press</a> | Doha | 		<script language="javascript">
+		 /// Story Page Editor Details //// 
+		jQuery(".bulletProj").hover(function() {
+		   var dividshow = '#div_'+jQuery( this ).attr( 'id' );
+		   jQuery( this ).siblings("#div_written_by_parent").html( jQuery( dividshow ).html() ).show();
+		   
+		})
+		jQuery(".editor-details, .editor").hover(function () {},function () {
+		   var dividhide = '#'+jQuery( this ).attr( 'id' );
+		   jQuery( "#div_written_by_parent" ).html("");
+		   jQuery( "#div_written_by_parent" ).hide();
+		});
+
+	</script>
+							<span> Published on:May 17, 2015 12:45 am</span>					<div class="editor-details" id="div_written_by_parent"></div>
+					</div>
+					<div class="main-body-content">
+					
+<p>Justin Gatlin sent a message to Usain Bolt on Friday — both with his legs and his mouth. Gatlin lived up to the pre-season hype by winning the 100 meters in a world-leading 9.74 seconds at the Diamond League opener, a personal-best time and a new meet record for Doha. While Bolt hasn’t made his season debut yet, it was an early marker from Gatlin ahead of their anticipated showdown at the world championships in Beijing in August. “That was for him (Bolt),” Gatlin said.</p>
+<p>“I just wanted to go out and put down a good time. I know I had to go out and make a statement tonight. That’s what my coach told me to do.” There was a big gap between Gatlin and his chasers, with U.S. relay teammate Michael Rodgers second in 9.96 and Keston Bledman of Trinidad and Tobago third in 10.01. Gatlin was the fastest man in the world last season over both 100 and 200 meters while Bolt rested, but went even faster in his first 100 of 2015 in the sweltering heat at Qatar Sports Club.</p>
+<p>Some other big names didn’t do as well on the night. Double Olympic and world long-distance champion Mo Farah made his Doha debut, but had a rare loss on an outdoor track when he couldn’t catch Ethiopian Hagos Gebrhiwet in the 3,000. That brought raucous cheers from the Ethiopian fans dressed in their red, yellow and green soccer shirts in one corner of the stadium.</p>
+<p>The defeat for Farah, who is starting his track season much earlier than normal, showed he was still human, he said. “I haven’t had a hard competition like that since Moscow (the 2013 worlds),” he said.</p>
+<p>Farah struggled to kick into another gear over the final lap and finally found some power through the last turn to come back through the field, but could only get second. Gebrhiwet was the world silver medalist in the 5,000 behind Farah in Moscow. Despite the loss, Farah went on a lap of honor and was mobbed by fans and volunteers as he tried to come off the track, with them all clamoring for a selfie with him.</p>
+<p>Jasmin Stowers showed she’s a rising star by winning the 100 hurdles in a personal-best 12.35 seconds, a new Diamond League record. Olympic champion Sally Pearson and 2014 Diamond Race winner Dawn Harper-Nelson were both outside the top three. The 23-year-old Stowers has improved her PB three times in 2015 after 12.40 and 12.39 performances previously this year. The latest time matched Pearson’s winning mark at the Olympics. “I was really nervous coming in,’’ said Stowers, who was drawn next to Pearson and pulled away from the Aussie through the last half of the race. Pearson was fourth and Harper-Nelson <span class="continue"><a href="http://indianexpress.com/article/sports/sport-others/with-9-74-dash-justin-gatlin-guns-for-usain-bolt/2">&#8230;continued &raquo;</a></span></p>
+					</div>
+										<div id="story_content_parts" style="display:none">
+					<div id="part1">
+											</div>
+					<div id="part2">
+											</div>
+					</div>
+											<script type="text/javascript">
+
+							jQuery(document).ready(function(){
+								var p_length = jQuery( ".main-body-content p" ).length;
+								
+								var twits = jQuery("#story_content_parts #part1").html();
+								jQuery( ".main-body-content p:nth-child(2)" ).after( twits );
+								
+								var related = jQuery("#story_content_parts #part2").html();
+								jQuery( ".main-body-content p:nth-child(3)" ).after( related );
+								
+								jQuery(".main-story .story-image img").each(function(){
+									var width = jQuery(this).width(); 
+									if(width <= 480){
+											jQuery(".main-story").css({"float":"left", "width":"480"});
+										}else{
+											jQuery(this).css({"float":"none", "width":"100%", "height":"auto", "margin":"0 auto", "display":"block",});
+										}
+									});
+								jQuery(".main-body-content img").each(function(){
+									var width = jQuery(this).width();
+									if(width > 480){
+										jQuery(this).css({"float":"none", "width":"100%", "height":"auto", "margin":"0 auto", "display":"block",});
+									}
+								});
+							});
+						</script>
+										<div class="likestory"><span>Do you like this story</span>
+					<div id="pd_rating_holder_7251833_2370439"></div>
+					<script type="text/javascript">
+					PDRTJS_settings_7251833_2370439 = {
+					"id" : "7251833",
+					"unique_id" : "7251833_2370439",
+					"title" : "With 9.74 dash, Justin Gatlin guns for Usain&nbsp;Bolt",
+					"permalink" : "http://indianexpress.com/article/sports/sport-others/with-9-74-dash-justin-gatlin-guns-for-usain-bolt/",
+					"item_id" : "_2370439"};
+					</script>
+					<script type="text/javascript" src="http://i0.poll.fm/js/rating/rating.js"></script></div>					<div class="social">
+						<div class="icons">
+							<span class='st_fblike_hcount' displayText='Facebook Like'></span>
+							<span class='st_facebook_hcount' displayText='Facebook'></span>
+							<span class='st_twitter_hcount' displayText='Tweet'></span>
+							<span class='st_googleplus_hcount' displayText='Google +'></span>
+						</div>
+						<div class="comments">
+							<ul>
+								<li>
+									<a href="#comments" data-vuukle="2370439">Comments</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="OUTBRAIN" data-src="http://indianexpress.com/article/sports/sport-others/with-9-74-dash-justin-gatlin-guns-for-usain-bolt/" data-widget-id="AR_1" data-ob-template="IndianExpress" ></div>
+					<div class="OUTBRAIN" data-src="http://indianexpress.com/article/sports/sport-others/with-9-74-dash-justin-gatlin-guns-for-usain-bolt/" data-widget-id="AR_2" data-ob-template="IndianExpress" ></div>
+					<script type="text/javascript" async="async" src="http://widgets.outbrain.com/outbrain.js"></script> 
+										<div class="storytags">
+						<ul>
+							<li>Tags:</li>
+														<li><a href="/tag/justin-gatlin">Justin Gatlin</a></li>
+														<li><a href="/tag/sports-2">sports</a></li>
+														<li><a href="/tag/usain-bolt">Usain Bolt</a></li>
+													</ul>
+					</div>
+										
+					<script type="text/javascript">
+					/////like dislike event tracking
+					jQuery(document).ready(function(){
+						jQuery("div[id^='pd_rating_holder_'] .rating-nero-icon").click(function(){
+							var id = jQuery(this).attr("id").split("_");
+							var key = parseInt(id.length)-1;
+							var action = id[key] ==1 ? "Like" : "Dislike";
+							var title = jQuery("h1").text();
+							if(typeof(_gaq)!=undefined){
+								_gaq.push(['_trackEvent', 'Article', action, title]);
+							}
+							});
+					});
+					</script>
+					<div class="prev-next">
+										<div class="stories">
+					<div class="subheading"><span class="prev">&nbsp;</span> Previous Story</div>
+					<h5><a href="http://indianexpress.com/article/cities/kolkata/jol-nupur-actor-dies-while-out-for-swim/">Jol Nupur actor dies while out for swim</a></h5>
+					</div>
+										 <div class="stories last">
+					 <div class="subheading">Next Story <span class="next">&nbsp;</span></div>
+					<h5><a href="http://indianexpress.com/article/cities/mumbai/stranded-in-bhavnagar-meem-crew-get-bombay-high-court-relief/">Stranded in Bhavnagar, MEEM crew get Bombay High Court relief</a></h5>
+					</div>
+										</div>
+					<div class="more-from">
+												<a name="comments"></a>
+						<div id="vuukle_div"></div> 
+						<script src="http://vuukle.com/js/vuukle.js" type="text/javascript"></script> 
+						<script type="text/javascript"> 
+							create_vuukle_platform('2e5a47ef-15f6-4eec-a685-65a6d0ed00d0', '2370439', 0, 'sports, sport-others', 'With 9.74 dash, Justin Gatlin guns for Usain&nbsp;Bolt'); 
+						</script>
+					</div>
+									</div>
+			</div>
+			<div class="rightpanel">
+			<div class='new' id='event'>					<iframe src="http://cricketlive.indianexpress.com/other-matches.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:294px; height:156px;" allowTransparency="true"></iframe>
+				</div>		<div id="text-45" class="widget widget_text">			<div class="textwidget"><div class=""><a href="http://indianexpress.com/topic/india-tour-of-bangladesh/" target="_blank"><img src="https://indianexpressonline.files.wordpress.com/2015/06/ind-ban.jpg" alt="" /></a>
+  </div></div>
+		</div><div  id='div-gpt-ad-1421046728907-0' >					<script type="text/javascript">googletag.display('div-gpt-ad-1421046728907-0');</script>
+				</div>		<div class="only-express"><h4>SACKING, UNSACKING</h4><div class="wrapper"><div class="lead-story"><div class="snap"><a href="http://indianexpress.com/article/sports/cricket/selectors-wanted-to-sack-ms-dhoni-in-2012-but-srinivasan-put-foot-down-former-selector-raja-venkat/"> <img alt="&#039;Selectors wanted to sack Dhoni in 2012 but Srinivasan put foot down&#039;" title="&#039;Selectors wanted to sack Dhoni in 2012 but Srinivasan put foot down&#039;" src="//images.indianexpress.com/2015/06/dhoni-small.jpg?w=450"></a></div><div class="links"><a href="http://indianexpress.com/article/sports/cricket/selectors-wanted-to-sack-ms-dhoni-in-2012-but-srinivasan-put-foot-down-former-selector-raja-venkat/"> &#039;Selectors wanted to sack Dhoni in 2012 but Srinivasan put foot down&#039;</a></div><p><a href="http://indianexpress.com/article/sports/cricket/selectors-wanted-to-sack-ms-dhoni-in-2012-but-srinivasan-put-foot-down-former-selector-raja-venkat/"> Former East Zone selector Raja Venkat says Virat was the choice to take over before ODIs Down Under.</a></p></div></div></div><div class="aside"><div class="editor-pic"><h4>Don't miss</h4><ul><li><a href="http://indianexpress.com/article/sports/sport-others/if-fear-stays-may-leave-manipur-mary-kom/"><img alt="If fear stays, may leave Manipur: Mary Kom" title="If fear stays, may leave Manipur: Mary Kom" src="//images.indianexpress.com/2015/06/com-small.jpg?w=450"></a><a href="http://indianexpress.com/sports/" class="name">Sports</a><a href="http://indianexpress.com/article/sports/sport-others/if-fear-stays-may-leave-manipur-mary-kom/" class="padding">If fear stays, may leave Manipur: Mary Kom</a></li><li><a href="http://indianexpress.com/article/sports/football/catching-bangladesh-in-action-in-one-sport-or-the-other/"><img alt="Catching Bangladesh in action, in one sport or the other" title="Catching Bangladesh in action, in one sport or the other" src="//images.indianexpress.com/2015/06/dhaka.jpg?w=450"></a><a href="http://indianexpress.com/sports/" class="name">Sports</a><a href="http://indianexpress.com/article/sports/football/catching-bangladesh-in-action-in-one-sport-or-the-other/" class="padding">Catching Bangladesh in action, in one sport or the other</a></li><li><a href="http://indianexpress.com/article/sports/sport-others/usain-bolt-says-sprint-explosion-will-silence-justin-gatlin/"><img alt="Usain Bolt says sprint ‘explosion’ will silence Justin Gatlin" title="Usain Bolt says sprint ‘explosion’ will silence Justin Gatlin" src="//images.indianexpress.com/2015/06/usainboltreuterst.jpg?w=450"></a><a href="http://indianexpress.com/sports/" class="name">Sports</a><a href="http://indianexpress.com/article/sports/sport-others/usain-bolt-says-sprint-explosion-will-silence-justin-gatlin/" class="padding">Usain Bolt says sprint ‘explosion’ will silence Justin Gatlin</a></li><li><a href="http://indianexpress.com/article/sports/tennis/leander-paes-opts-out-of-new-zealand-davis-cup-tie/"><img alt="Leander Paes opts out of New Zealand Davis Cup tie" title="Leander Paes opts out of New Zealand Davis Cup tie" src="//images.indianexpress.com/2015/06/leander-paes.jpg?w=450"></a><a href="http://indianexpress.com/sports/" class="name">Sports</a><a href="http://indianexpress.com/article/sports/tennis/leander-paes-opts-out-of-new-zealand-davis-cup-tie/" class="padding">Leander Paes opts out of New Zealand Davis Cup tie</a></li><li><a href="http://indianexpress.com/article/sports/football/copa-america-hosts-chile-beat-ecuador-2-0-in-opener/"><img alt="Copa America: Hosts Chile beat Ecuador 2-0 in opener" title="Copa America: Hosts Chile beat Ecuador 2-0 in opener" src="//images.indianexpress.com/2015/06/arturo-vidal-t.jpg?w=450"></a><a href="http://indianexpress.com/sports/" class="name">Sports</a><a href="http://indianexpress.com/article/sports/football/copa-america-hosts-chile-beat-ecuador-2-0-in-opener/" class="padding">Copa America: Hosts Chile beat Ecuador 2-0 in opener</a></li></ul></div></div><div class='add-first' id='div-gpt-ad-1383904327704-24' >					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-24');</script>
+				</div>		<div class="photos"><h4>Photos</h4><div class="first-story">
+							<div class="sto-img"><a href="http://indianexpress.com/photos/sports-gallery/virat-kohli-led-india-apply-final-touches-before-bangladesh-tour/"><img alt="Kohli-led India apply final touches" src="//images.indianexpress.com/2015/06/viratkohlit.jpg?w=410"></a></div>
+							<div class="slugs"><a class="text" href="http://indianexpress.com/photos/sports-gallery/virat-kohli-led-india-apply-final-touches-before-bangladesh-tour/">Kohli-led India apply final touches</a></div> 
+						</div><div class="other-stories"><ul><li><a href="http://indianexpress.com/photos/sports-gallery/stan-wawrinka-vs-novak-djokovic-french-open-2015-final-stans-the-man/"><img width="140" height="93" alt="French Open 2015 final: Stan&#039;s The Man" src="//images.indianexpress.com/2015/06/wawrinka410.jpg?w=410"></a>
+						<a href="http://indianexpress.com/photos/sports-gallery/stan-wawrinka-vs-novak-djokovic-french-open-2015-final-stans-the-man/">French Open 2015 final: Stan&#039;s The Man</a>
+						</li><li><a href="http://indianexpress.com/photos/sports-gallery/from-player-to-coach-ravi-shastris-many-roles/"><img width="140" height="93" alt="From player to coach, Ravi Shastri&#039;s many roles" src="//images.indianexpress.com/2015/06/shastri_t.jpg?w=410"></a>
+						<a href="http://indianexpress.com/photos/sports-gallery/from-player-to-coach-ravi-shastris-many-roles/">From player to coach, Ravi Shastri&#039;s many roles</a>
+						</li></ul></div></div><div class='add-first' id='div-gpt-ad-1406019564938-0' >					<script type="text/javascript">googletag.display('div-gpt-ad-1406019564938-0');</script>
+				</div>		<div class="editor-pic"><h4><p>Best of Express</p>
+</h4><ul><li><a href="http://indianexpress.com/article/india/india-others/apex-body-of-naga-tribes-meets-pm-modi-assures-their-commitment-to-peace-in-the-region/"><img alt="Myanmar Operation: Decision to strike was taken at CCS after June 4 Army ambush" title="Myanmar Operation: Decision to strike was taken at CCS after June 4 Army ambush" src="//images.indianexpress.com/2015/06/modi-thumb1.jpg?w=450"></a><a href="http://indianexpress.com/india/" class="name">India</a><a href="http://indianexpress.com/article/india/india-others/apex-body-of-naga-tribes-meets-pm-modi-assures-their-commitment-to-peace-in-the-region/" class="padding">Myanmar Operation: Decision to strike was taken at CCS after June 4 Army ambush</a></li><li><a href="http://indianexpress.com/article/india/india-others/six-months-before-emergency-s-s-ray-to-indira-gandhi-crack-down-get-law-ready/"><img alt="Six months before Emergency, S S Ray to Indira Gandhi: Crack down, get law ready" title="Six months before Emergency, S S Ray to Indira Gandhi: Crack down, get law ready" src="//images.indianexpress.com/2015/06/indira-gandhi-thumb.jpg?w=450"></a><a href="http://indianexpress.com/india/" class="name">India</a><a href="http://indianexpress.com/article/india/india-others/six-months-before-emergency-s-s-ray-to-indira-gandhi-crack-down-get-law-ready/" class="padding">Six months before Emergency, S S Ray to Indira Gandhi: Crack down, get law ready</a></li><li><a href="http://indianexpress.com/article/india/india-others/two-dalits-killed-over-rs-4-in-allahabad/"><img alt="Two Dalits killed over Rs 4 in Allahabad" title="Two Dalits killed over Rs 4 in Allahabad" src="//images.indianexpress.com/2015/04/murder-2.jpg?w=450"></a><a href="http://indianexpress.com/india/" class="name">India</a><a href="http://indianexpress.com/article/india/india-others/two-dalits-killed-over-rs-4-in-allahabad/" class="padding">Two Dalits killed over Rs 4 in Allahabad</a></li><li><a href="http://indianexpress.com/article/india/india-others/foreign-funding-listing-us-among-barred-ngos-a-mistake-say-top-institutes/"><img alt="Foreign Funding: Listing us among barred NGOs a mistake, say top institutes" title="Foreign Funding: Listing us among barred NGOs a mistake, say top institutes" src="//images.indianexpress.com/2015/05/iit-delhi-m.jpg?w=450"></a><a href="http://indianexpress.com/india/" class="name">India</a><a href="http://indianexpress.com/article/india/india-others/foreign-funding-listing-us-among-barred-ngos-a-mistake-say-top-institutes/" class="padding">Foreign Funding: Listing us among barred NGOs a mistake, say top institutes</a></li><li><a href="http://indianexpress.com/article/opinion/columns/no-proof-required-the-change-is-here/"><img alt="No Proof Required: The change is here" title="No Proof Required: The change is here" src="//images.indianexpress.com/2015/06/modi12.jpg?w=450"></a><a href="http://indianexpress.com/opinion/" class="name">Opinion</a><a href="http://indianexpress.com/article/opinion/columns/no-proof-required-the-change-is-here/" class="padding">No Proof Required: The change is here</a></li></ul></div><div class='add-poll nodis' >					<div class='aside'>
+						<div style="width:300px; height:400px;" breakingburner-widget="IndianExpress/sports"><script src="http://widget.breakingburner.com/js/jwidget.js"></script>
+						</div>
+					</div>
+				</div>		<div class='add-first no-dis' id='div-gpt-ad-1383904327704-25' style='width:300px; height:250px;'>					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-25');</script>
+				</div>		<div  id='div-gpt-ad-1383904327704-33' style='width:1px; height:1px;'>					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-33');</script>
+				</div>		<div  id='div-gpt-ad-1383904327704-32' style='width:1px; height:1px;'>					<script type="text/javascript">googletag.display('div-gpt-ad-1383904327704-32');</script>
+				</div>					</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="clear"></div>
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('body').append(jQuery('<div class="popup hiding" id="article-finished"><span class="close">X</span><div class="article-story"><img src="//images.indianexpress.com/2015/06/modi-thumb1.jpg?w=450" alt="Myanmar Operation: Decision to strike was taken at CCS after June 4 Army ambush"><h4 class="recommendedclass">Recommended for you</h4><a href="http://indianexpress.com/article/india/india-others/apex-body-of-naga-tribes-meets-pm-modi-assures-their-commitment-to-peace-in-the-region/">Myanmar Operation: Decision to strike was taken at CCS after June 4 Army ambush</a></div></div>'));
+	jQuery('#section').waypoint(function(direction) {
+		jQuery('#article-finished').toggleClass('hiding', direction === "up");
+	}, {
+		offset: function() {
+			return -100;
+		}
+	});
+	
+	jQuery('.close').click(function(event) {
+			jQuery(this).parent().remove();
+		});
+});
+</script>
+ 
+ </div>
+	<footer>
+		<div class="footer-group">
+		  <div style="height:1px;"><img src='http://pubads.g.doubleclick.net/gampad/ad?iu=/1050432/IE_Imp_Trk__ROS_1x1&sz=1x1&t=&c=123456789'/></div>
+			<div class="details">
+								<div class="social-icons">
+					<ul>
+						<li class="no-mob"><a href="/todays-paper/" title="Print Edition" target="_blank" class="print-edition">&nbsp;</a></li>
+						<li class="no-mob"><a href="http://m.indianexpress.com/" title="Mobile" target="_blank" class="mobile">&nbsp;</a></li>
+						<li class="no-mob"><a href="https://itunes.apple.com/us/app/the-indian-express/id506351833?mt=8" title="iPhone" target="_blank" class="iPhone">&nbsp;</a></li>
+						<li class="no-mob"><a href="https://itunes.apple.com/us/app/the-indian-express-for-ipad/id474196564?mt=8" title="iPad" target="_blank" class="iPad">&nbsp;</a></li>
+				 <li class="no-mob"><a href="https://play.google.com/store/apps/details?id=com.indianexpress.android&hl=en" title="Android" target="_blank" class="android">&nbsp;</a></li>
+						<li class="no-mob"><a href="http://www.indianexpress.com/syndication/" title="RSS Feed" target="_blank" class="rss">&nbsp;</a></li>
+						<li class="no-mob"><a href="http://epaper.indianexpress.com/" title="e-Paper" target="_blank" class="ePaper">&nbsp;</a></li>
+						<li><a href="https://www.facebook.com/indianexpress" title="Facebook" target="_blank" class="facebook">&nbsp;</a></li>
+						<li><a href="https://twitter.com/indianexpress" title="Twitter" target="_blank" class="twitter">&nbsp;</a></li>
+						<li><a href="https://plus.google.com/+indianexpress?rel=author" title="Google Plus" target="_blank" class="gplus">&nbsp;</a></li>
+						<li><a href="http://www.youtube.com/IndianExpress" title="YouTube" target="_blank" class="youtube">&nbsp;</a></li>
+						<li><a href="http://indianexpress.tumblr.com/" title="Tumblr" target="_blank" class="tumblr">&nbsp;</a></li>
+						<li><a href="https://www.pinterest.com/IndianExpress/" title="Pintrest" target="_blank" class="pintrest">&nbsp;</a></li>
+					</ul>
+				</div>
+				<div class="group">
+					<ul>
+						<li><a href="http://www.expressindia.com/news/expressgroup/" target="_blank">The Express Group</a></li>
+						<li><a href="http://www.indianexpress.com/" target="_blank">The Indian Express</a></li>
+						<li><a href="http://www.financialexpress.com/" target="_blank">The Financial Express</a></li>
+						<li><a href="http://www.loksatta.com/" target="_blank">Loksatta</a></li>
+						<li><a href="http://www.jansatta.com/" target="_blank">Jansatta</a></li>
+						<li><a href="http://www.exims.in/" target="_blank">Exims</a></li>
+						<li><a href="http://www.expressindia.com/ramnath-goenka-foundation/" target="_blank">Ramnath Goenka Awards </a></li>
+					</ul>
+				</div>
+				<div class="group">
+					<ul>
+						<li><a href="http://www.expresstowers.in/" target="_blank">Express Towers</a></li>
+						<li><a href="http://expressbusinesspublications.com/" target="_blank">Business Publication Division</a></li>
+						<li><a href="http://pharma.financialexpress.com/" target="_blank">Express Pharma</a></li>
+						<li><a href="http://healthcare.financialexpress.com/" target="_blank">Express Healthcare</a></li>
+						<li><a href="http://hospitality.financialexpress.com/" target="_blank">Express Hospitality</a></li>
+						<li><a href="http://travel.financialexpress.com/" target="_blank">Express Travelworld</a></li>
+						<li><a href="http://computer.financialexpress.com/" target="_blank">Express Computers</a></li>
+					</ul>
+				</div>
+				<div class="group">
+					<ul>
+						<li><a href="/privacy-policy/" target="_blank">Privacy Policy</a></li>
+						<li><a href="/advertise-with-us/" target="_blank">Advertise with Us</a></li>
+						<li><a href="/contact-us/" target="_blank">Contact Us</a></li>
+						<li><a href="http://subscribe.indianexpress.com/" target="_blank">Subscribe</a></li>
+					</ul>
+				</div>
+								<div class="express-group">&nbsp;</div>
+				<div class="copyright">
+					<div class="privacy">Copyright &copy; 2015 The Indian Express ltd. All Rights Reserved </div>
+					<div class="wp"><a href="https://vip.wordpress.com/" rel="generator nofollow" class="powered-by-wpcom"><img src="http://s1.wp.com/wp-content/themes/vip/plugins/vip-do-not-include-on-wpcom/vip-powered-wpcom/images/vip-powered-dark-small.png?m=1401974073g" width="187" height="26" alt="Powered by WordPress.com VIP" /></a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type='text/javascript'>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1403607-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+<!-- wpcom_wp_footer -->
+		<script type="text/javascript">
+			!function(d,s,id){
+				var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)){
+					js=d.createElement(s);
+					js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js,fjs);
+				}
+			}(document,"script","twitter-wjs");
+		</script>
+		<script type='text/javascript' src='http://s2.wp.com/_static/??/wp-content/js/devicepx.js,/wp-content/themes/vip/indianexpress/microsites/responsive/js/responsive-infooter.js?m=1429298047j'></script>
+<script type='text/javascript' src='http://2982.tm.zedo.com/v1/bbf105a4-6884-44ff-92f4-d8e0653c48bb/tm.js?ver=4.2-RC4-32277'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"1","is_front_page":"0","is_archive":"0","percentToTrack":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/mu-plugins/2-vip/js/vip-analytics.js?m=1411795912g'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?47" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'53855017','blog_tz':'5','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'53855017','v':'wpcom','tz':'5','user_id':'0','post':'2370439','subd':'indianexpressonline'}]);
+function st_vt() {var x=document.createElement("img");x.src="http://pixel.wp.com/g.gif?blog=53855017&v=wpcomvt&tz=5&user_id=0&post=2370439&subd=indianexpressonline&rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtib2E/SzdEJm0lUEtbdFU0fFk4cHZvcUFrZT90Tn4yQm1+R3NyNTdRYmxPT0k4VXdkJnFvVDlmWWNHK2FpVnRRfkl6N3d4VXdJek95SWNLaXJOay0/THEmRkE2NjBRUnFSLiVELk5jSDJzYWQ1XWZnTUMtWDgrWHd4JmtvTmUtdjFJPyxtZnEyJT1Sbm8rSVJaVnx+LEx+aUJZW1UzcV1RWXpCSEF0cSs/LmN+ZVddSm01Ry9xUXFQVEVZankzcEV2ST1sdCZJaE92SW0sMnAubUhIJTF8P3Q2MUhUekxmZGFpSXZMNEZvMmRaQ2s='}]);
+_stq.push([ 'clickTrackerInit', '53855017', '2370439' ]);
+	</script>
+<noscript><img src="http://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script><!-- 89fe265e947e3c845c48a5918d5f409d -->
+	<script type="text/javascript">
+    var ttsmi2_data = { siteid: 41973, count: 'site' };
+    (function() {
+      var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+      sc.src = '//target.smi2.net/client/target.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc, s);
+    }());
+  </script>
+		 <!-- Vuukle Script -->
+ <script type="text/javascript">
+		var cb = function () { 
+			var l = document.createElement('script'); l.src = "http://vuukle.com/js/va.js"; 
+			l.async = "async"; 
+			var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h); 
+		}; 
+		var raf = requestAnimationFrame || mozRequestAnimationFrame || 
+		webkitRequestAnimationFrame || msRequestAnimationFrame; 
+		if (raf) raf(cb); 
+		else window.addEventListener('load', cb); 
+	</script> 
+</body>
+</html>
+<!--
+	generated 43 seconds ago
+	generated in 0.374 seconds
+	served from batcache in 0.002 seconds
+	expires in 257 seconds
+-->
