@@ -30,8 +30,6 @@ sub source_name {
 sub parse {
     my ( $self, $story ) = @_;
 
-	print Dumper $story;
-	exit;
     my $url = $story->{'link'};
     INFO qq{$url};
     my $pd    = $self->get_url($url);
