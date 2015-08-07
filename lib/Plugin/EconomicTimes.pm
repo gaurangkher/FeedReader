@@ -7,6 +7,7 @@ use Mojo::DOM;
 use LWP::Simple;
 use HTML::HeadParser;
 use Story;
+use String::Util qw(trim);
 use Log::Log4perl qw(:easy);
 
 with 'ParserRole';
@@ -29,6 +30,8 @@ sub source_name {
 sub parse {
     my ( $self, $story ) = @_;
 
+	print Dumper $story;
+	exit;
     my $url = $story->{'link'};
     INFO qq{$url};
     my $pd    = $self->get_url($url);
@@ -53,8 +56,9 @@ sub parse_page {
     my $image_url = $page->find('meta[property="og:image"]')->first;
     $image_url = $image_url->tree->[2]->{content};
 
-    my $author = $page->find('.byline')->first;
-    $author = $author->find('span')->first->all_text(0);
+    my $author = $page->find('div.byline')->first->all_text(0);
+    $author =~ s/By|\|.*//g;
+ 	$author = trim($author);
 
     my $tags = $page->find('meta[name="keywords"]')->first;    
     $tags = $tags->tree->[2]->{content};

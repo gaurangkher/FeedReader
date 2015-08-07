@@ -22,7 +22,7 @@ is_deeply(
     $story,
     {
         'category' => 'News',
-        'author' => 'Nishanth Vasudevan',
+        'author' => 'Nishanth Vasudevan, ET Bureau',
         'tags' => 'Tata Elxsi,stocks,Sensex,Retail investors,real estate,nifty,mutual funds,invest,Eicher Motors,Dalal Street,BSE,Britannia,Ashok Leyland',
         'image_url' => 'http://economictimes.indiatimes.com/thumb/msid-48367348,width-600,resizemode-4/growth3_bccl.jpg'
     }, 
