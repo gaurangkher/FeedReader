@@ -7,6 +7,7 @@ use Mojo::DOM;
 use LWP::Simple;
 use HTML::HeadParser;
 use Story;
+use Try::Tiny;
 use Log::Log4perl qw(:easy);
 
 with 'ParserRole';
@@ -28,14 +29,18 @@ sub source_name {
 
 sub parse {
     my ( $self, $story ) = @_;
-
+    
     my $url = $story->{'link'};
     INFO qq{$url};
     my $pd    = $self->get_url($url);
     my $args  = $self->parse_page($pd);
+    my $category = ref $story->{'category'}  eq q{ARRAY}
+        ? $story->{'category'}->[0]
+        : $story->{'category'};
+        
     my $obj   = Story->new(
         title       => $story->{title},
-        category    => $story->{'category'}->[0],
+        category    => $category,
         description => $story->{description},
         time        => $story->{'pubDate'},
         source      => $self->source_name(),
@@ -52,8 +57,7 @@ sub parse_page {
 
     my $page = Mojo::DOM->new($pd);
 
-    my $image_url = $page->find('meta[property="og:image"]')->first;
-    $image_url = $image_url->tree->[2]->{content};
+    my $image_url = try {$page->find('meta[property="og:image"]')->first->tree->[2]->{content} } || undef;
 
     my $tags = $page->find('meta[name="keywords"]')->first;
     $tags = $tags->tree->[2]->{content};
