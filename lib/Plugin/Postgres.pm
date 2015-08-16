@@ -18,7 +18,7 @@ has dbh => (
     default => sub {
         if (exists $ENV{v_env} && $ENV{v_env} eq 'test') {
             return DBI->connect(
-                "dbi:Pg:dbname='vartaatest';host='vartaa-test.cu829urpqqax.us-west-2.rds.amazonaws.com';port=5432;",
+                "dbi:Pg:dbname='vartaatest';host='vartaatest.cu829urpqqax.us-west-2.rds.amazonaws.com';port=5432;",
                 "vartaa_test", "Vart1AdotIn" 
             );
         }
