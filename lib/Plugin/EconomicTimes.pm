@@ -61,7 +61,10 @@ sub parse_page {
     my $tags = $page->find('meta[name="keywords"]')->first;    
     $tags = $tags->tree->[2]->{content};
 
-    my $content = $page->find('.Normal')->first->all_text(0);
+    my $content = $page->find('.Normal')->first;
+    $content->find('br')->each(sub {$_->replace("<p>#*##</p>") });
+    $content = $content->all_text();
+    $content =~ s/\#\*\#\#/\n\n/g;
 
     my $category = $page->find('h2')->first->all_text(0);
 

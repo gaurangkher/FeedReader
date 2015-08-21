@@ -65,7 +65,9 @@ sub parse_page {
 
     my $content = $page->find('div#mainentrycontent')->first;
     $content->at('script')->remove;
-    $content = $content->all_text(0);
+    $content->find('p')->each(sub {$_->append_content("#*##") }); 
+    $content = $content->all_text();
+    $content =~ s/\#\*\#\#/\n\n/g;
 
     return {
         content     => $content,

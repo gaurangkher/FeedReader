@@ -68,7 +68,7 @@ sub parse_page {
     for my $e ($page->find('p')->each) {
         my $string = $e->to_string();
         next if $string =~ /script type=\"text\/javascript\"/;
-        $content = $content  . "\n" . $e->all_text(0);
+        $content = $content  . "\n\n" . $e->all_text(0);
     }
     my $pg_content = $page->at('.page_update')->content;
 

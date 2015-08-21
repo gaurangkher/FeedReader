@@ -58,7 +58,9 @@ sub parse_page {
     $time = $time->tree->[2]->{content};
 
     my $content = $page->find('div.fullCont1')->first;
-    $content = $content->all_text(0);
+    $content->find('p')->each(sub {$_->append_content("#*##") });
+    $content = $content->all_text();
+    $content =~ s/\#\*\#\#/\n\n/g;
 
     my $author = $page->find('span.by')->first;
     $author = $author->find('a')->map('text')->first;

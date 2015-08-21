@@ -64,7 +64,10 @@ sub parse_page {
 
     my $content = $page->find('.story-body__inner')->first;
     $content->at('.bbccom_slot')->remove; 
-    $content = $content->all_text(0);
+    $content->find('p')->each(sub {$_->append_content("#*##") });
+    $content = $content->all_text();
+    $content =~ s/\#\*\#\#/\n\n/g;
+    
     my $tags = q{india};
 
     return {

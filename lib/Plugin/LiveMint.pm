@@ -42,6 +42,8 @@ sub parse {
         title  => $title,
         source => $self->source_name(),
         url    => $url,
+        author => $story->{author},        
+        image_url => $story->{bigimage} || "",
         %{$args},
     );
 
@@ -59,11 +61,6 @@ sub parse_page {
         $content = $content . "\n" . $e->all_text(0);
     }
 
-    my $auths     = $page->at('.sty_author')->find('a')->map('text');
-    my $author    = $auths->first;
-    my $image_url = $page->at('.sty_main_pic_sml1')->find('img')->first;
-    $image_url = q{http://www.livemint.com} . $image_url->attr('src');
-
     my $category = $page->find('meta[property="article:section"]')->first;
     $category = $category->tree->[2]->{content};
     
@@ -77,10 +74,8 @@ sub parse_page {
 
     return {
         time        => $time,
-        author      => $author,
         content     => $content,
         description => $description,
-        image_url   => $image_url,
         tags        => $tags,
         category    => $category,
     };

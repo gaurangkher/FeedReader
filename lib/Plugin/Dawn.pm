@@ -70,8 +70,10 @@ sub parse_page {
     $category = $category->tree->[2]->{content};
 
     my $content = $page->find('div.story__body')->first;
-    $content = $content->all_text(0);
-  
+    $content->find('p')->each(sub {$_->append_content("#*##") });
+    $content = $content->all_text();
+    $content =~ s/\#\*\#\#/\n\n/g;
+
     my $tags = q{pakistan, india};
 
     return {
