@@ -63,7 +63,7 @@ for my $source (@sources) {
             INFO q{UPDATE};
         }
         else {
-            my $sth_i = $dbh->prepare("INSERT INTO ranking(id, auto, admin, page_rank) VALUES ('$id', 0, 1000, $new_rank)");
+            my $sth_i = $dbh->prepare("INSERT INTO ranking(id, auto, admin, page_rank, likes, dislikes) VALUES ('$id', 0, 1000, $new_rank, 0, 0)");
             $sth_i->execute;
             INFO q{INSERT};
         }
