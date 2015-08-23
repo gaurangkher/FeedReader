@@ -55,7 +55,7 @@ while (my @arr = $sth->fetchrow_array()) {
     $e->index(
         index => 'vartaa',
         type  => 'article',
-        id    => 1,
+        id    => $id,
         body  => {
             title       => $title,
             date        => $date,
@@ -63,7 +63,6 @@ while (my @arr = $sth->fetchrow_array()) {
             source      => $source,
             tags        => \@tags,
             description => $description,
-            article_id  => $id,
         }
     );
     $count++;

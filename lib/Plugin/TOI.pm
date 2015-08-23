@@ -37,12 +37,14 @@ sub parse {
     INFO qq{$url};
     my $pd    = $self->get_url($url);
     my $title = $story->{'title'};
+    my $date  = $story->{'pubDate'};
+    $date =~ s/,//g;
     my $args  = $self->parse_page($pd);
     my $obj   = Story->new(
         title  => $title,
         source => $self->source_name(),
         url    => $url,
-        date   => $story->{pubDate},
+        time   => $date,
         %{$args},
     );
 
