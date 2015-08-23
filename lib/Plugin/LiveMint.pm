@@ -38,12 +38,16 @@ sub parse {
     my $pd    = $self->get_url($url);
     my $title = $story->{'title'};
     my $args  = $self->parse_page($pd);
+    my $img   = $story->{bigimage} || "";
+    if ($img =~ /blanklivemint/) {
+        $img = "";
+    }
     my $obj   = Story->new(
         title  => $title,
         source => $self->source_name(),
         url    => $url,
         author => $story->{author},        
-        image_url => $story->{bigimage} || "",
+        image_url => $img,
         %{$args},
     );
 
@@ -55,12 +59,12 @@ sub parse_page {
 
     my $page    = Mojo::DOM->new($pd);
     my $content = '';
-    for my $e ($page->find('div.p')->each) {
+    for my $e ($page->find('div.story-content-long-form')->first->find('p')->each) {
         my $string = $e->to_string();
         next if $string =~ /script type=\"text\/javascript\"/;
         $content = $content . "\n" . $e->all_text(0);
     }
-
+    
     my $category = $page->find('meta[property="article:section"]')->first;
     $category = $category->tree->[2]->{content};
     
