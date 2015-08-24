@@ -8,6 +8,7 @@ use DBD::Pg;
 use LWP::Simple;
 use Log::Log4perl qw(:easy);
 use Data::Dumper;
+use Search::Elasticsearch;
 
 with 'DestRole';
 
@@ -28,6 +29,20 @@ has dbh => (
                 "admin", "admin" 
             );
         }
+    },
+);
+
+has es_dbh => (
+    is => 'ro',
+    isa => 'Object',
+    lazy => 1,
+    default => sub {
+        return Search::Elasticsearch->new(
+            nodes => [
+                '207.181.217.150:9200',
+                '207.181.217.150:9200'
+            ]
+        );
     },
 );
 
@@ -65,6 +80,29 @@ sub persist {
 
     $self->insert( q{metatags}, $id, $tags );
     $self->insert( q{content},  $id, $content );
+
+    # Move out to messaging
+    my @a_s = split q{,}, $author;
+    my @t_s = split q{,}, $tags; 
+    my $sth = $self->dbh->prepare("select title, date, description from article where id = '$id'");
+    $sth->execute;
+    my ($a_t,$a_d, $a_de) = $sth->fetchrow_array();
+    
+    $self->es_dbh->index(
+        index => 'vartaa',
+        type  => 'article',
+        id    => $id,
+        body  => {
+            title       => $a_t,
+            date        => $a_d,
+            authors     => \@a_s,
+            source      => $source,
+            tags        => \@t_s,
+            description => $a_de,
+        }
+    );
+
+   
     return;
 }
 

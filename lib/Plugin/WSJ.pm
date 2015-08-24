@@ -19,7 +19,10 @@ has feeds => (
     default  => sub {
         [
             'http://www.wsj.com/xml/rss/3_7656.xml', 
-            'http://www.wsj.com/xml/rss/3_8147.xml'
+            'http://www.wsj.com/xml/rss/3_8147.xml',
+            'http://www.wsj.com/xml/rss/3_7013.xml',
+            'http://www.wsj.com/xml/rss/3_9033.xml',
+            'http://www.wsj.com/xml/rss/3_7085.xml',
         ];
     },
 );
@@ -36,14 +39,16 @@ sub parse {
         ? 1 : 0;
 
     my $title = $story->{'title'};
-    return if $title eq q{WSJ.com: India Journal};
+    next if $title eq q{WSJ.com: India Journal};
+    my $desc  = $story->{'description'};
+    next if ($title !~ /india/i || $desc !~ /india/i);
     INFO qq{$url};
     my $pd    = $self->get_url($url);
     my $args  = $self->parse_page($pd, $is_free);
     my $obj   = Story->new(
-        title       => $story->{'title'},
+        title       => $title,
         time        => $story->{'pubDate'},
-        description => $story->{'description'},
+        description => $desc,
         source      => $self->source_name(),
         url         => $url,
         %{$args},
