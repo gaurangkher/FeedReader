@@ -25,6 +25,7 @@ has feeds => (
            'http://indiatoday.feedsportal.com/c/33614/f/589705/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=61',
            'http://indiatoday.feedsportal.com/c/33614/f/589711/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=25',
            'http://indiatoday.feedsportal.com/c/33614/f/589706/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=84',  
+           'http://indiatoday.feedsportal.com/c/33614/f/589714/index.rss?http://indiatoday.intoday.in/rss/issue.jsp',
         ];
     },
 );

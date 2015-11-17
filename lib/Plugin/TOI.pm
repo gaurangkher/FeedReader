@@ -22,6 +22,8 @@ has feeds => (
             'http://timesofindia.feedsportal.com/c/33039/f/533965/index.rss',
             'http://timesofindia.feedsportal.com/c/33039/f/533921/index.rss',
             'http://timesofindia.feedsportal.com/c/33039/f/533927/index.rss',
+            'http://timesofindia.feedsportal.com/c/33039/f/533928/index.rss',
+            'http://timesofindia.indiatimes.com/rssfeeds/7098551.cms',
         ];
     },
 );
