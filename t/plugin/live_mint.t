@@ -15,6 +15,19 @@ use_ok('Plugin::LiveMint');
 
 my $plugin = Plugin::LiveMint->new();
 
-print Dumper $plugin->parse_page($page);
+my $story =  $plugin->parse_page($page);
+my $content = delete $story->{content};
+
+is_deeply(
+    $story,
+    {
+        'category' => 'Politics',
+        'description' => 'Move is being seen by analysts as a strategic step for the country on the global stage',
+        'tags' => 'solar alliance, renewable energy, Paris, summit, climate, Africa, business opportunity',
+        'time' => 'Nov 30 07:40:26 IST 2015'
+    },
+    q{got category, description, tags, time}
+);
+
 
 done_testing();

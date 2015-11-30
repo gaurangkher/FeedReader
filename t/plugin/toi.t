@@ -22,13 +22,13 @@ print Dumper $story;
 is_deeply(
     $story,
     {
-          'category' => 'Home',
-          'image_url' => 'http://timesofindia.indiatimes.com/photo/47913104.cms',
-          'author' => '',
-          'description' => 'Maharashtra chief minister Devendra Fadnavis on Thursday said that he will initiate criminal defamation proceedings over reports that he threatened to offload with his delegation from an Air India flight to US.',
-          'tags' => 'maharashtra CM,Fadnavis,Devendra Fadnavis,Civil Aviation Minister,Ashok Gajapathi Raju,Air India delays',
+        'image_url' => 'http://timesofindia.indiatimes.com/photo/48569051.cms',
+        'description' => 'Should unilateral, triple talaq be banned? An overwhelming number of Muslim women in the country think so.',
+        'category' => 'News Home',
+        'author' => 'Himanshi Dhawan',
+        'tags' => 'oral talaq,Noorjehan Safia Niaz,NCW,Muslim women,BMMA,Bharatiya Muslim Mahila Andolan'
     },
-    q{got tags, time, descrription, author, image_url, category}
+    q{got tags, descrription, author, image_url, category}
 );
 
 done_testing();

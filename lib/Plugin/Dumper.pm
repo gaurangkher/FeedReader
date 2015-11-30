@@ -15,6 +15,7 @@ sub persist {
     my ($self, $data) = @_;
 
     my $id = $data->to_href()->{story_id};
+    print Dumper $data->to_href();
     if ( !exists $self->stories->{$id}) {
         print Dumper $data->to_href()->{title};
         $self->stories->{$id} = 1;
