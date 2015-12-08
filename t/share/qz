@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<!--
+		 ______         __  __       ________       ______        _________       ______     
+		/_____/\       /_/\/_/\     /_______/\     /_____/\      /________/\     /_____/\    
+		\:::_ \ \      \:\ \:\ \    \::: _  \ \    \:::_ \ \     \__.::.__\/     \:::__\/    
+		 \:\ \ \ \_     \:\ \:\ \    \::(_)  \ \    \:(_) ) )_      \::\ \          /: /     
+		  \:\ \ /_ \     \:\ \:\ \    \:: __  \ \    \: __ `\ \      \::\ \        /::/___   
+		   \:\_-  \ \     \:\_\:\ \    \:.\ \  \ \    \ \ `\ \ \      \::\ \      /_:/____/\ 
+		    \___|\_\_/     \_____\/     \__\/\__\/     \_\/ \_\/       \__\/      \_______\/
+
+		!-->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+		<meta name="apple-mobile-web-app-title" content="Quartz"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<meta name="robots" content="noodp,noydir"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=7; IE=8; IE=9; IE=10">
+		<meta name="bitly-verification" content="3cc1017cee1d"/>
+		<title>How my startup lost Rs15 lakh and shut down before its first anniversary - Quartz</title>
+
+		<script>
+			var currentDomain = "qz.com";
+			var currentPath = "http://app.qz.com";
+						window.QZ = {
+				bootstrap: {},
+				env: { screen: 'desktop' },
+				edition: 'india'
+			};
+
+			QZ.readFullUsed = false;
+			QZ.readFull = function () {
+				// make sure we know this method was used so the app work correctly
+				QZ.readFullUsed = true;
+				var readFullArticle = document.querySelector(".read-full");
+				if ( readFullArticle ) {
+					readFullArticle.classList.remove("read-full");
+				}
+			};
+
+		</script>
+
+        			<link rel="stylesheet" href="http://app.qz.com/css/styles-min.4.0.168.css"/>
+        
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://app.qz.com/img/icons/touch_144.png"/>
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://app.qz.com/img/icons/touch_114.png"/>
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://app.qz.com/img/icons/touch_72.png"/>
+		<link rel="apple-touch-icon-precomposed" href="http://app.qz.com/img/icons/touch.png"/>
+		<link rel="logo" type="image/svg" href="http://app.qz.com/img/logo/quartz.svg"/>
+		<link rel="shortcut icon" href="http://app.qz.com/img/icons/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" media="print" href="http://app.qz.com/css/print.css" />
+		<link href="http://app.qz.com/img/apple/touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+		<link href="http://app.qz.com/img/apple/touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="http://app.qz.com/img/apple/touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="http://app.qz.com/img/apple/touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+		<link href="http://app.qz.com/img/apple/touch-startup-image-768x1004-landscape.png" media="(device-width: 768px) and (orientation: landscape) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+		<link href="http://app.qz.com/img/apple/touch-startup-image-1536x2008.png" media="(device-width: 768px) and (orientation: portrait) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="http://app.qz.com/img/apple/touch-startup-image-1536x2008-landscape.png" media="(device-width: 768px) and (orientation: landscape) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<meta name="google-site-verification" content="Fm_AozADu13Rytwyc4XvQo_081WOanaXLa6xKd8dUgc" />
+<meta name="msvalidate.01" content="4B2AFFFDBF9736993D778515CB307FAF" />
+<meta name="description" content="I thought I would make millions of dollars through my startup, but I failed miserably. I had read amazing stories of startups like Flipkart and Zomato, but nobody told me that 90% of new companies fail within two years of taking their initial steps. I failed in my first year. I sometimes feel cheated, but..."/>
+<meta name="news_keywords" content="billiondollar industry, boring job, Business, capabilities, childrens education, company incentives, customer, decision, edutech, education"/>
+<meta property="og:title" content="How my startup lost Rs15 lakh and shut down before its first anniversary"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="https://qzprod.files.wordpress.com/2015/12/startup-fail.jpg?quality=80&amp;strip=all&amp;w=1600"/>
+<meta property="og:url" content="http://qz.com/556691/how-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary/"/>
+<meta property="og:description" content="My journey as a failed entrepreneur in India."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Quartz"/>
+<meta property="article:publisher" content="https://www.facebook.com/quartznews"/>
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:title" content="How my startup lost Rs15 lakh and shut down before its first anniversary"/>
+<meta property="twitter:image" content="https://qzprod.files.wordpress.com/2015/12/startup-fail.jpg?quality=80&amp;strip=all&amp;w=1600"/>
+<meta property="twitter:url" content="http://qz.com/556691/how-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary/"/>
+<meta property="twitter:description" content="I thought I would make millions of dollars through my startup, but I failed miserably. I had read amazing stories of startups like Flipkart and Zomato, but nobody told me that 90% of new companies fail within two years of taking their initial steps. I failed in my first year. I sometimes feel cheated, but..."/>
+<meta property="twitter:site" content="@qz"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"NewsArticle","name":"How my startup lost Rs15 lakh and shut down before its first anniversary","headline":"How my startup lost Rs15 lakh and shut down before its first anniversary","alternativeHeadline":"My journey as a failed entrepreneur in India..","description":"My journey as a failed entrepreneur in India.","url":"http:\/\/qz.com\/556691\/how-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary\/","author":{"@type":"Person","name":"Commentary","url":"http:\/\/qz.com\/author\/commentaryqz","sameAs":["http:\/\/twitter.com\/"]},"creator":["Commentary"],"dateCreated":"2015-12-06T23:41:35+00:00","datePublished":"2015-12-06T23:41:35+00:00","image":"https:\/\/qzprod.files.wordpress.com\/2015\/12\/startup-fail.jpg?quality=80&strip=all&w=1600","thumbnailUrl":"https:\/\/qzprod.files.wordpress.com\/2015\/12\/startup-fail.jpg?quality=80&strip=all","articleSection":"india","keywords":["billion-dollar industry","boring job","Business","capabilities","children's education","company incentives","customer","decision","edu-tech","education","entrepreneur","ERP products","Expenditure","expenses","fail","failure","first venture","gurgaon","hardware","hiring","india","Internet","intuition","investing","investment","laptop","money","new companies","office space","premium","recruitment firm","risky business","sales person","schools","software","startup","startup ecosystem","Technology"],"inLanguage":"en-us","publisher":{"@type":"Organization","name":"Quartz","logo":"http:\/\/app.qz.com\/img\/logo\/quartz.svg","sameAs":["http:\/\/en.wikipedia.org\/wiki\/Quartz_(publication)","http:\/\/facebook.com\/quartznews","http:\/\/twitter.com\/qz"],"url":"http:\/\/qz.com","member":[{"@type":"Person","name":"Kevin J. Delaney","jobTitle":"CEO"}],"memberOf":{"@type":"Corporation","name":"Atlantic Media","founder":{"@type":"Person","name":"David G. Bradley"}},"location":{"@type":"PostalAddress","addressLocality":"New York","addressRegion":"NY"}}}</script>		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=qz.com&amp;id=39587363&amp;t=1449551240&amp;back=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='https://s2.wp.com/_static/??-eJx9jt0OwiAMRl9IbOaWuRvjswBWhlJKgGWvvy7+RKPZTfO1OactzElZjhVjBZpUCpPzsYDljDKnpCsIQXjxGgOSYHtbyg7+a5T6l7XGUdt72eLnJLQyJmUsRUklP5Gqoxx6eh4iVy9qeYethQ5ZBba6eo5fjboG7fOWmtEEdhIdCPXR/kiP/2DswAU2OqzAmU5N1/bHoT0MzW0BRT9+8Q==?cssminify=yes' type='text/css' media='all' />
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyFztEKwjAMBdAfsqvT+bAH8VtqjSN1SWuTbujX24E+CEMhEMg9XGLnZJD9WC4gNtS5F8iP92qCbOwvYAiH7BQaQv5gH1mBdbEUzziCKQLZDfVWi65xxaUoSiBS0Ur6/RLyhDD/ZQE0OX8zGQSfS+uJjm237w/tdtd34QU0IVvQ'></script>
+<link rel='prev' title='Japan cut its target for women in leadership positions from 30% to 7%' href='http://qz.com/567026/japan-cut-its-target-for-women-in-leadership-positions-from-30-to-7/' />
+<link rel='next' title='Quartz Daily Brief—Europe and Africa edition—London attack, French elections, emailed postal mail' href='http://qz.com/567117/london-attack-french-elections-emailed-postal-mail/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='http://wp.me/p2G6tR-2kOT' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F&amp;for=wpcom-auto-discovery" /><link rel='openid.server' href='http://qzprod.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://qzprod.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://qz.com/osd.xml" title="Quartz" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/opensearch.xml" title="WordPress.com" />
+
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<link rel="canonical" href="http://qz.com/556691/how-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary/" />
+<meta name="application-name" content="Quartz" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Quartz is a digitally native news outlet for the new global economy." /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://qz.com/feed/;icon-uri=http://0.gravatar.com/blavatar/4f71ab389fb590b475ab11f5b9735ad1?s=16" /><style type="text/css" id="syntaxhighlighteranchor"></style>
+    </head>
+<body class="single single-post postid-556691 single-format-standard mp6 customizer-styles-applied highlander-enabled highlander-light">
+	<header id="header" class="has-edition">
+	<div class="logo">
+		<a href="http://qz.com" title="Quartz" id="qz-logo">
+			<!--[if gte IE 10]><!-->
+<!-- QUARTZ LOGO -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="160px" height="25px" fill="" viewBox="0 0 160 25" enable-background="new 0 0 160 25" xml:space="preserve">
+	<g>
+		<g>
+			<path d="M21.852,19.584c1.479-2.008,2.356-4.488,2.356-7.173c0-6.682-5.442-12.123-12.124-12.123
+				c-6.686,0-12.123,5.441-12.123,12.123c0,6.687,5.438,12.124,12.123,12.124c2.628,0,5.065-0.84,7.054-2.271l3.038,3.039
+				l2.699-2.695L21.852,19.584z M19.109,16.842l-4.479-4.479l-2.694,2.699l4.455,4.456c-1.259,0.763-2.732,1.201-4.307,1.201
+				c-4.583,0-8.308-3.725-8.308-8.308c0-4.579,3.725-8.308,8.308-8.308c4.578,0,8.308,3.729,8.308,8.308
+				C20.392,14.037,19.92,15.559,19.109,16.842z"/>
+		</g>
+		<g>
+			<polygon points="133.62,0.889 133.62,4.743 126.411,4.743 126.411,24.017 122.507,24.017 122.507,4.743 115.299,4.743 
+				115.299,0.889 		"/>
+		</g>
+		<g>
+			<path d="M73.351,0.889h-4.688L59.75,24.017h4.091l1.67-4.506h10.992l1.669,4.506h4.093L73.351,0.889z M66.998,15.906l4.011-10.439
+				l4.006,10.439H66.998z"/>
+		</g>
+		<g>
+			<polygon points="160.052,4.743 147.123,20.111 160.052,20.111 160.052,24.017 142.031,24.017 142.031,19.908 155.006,4.743 
+				142.932,4.743 142.932,0.927 160.052,0.927 		"/>
+		</g>
+		<g>
+			<path d="M52.19,0.889v14.632c0,4.96-4.03,8.995-8.99,8.995s-8.995-4.035-8.995-8.995V0.889h3.901v14.632
+				c-0.086,2.856,2.236,5.18,5.094,5.18c2.853,0,5.175-2.323,5.119-5.18V0.889H52.19z"/>
+		</g>
+		<g>
+			<path d="M102.612,16.184c2.653-1.321,4.47-4.044,4.47-7.183c0-4.239-3.496-8.026-7.849-8.112h-8.564v23.128h3.905v-6.966h3.537
+				l8.05,8.156l2.713-2.681L102.612,16.184z M98.949,13.236h-4.375v-8.47h4.375c2.381,0,4.317,1.898,4.317,4.235
+				C103.267,11.338,101.33,13.236,98.949,13.236z"/>
+		</g>
+	</g>
+</svg>
+<!-- /QUARTZ LOGO -->
+
+<!--<![endif]-->			<span class="header-edition">India</span>
+		</a>
+	</div>
+	<div class="right">
+		<button id="avatar" class="header-button">
+			<i class="icon-more"></i>
+		</button>
+		<button class="menu header-button">
+			<i class="icon-more"></i>
+		</button>
+		<a href="http://qz.com/search" class="search header-button">
+			<i class="icon-search"></i>
+		</a>
+		<a href="http://qz.com/obsessions" class="obsessions header-button">
+			obsessions
+		</a>
+		<a href="http://qz.com/daily-brief" class="dbsignup header-button"><i class="icon-daily-brief"></i></a>
+	</div>
+	<div id="header-search-input"></div>
+	<div class="left">
+		<a href="http://qz.com/search" class="search header-button">
+			<i class="icon-search"></i>
+		</a>
+		<a href="http://qz.com/top" class="top header-button">
+			our picks
+		</a>
+		<a href="http://qz.com/latest" class="latest header-button">
+			latest
+		</a>
+		<a href="http://qz.com/popular" class="popular header-button">
+			popular
+		</a>
+		<a href="http://www.facebook.com/quartznews" class="fb header-button" target="_blank"><i class="icon-facebook"></i></a>
+		<a href="http://www.twitter.com/qz" class="twitter header-button" target="_blank"><i class="icon-twitter"></i></a>
+	</div>
+</header>
+<div id="settings-nav-bg"></div>
+<nav id="settingsNav">
+	<div class="upper">
+		<a href="http://www.facebook.com/quartznews" class="fb" target="_blank"><i class="icon-facebook"></i>like us on facebook</a>
+		<a href="http://www.twitter.com/qz" class="twitter" target="_blank"><i class="icon-twitter"></i>follow us on twitter</a>
+		<a href="http://qz.com/daily-brief" class="dbsignup"><i class="icon-daily-brief"></i>quartz daily brief</a>
+		<a href="http://qz.com/about/" class="about-us"><i class="icon-about"></i>about us</a>
+		<a href="https://ssl.qz.com/register" class="register"><i class="icon-register"></i>register</a>
+		<a href="http://ssl.qz.com/login" class="login"><i class="icon-login"></i>log in</a>
+		<a href="#" class="logout"><i class="icon-logout"></i>log out</a>
+		<a href="http://events.qz.com" class="events"><i class="icon-calendar"></i>Events</a>
+		<a href="http://atlas.qz.com" class="atlas"><i class="icon-atlas"></i>Atlas</a>
+	</div>
+	<div class="lower">
+		<a href="http://qz.com/global/"><i class="icon-global"></i>quartz</a>
+					<a href="http://qz.com/india/ ">
+				<i class="icon-india"></i>
+				quartz India			</a>
+					<a href="http://qz.com/africa/ ">
+				<i class="icon-africa"></i>
+				quartz Africa			</a>
+			</div>
+	<button class="navigation-toggle">
+		<span class="edition-text icon-down-arrow">Change your edition</span>
+		<span class="menu-text icon-down-arrow">back to menu</span>
+	</button>
+</nav>
+	<div id="container">
+		<div id="content"><div id="content-header">
+	</div>
+<div id="content-articles">
+	<div id="well"><article id="item-556691" class="item india article has-hero" itemscope itemtype="http://schema.org/NewsArticle">
+<header class="item-header content-width">
+			<span class="kicker">EPIC FAIL</span>
+		<h1 itemprop="headline">How my startup lost Rs15 lakh and shut down before its first anniversary</h1>
+	<div class="item-meta-mobile"><div class="byline item-meta-row">
+	<h5>Written by</h5>
+
+	
+		Pardeep Goyal
+	</div>
+
+
+
+<div class="item-timestamp item-meta-row">
+
+			<span class="timestamp" itemprop="datePublished">December 06, 2015</span>
+	
+			<a class="edition" href="http://qz.com/india/">Quartz india</a>
+	
+</div>
+</div>
+</header>
+<figure class="featured-image size-extra-large ">
+	<picture>
+		<!--[if IE 9]><video style="display: none;"><![endif]-->
+		<source srcset="https://qzprod.files.wordpress.com/2015/12/startup-fail.jpg?quality=80&#038;strip=all&#038;w=1600, https://qzprod.files.wordpress.com/2015/12/startup-fail.jpg?quality=80&#038;strip=all&#038;w=1600 2x" media="(min-width: 769px)">
+		<source srcset="https://qzprod.files.wordpress.com/2015/12/startup-fail.jpg?quality=80&#038;strip=all&#038;w=768, https://qzprod.files.wordpress.com/2015/12/startup-fail.jpg?quality=80&#038;strip=all&#038;w=1536 2x" media="(min-width: 321px)">
+		<!--[if IE 9]></video><![endif]-->
+		<img itemprop="image" srcset="https://qzprod.files.wordpress.com/2015/12/startup-fail.jpg?quality=80&#038;strip=all&#038;w=320, https://qzprod.files.wordpress.com/2015/12/startup-fail.jpg?quality=80&#038;strip=all&#038;w=640 2x" alt="India-startup-fail-entrepreneur" title="An employee works on a computer terminal against the backdrop of a picture of late Apple co-founder Steve Jobs at the Start-up Village in Kinfra High Tech Park in the southern Indian city of Kochi"/>
+	</picture>
+	<figcaption class="featured-image-caption">
+		<div class="content-width">
+			<i class="icon-camera"></i>Failure and no easy money.							<span class="featured-image-credit">(Reuters/Sivaram V)</span>
+					</div>
+	</figcaption>
+</figure>
+<div class="item-content ">
+	<div class="item-meta">
+		<div class="share-buttons colored item-meta-row">
+			<h5>Share</h5>
+				 <a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fqz.com%2F556691&#038;text=How+my+startup+lost+Rs15+lakh+and+shut+down+before+its+first+anniversary&#038;via=qzindia" target="_blank" class="share-action icon-twitter"></a>
+	 <a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F" target="_blank" class="share-action icon-facebook"></a>
+	 <a title="Share on linkedin" href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F&#038;title=How+my+startup+lost+Rs15+lakh+and+shut+down+before+its+first+anniversary&#038;summary=I+thought+I+would+make+millions+of+dollars+through+my+startup%2C+but+I+failed+miserably.+I+had+read+amazing+stories+of+startups+like+Flipkart+and%26hellip%3B&#038;source=Quartz" target="_blank" class="share-action icon-linkedin"></a>
+	 <a title="Share on email" href="mailto:?subject=Quartz%3A%20How%20my%20startup%20lost%20Rs15%20lakh%20and%20shut%20down%20before%20its%20first%20anniversary&#038;body=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F%0A%0AI%20thought%20I%20would%20make%20millions%20of%20dollars%20through%20my%20startup%2C%20but%20I%20failed%20miserably.%20I%20had%20read%20amazing%20stories%20of%20startups%20like%20Flipkart%20and%E2%80%A6%0A%0ASign%20up%20for%20the%20Quartz%20Daily%20Brief%3A%20http%3A%2F%2Fbit.ly%2Fquartzdailybrief." target="_blank" class="share-action icon-email"></a>
+	 <a title="Share on whatsapp" href="" target="_blank" class="share-action icon-whatsapp"></a>
+		</div>
+		<div class="byline item-meta-row">
+	<h5>Written by</h5>
+
+	
+		Pardeep Goyal
+	</div>
+
+
+
+<div class="item-timestamp item-meta-row">
+
+			<span class="timestamp" itemprop="datePublished">December 06, 2015</span>
+	
+			<a class="edition" href="http://qz.com/india/">Quartz india</a>
+	
+</div>
+	</div>
+	<div class="item-body" itemprop="articleBody">
+		<div>
+			
+<p>I thought I would make millions of dollars through my startup, but I failed miserably.</p>
+<p>I had read amazing stories of startups like Flipkart and Zomato, but nobody told me that 90% of new companies fail within two years of taking their initial steps.</p>
+<p>I failed in my first year.</p>
+<p>I sometimes feel cheated, but the fault is mine. I believed in just one side of the story, and so, I am going to tell you the other side&mdash;the secret behind the failure of first-time entrepreneurs.</p>
+<div class="inline-ad"></div><p>In April 2013, I started getting uncomfortable in my office. It was a dull cubicle of an IT company in Gurgaon. I was pretending to fix defects when I was actually wasting time on the internet. My mind was taken over by thoughts of freedom from my boring job. And my manager and other colleagues could sense that there was something wrong.</p>
+<p>I had just returned from the US a month ago, and I told my manager: &ldquo;Sir, I need a little break to set up my home and adjust again in India.&rdquo; My son was just six months old, and he was having issues adjusting to the Indian climate. I worked from home for a few days, but my real problem persisted: I was unhappy with my job.</p>
+<p>I started thinking about leaving the job and building a company.<span class="pull-quote"><span class="quote-line">&nbsp;</span><span>I decided to put all my savings in my startup rather than buying a home.</span><span class="quote-line">&nbsp;</span></span></p>
+<p>My brother-in-law&mdash;who was also unhappy with his job in a recruitment firm&mdash;and I started talking about setting up a business, even though we were unsure about the product. We were comfortable working with each other. I had saved a good amount of money by living frugally during my US trip, and I decided to put all my savings in my startup rather than buying a home.</p>
+<div class="inline-ad"></div><p>We began by incorporating a private limited company, investing Rs5 lakh each, and dividing the equity equally. We found a basement office in Gurgaon with a monthly rent of Rs13,000. We spent another Rs1 lakh on renovating the space. We bought the furniture, air conditioners, an inverter, and a refrigerator.</p>
+<p>We wanted to solve a problem related to schools because education is a billion-dollar industry. A child&rsquo;s education is the second biggest expense for a parent, and we thought that any product for schools would translate into big profits.</p>
+<p>We decided to create an ERP (enterprise resource planning) tool&mdash;an online software for schools to manage everything from fees, inventory, communication with parents, and so on.</p>
+<p>Once we developed this idea, our next step was to hire a team. I was confident that we would be able to hire easily. We had everything to build a good team: an office, money in the bank, a hiring policy and, most importantly, a co-founder with a recruitment experience of more than 10 years.</p>
+<div class="inline-ad"></div><p>We hired one person&mdash;a fresher open to learning new technologies for our cloud-based product. We needed a senior person to handle all the development work because my brother-in-law and I still retained our full-time jobs.</p>
+<p>We started interviewing people. My co-founder analysed a pile of resumes, as he had access to all the major recruitment portals. We selected the best people, and interviewed them in cafes or restaurants. Our office was still under renovation.</p>
+<p>We met several people for product development and design, but no one was ready to join a startup like ours. We were shocked.</p>
+<p>&ldquo;I could have hired 10 people for any other company by this time. I am not sure why people are not joining us,&rdquo; my co-founder said.</p>
+<div class="inline-ad"></div><p>&ldquo;Maybe they will join after seeing our new office,&rdquo; I said.</p>
+<p>Since we both had worked at corporates, we spent a few days drafting a new hiring policy. Along with basic salary, we introduced company incentives based on revenue and an individual performance bonus.</p>
+<p>Our office was ready in June. We moved in and resumed our hiring process. Someone told me to hire the initial team from my personal network, but none of my friends had a profile that matched.</p>
+<p>Finally, I found a person in Chandigarh. We were impressed with his technical capabilities, but doubted his managerial and leadership skills. Still, we thought of giving him a try&mdash;and anyway, no one else was ready to join us. He was a costly hire. We offered him Rs60,000 per month plus company incentives if we made any revenue by the end of the year.</p>
+<div class="inline-ad"></div><p>It was an exciting time. Our product was taking shape. The co-founders were spending hours on whiteboards discussing the features, and the developers were busy coding. We managed to hire a designer for about Rs25,000 per month, but we compromised a lot with his skill set and attitude. We were already feeling the heat of startup hiring.</p>
+<p>We wanted to complete the product as soon as possible so that we could start selling.</p>
+<p>Then, we started facing unexpected problems. Our junior developer was not performing up to our expectations, and we had to ask him to leave. With a team of just four people, we completed the first version of our product.<span class="pull-quote"><span class="quote-line">&nbsp;</span><span>Our first potential client&mdash;a known school principal&mdash;appreciated our idea and demo, but put us on hold till she heard from higher management.</span><span class="quote-line">&nbsp;</span></span></p>
+<p>We were confident that our product sell once it hits the market. We included all the features of top ERP products in the market to beat our competitors, but we weren&rsquo;t happy with the front-end design, and we were constantly looking for a better designer.</p>
+<p>Our first potential client&mdash;a known school principal&mdash;appreciated our idea and demo, but put us on hold till she heard from higher management. We gladly sent her the sales material and thought we would deploy our software in a few months.</p>
+<p>Six months into, the cost of product development was:<br>
+Company incorporation: Rs30,000<br>
+Office renovation: Rs1,20,000<br>
+AC/fridge/inverter: Rs40,000<br>
+Rent: Rs91,000<br>
+Salaries: Rs3,60,000 + Rs1,00,000 + Rs65,000<br>
+Travel, food, marketing material and others: Rs1,00,000<br><strong>Total: Rs9,56,000</strong></p>
+<p>We were confident in our software, but to sell it, we had to leave our jobs. We were ready to take the risk. We put in our resignations. We decided to move our development office to Chandigarh where I would manage operations, and my co-founder would handle sales in Gurgaon.</p>
+<p>It went well. Our senior developer was now spending more time in development than traveling between Gurgaon and Chandigarh. We saved money on office rental, and I saved money on my living expenses.</p>
+<p>Then, in another surprise, our designer ran away with the laptop. We tracked him down and recovered the laptop, but we lost our only designer. I took the challenge and learned the basics of web designing. We revamped the entire design in one month. The product came out nicely.</p>
+<p>Meanwhile, we started reaching out to schools. But none of the co-founders had a sales background. We struggled to get appointments. We found that principals had no decision-making power. The decision-makers were never available in the school. Most school administrators do not check or respond to emails..</p>
+<p>We were unable to sell our product even though it cost much less than our competitors. We were devastated, and cried on each other&rsquo;s shoulders. (The biggest benefit of having a co-founder in a startup.)</p>
+<p>We found a few customers by leveraging references, but revenue was far away. My co-founder knew customers better than me. He said that few big schools would buy our product if we could implement a few more features.</p>
+<p>I had a different opinion. I argued that we had enough features for any school, but that there was something missing in the sales process. I thought we should focus on small to medium schools, even if we make less money. Conflicts between co-founders began escalating.</p>
+<p>We were running out of money, so we invested more of our personal savings into our startup. And then, we hired a sales person from a big competitor&mdash;our big mistake.</p>
+<p>We felt that we&rsquo;d found a silver bullet because he gave us access to our competitor&rsquo;s product, and told us the secrets of selling to schools. We thought that finally <em>&ldquo;aache din aane wale hain&rdquo;</em> (The good days are about to come).</p>
+<p>He worked with us for a month, but couldn&rsquo;t crack even a single sale. We wondered what was wrong. Actually, he was able to sell in his previous company because of the brand name. He had never faced the heat of an unknown startup.</p>
+<p>We needed more money to survive. My co-founder was busy chasing big schools who could pay good money in advance. He also started establishing contacts with political and influential folks to win the deals. But we, the co-founders, were on different paths.<span class="pull-quote"><span class="quote-line">&nbsp;</span><span>I was reading a lot of startup blogs and books. I started believing in lean startup methodologies and doing more with less resources. </span><span class="quote-line">&nbsp;</span></span></p>
+<p>I was reading a lot of startup blogs and books. I started believing in lean startup methodologies and doing more with less resources. Unfortunately, my co-founder was still building our startup like a big corporate (alliances with other companies and politicians, hiring sales, and maintaining hierarchy).</p>
+<p>I proposed to reduce our expenses:</p>
+<ul><li>Bring our only developer from cash to equity (up to 20%).</li>
+<li>Stop chasing big schools and focus on small schools.</li>
+<li>Target schools on the outskirts, which are relatively easy to win.</li>
+<li>Fire the sales guy and spend all our time in sales.</li>
+</ul><p>But our vision and thoughts were not aligned. I knew that our relationship would be spoiled if we continued working together. We had long (and bitter) discussions on keeping the ownership and equity, but nothing came of it. Finally, my co-founder took over the company and promised to return my cash if the company made any profits in the future.</p>
+<p>Expenses at the end of 11 months:<br>
+Initial six months: Rs9,56,000<br>
+Salaries: Rs3,00,000<br>
+Sales training: Rs30,000<br>
+Rent: Rs56,000<br>
+Travel, marketing, and others: Rs2,00,000<br><strong>Total: Rs15,42,000</strong></p>
+<p>By now, we had wasted more than Rs15 lakh ($22,000) on a product that nobody wanted to purchase. After a few more weeks of struggle, my co-founder had to join a job. The end of the startup, SchoolGennie.</p>
+<p>But I learnt some of the great lessons of my life:</p>
+<h2><strong>1. Know your customer before building your product</strong></h2>
+<p>The point should be clear by now. We built our product based on the assumptions and feature lists of our competitors. We should have talked to our customers before building our product.</p>
+<p>We should have convinced two to three schools of different sizes to test our product. In exchange, we should have provided a lifetime free product and support for early-adopter schools. I should have validated my product before leaving my job.</p>
+<h2><strong>2. Know where to spend money and where to save</strong></h2>
+<p>We spent most of the money on office infrastructure and employee salaries. We could have avoided 80% of expenses by working from home and hiring employees on survival salary and ESOPs.</p>
+<p>We  avoided expenses on professional design of sales material, marketing tools, and paid consultancy. We should have spent money on these things since they translate into more sales or leads.</p>
+<p>If the primary source of your customer acquisition is your website, then you should spend money on content marketing, sales deck, and sales pages. If you acquire your customers offline, then spend money on sales brochures and other printed material.</p>
+<h2><strong>3. Get your hands dirty with the code, even if you are a non-techie</strong></h2>
+<p>Non-technical co-founders remain clueless about technical know-hows. They should not behave like a foreign client who just assigns work and expects it to be completed by the technical team.</p>
+<p>That didn&rsquo;t work in my startup and it will not work in your startup. I advise you to start coding. There might be some exceptions, but a non-tech co-founder can take better decisions if he or she knows how things get implemented.</p>
+<p>If you do not have a tech co-founder and are building a software product, then there is no exception.</p>
+<h2><strong>4. Sell, even if you are from a non-sales background</strong></h2>
+<p>The sales process is not just about good public speaking but addressing the concerns of the customer.</p>
+<p>When I moved to Chandigarh, I tried sales in the local schools. I visited about 50 schools in one month and closed three deals. I not only learnt the sales process, but also got acquainted with customers&rsquo; real issues. You can build a great product with a better understanding of your customer&rsquo;s pain areas.<span class="pull-quote"><span class="quote-line">&nbsp;</span><span>You can build a great product with a better understanding of your customer&rsquo;s pain areas.</span><span class="quote-line">&nbsp;</span></span></p>
+<p>Disclaimer: I am not suggesting that all co-founders should be doing all the things at all the time. No. They should be owners of their areas, but at the same time, they should have first-hand experience of all kind of jobs in a startup.</p>
+<h2>5. Take a decision and trust your intuition</h2>
+<p>We became bad at taking firm decisions. We started postponing tough decisions like the sales budget, hiring or firing, offering equity to the employees, deciding between chasing big schools and small schools, offering a free solution or charging premium and, in the end, on how to go our own ways.</p>
+<p>Since the closure of my first venture, I started taking firm decisions based on the available information at that time. You can never have 100% data available for taking any decision. You should be smart enough to derive a conclusion with between 60% and 70% information and fill the gap with your intuition.</p>
+<p>If you are confused with your decision, then you will not be able to execute with 100% confidence.</p>
+<h2>6. Money is just a by-product of a startup</h2>
+<p>We entrepreneurs start a venture to solve a customer&rsquo;s problem (or to explore our passion), and money is just fuel for our startup vehicle.</p>
+<p>If you focus on money, then you will become short-sighted. You can make money in the short-term, but you will lose strength in the long-term. Focus on solving problems and keeping your customers happy. The money will follow.</p>
+<p><em>This post first appeared on <a href="https://www.linkedin.com/pulse/how-we-lost-rs-1500000-startup-shutdown-before-first-pardeep-goyal?trk=hp-feed-article-title-channel-add">Linkedin</a>. We welcome your comments at <a href="mailto:ideas.india@qz.com">ideas.india@qz.com</a>.</em></p>
+			<div class="article-aside"></div>
+		</div>
+		<div class="item-share-tools article-footer">
+			<div class="short-url">
+				<input type="text" name="shortURL" value="http://qz.com/556691"/>
+			</div>
+			<div class="share-buttons colored">
+					 <a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fqz.com%2F556691&#038;text=How+my+startup+lost+Rs15+lakh+and+shut+down+before+its+first+anniversary&#038;via=qzindia" target="_blank" class="share-action icon-twitter"></a>
+	 <a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F" target="_blank" class="share-action icon-facebook"></a>
+	 <a title="Share on linkedin" href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F&#038;title=How+my+startup+lost+Rs15+lakh+and+shut+down+before+its+first+anniversary&#038;summary=I+thought+I+would+make+millions+of+dollars+through+my+startup%2C+but+I+failed+miserably.+I+had+read+amazing+stories+of+startups+like+Flipkart+and%26hellip%3B&#038;source=Quartz" target="_blank" class="share-action icon-linkedin"></a>
+	 <a title="Share on email" href="mailto:?subject=Quartz%3A%20How%20my%20startup%20lost%20Rs15%20lakh%20and%20shut%20down%20before%20its%20first%20anniversary&#038;body=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F%0A%0AI%20thought%20I%20would%20make%20millions%20of%20dollars%20through%20my%20startup%2C%20but%20I%20failed%20miserably.%20I%20had%20read%20amazing%20stories%20of%20startups%20like%20Flipkart%20and%E2%80%A6%0A%0ASign%20up%20for%20the%20Quartz%20Daily%20Brief%3A%20http%3A%2F%2Fbit.ly%2Fquartzdailybrief." target="_blank" class="share-action icon-email"></a>
+	 <a title="Share on whatsapp" href="" target="_blank" class="share-action icon-whatsapp"></a>
+			</div>
+		</div>
+	</div>
+	<div class="article-annotations"></div>
+</div>
+<div class="after-article"></div>
+<button class="read-full-story-button" onclick="QZ.readFull();">Read full story</button></article></div></div></div>	</div>
+	<div id="modal">
+			</div>
+	<div id="chyron"></div>
+	<div id="tab-bar">
+	<a href="http://qz.com" class="tab home"><i class="icon-q"></i>the brief</a>
+	<a href="http://qz.com/top" class="tab top"><i class="icon-star"></i>our picks</a>
+	<a href="http://qz.com/popular" class="tab popular"><i class="icon-most-popular"></i>popular</a>
+	<a href="http://qz.com/latest" class="tab latest"><i class="icon-latest"></i>latest</a>
+	<a href="http://qz.com/obsessions" class="tab obsessions"><i class="icon-obsessions"></i>obsessions</a>
+	<a href="http://qz.com/search" class="tab search"><i class="icon-search"></i>search</a>
+</div>
+	<!-- wpcom_wp_footer -->
+
+		<!-- /// LOAD CHARTBEAT /// -->
+		<script type="text/javascript">
+		var _sf_async_config={};
+		_sf_async_config.uid = 55570;
+		_sf_async_config.useCanonical = true;
+					_sf_async_config.domain = 'qz.com';
+			_sf_async_config.authors = 'Commentary';
+_sf_async_config.sections = ["Uncategorized"];
+
+		(function(){
+		  function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			   (("https:" == document.location.protocol) ? "https://" : "http://") +
+			   "static.chartbeat.com/js/chartbeat.js");
+			document.body.appendChild(e);
+		  }
+		  var oldonload = window.onload;
+		  window.onload = (typeof window.onload != 'function') ?
+			 loadChartbeat : function() { try { oldonload(); } catch (e) { loadChartbeat(); throw e} loadChartbeat(); };
+		})();
+		</script>
+		<script type='text/javascript' src='http://app.qz.com/js/libs/omniture.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"1","is_front_page":"0","is_archive":"0","percentToTrack":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/2-vip/js/vip-analytics.js?m=1411795912g'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?48" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'39587363','blog_tz':'-5','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'39587363','v':'wpcom','tz':'-5','user_id':'0','post':'556691','subd':'qzprod'}]);
+function st_vt() {var x=document.createElement("img");x.src="http://pixel.wp.com/g.gif?blog=39587363&v=wpcomvt&tz=-5&user_id=0&post=556691&subd=qzprod&rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtib2E/SzdEJm0lUEtbdFU0fFk4cHZvcUFrZT90Tn4yQm1+R3NyNTdEfC1rZmVUMy9QNXhLa2dIP0wvZ2RNYSV+S1VzM2gtT0J4Rk5OX3ktMTAuNC9ja3glalBlUDFuVWF1UVhdPUpdWUxQJktzWmx8TmVFdnUmWldTS3ElYWo2SFljckotS2dlLy9TYkxjenJRQ352UDJ2a0gmWDF8LT9xdkxnZlFtY1ZsRHRSaVJWUyxINHdzaCUyWUhXbDMyLWpWWDZpR2J6eFBaQ3Uya3JCV3dEX009cXlGXzFPYUhwT3daOVhUSl9fUi42'}]);
+_stq.push([ 'clickTrackerInit', '39587363', '556691' ]);
+	</script>
+<noscript><img src="http://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+	<script>
+		QZ.splitTests = false;
+		QZ.editions = ["global","india","africa"];
+		QZ.geolocation = 'global';
+		QZ.bootstrap = {"http:\/\/qz.com\/api\/article\/556691\/":{"version":3,"header":{"name":"Article","slug":"article","type":"article","path":"article\/556691\/"},"items":[{"id":556691,"title":"How my startup lost Rs15 lakh and shut down before its first anniversary","slug":"how-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary","permalink":"http:\/\/qz.com\/556691\/how-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary\/","date":{"published":"2015-12-07 04:41:35","updated":"2015-12-07 05:33:59","pretty":"December 06, 2015"},"postType":"article","summary":"I thought I would make millions of dollars through my startup, but I failed miserably. I had read amazing stories of startups like Flipkart and&hellip;","content":"\n<p>I thought I would make millions of dollars through my startup, but I failed miserably.<\/p>\n<p>I had read amazing stories of startups like Flipkart and Zomato, but nobody told me that 90% of new companies fail within two years of taking their initial steps.<\/p>\n<p>I failed in my first year.<\/p>\n<p>I sometimes feel cheated, but the fault is mine. I believed in just one side of the story, and so, I am going to tell you the other side&mdash;the secret behind the failure of first-time entrepreneurs.<\/p>\n<div class=\"inline-ad\"><\/div><p>In April 2013, I started getting uncomfortable in my office. It was a dull cubicle of an IT company in Gurgaon. I was pretending to fix defects when I was actually wasting time on the internet. My mind was taken over by thoughts of freedom from my boring job. And my manager and other colleagues could sense that there was something wrong.<\/p>\n<p>I had just returned from the US a month ago, and I told my manager: &ldquo;Sir, I need a little break to set up my home and adjust again in India.&rdquo; My son was just six months old, and he was having issues adjusting to the Indian climate. I worked from home for a few days, but my real problem persisted: I was unhappy with my job.<\/p>\n<p>I started thinking about leaving the job and building a company.<span class=\"pull-quote\"><span class=\"quote-line\">&nbsp;<\/span><span>I decided to put all my savings in my startup rather than buying a home.<\/span><span class=\"quote-line\">&nbsp;<\/span><\/span><\/p>\n<p>My brother-in-law&mdash;who was also unhappy with his job in a recruitment firm&mdash;and I started talking about setting up a business, even though we were unsure about the product. We were comfortable working with each other. I had saved a good amount of money by living frugally during my US trip, and I decided to put all my savings in my startup rather than buying a home.<\/p>\n<div class=\"inline-ad\"><\/div><p>We began by incorporating a private limited company, investing Rs5 lakh each, and dividing the equity equally. We found a basement office in Gurgaon with a monthly rent of Rs13,000. We spent another Rs1 lakh on renovating the space. We bought the furniture, air conditioners, an inverter, and a refrigerator.<\/p>\n<p>We wanted to solve a problem related to schools because education is a billion-dollar industry. A child&rsquo;s education is the second biggest expense for a parent, and we thought that any product for schools would translate into big profits.<\/p>\n<p>We decided to create an ERP (enterprise resource planning) tool&mdash;an online software for schools to manage everything from fees, inventory, communication with parents, and so on.<\/p>\n<p>Once we developed this idea, our next step was to hire a team. I was confident that we would be able to hire easily. We had everything to build a good team: an office, money in the bank, a hiring policy and, most importantly, a co-founder with a recruitment experience of more than 10 years.<\/p>\n<div class=\"inline-ad\"><\/div><p>We hired one person&mdash;a fresher open to learning new technologies for our cloud-based product. We needed a senior person to handle all the development work because my brother-in-law and I still retained our full-time jobs.<\/p>\n<p>We started interviewing people. My co-founder analysed a pile of resumes, as he had access to all the major recruitment portals. We selected the best people, and interviewed them in cafes or restaurants. Our office was still under renovation.<\/p>\n<p>We met several people for product development and design, but no one was ready to join a startup like ours. We were shocked.<\/p>\n<p>&ldquo;I could have hired 10 people for any other company by this time. I am not sure why people are not joining us,&rdquo; my co-founder said.<\/p>\n<div class=\"inline-ad\"><\/div><p>&ldquo;Maybe they will join after seeing our new office,&rdquo; I said.<\/p>\n<p>Since we both had worked at corporates, we spent a few days drafting a new hiring policy. Along with basic salary, we introduced company incentives based on revenue and an individual performance bonus.<\/p>\n<p>Our office was ready in June. We moved in and resumed our hiring process. Someone told me to hire the initial team from my personal network, but none of my friends had a profile that matched.<\/p>\n<p>Finally, I found a person in Chandigarh. We were impressed with his technical capabilities, but doubted his managerial and leadership skills. Still, we thought of giving him a try&mdash;and anyway, no one else was ready to join us. He was a costly hire. We offered him Rs60,000 per month plus company incentives if we made any revenue by the end of the year.<\/p>\n<div class=\"inline-ad\"><\/div><p>It was an exciting time. Our product was taking shape. The co-founders were spending hours on whiteboards discussing the features, and the developers were busy coding. We managed to hire a designer for about Rs25,000 per month, but we compromised a lot with his skill set and attitude. We were already feeling the heat of startup hiring.<\/p>\n<p>We wanted to complete the product as soon as possible so that we could start selling.<\/p>\n<p>Then, we started facing unexpected problems. Our junior developer was not performing up to our expectations, and we had to ask him to leave. With a team of just four people, we completed the first version of our product.<span class=\"pull-quote\"><span class=\"quote-line\">&nbsp;<\/span><span>Our first potential client&mdash;a known school principal&mdash;appreciated our idea and demo, but put us on hold till she heard from higher management.<\/span><span class=\"quote-line\">&nbsp;<\/span><\/span><\/p>\n<p>We were confident that our product sell once it hits the market. We included all the features of top ERP products in the market to beat our competitors, but we weren&rsquo;t happy with the front-end design, and we were constantly looking for a better designer.<\/p>\n<p>Our first potential client&mdash;a known school principal&mdash;appreciated our idea and demo, but put us on hold till she heard from higher management. We gladly sent her the sales material and thought we would deploy our software in a few months.<\/p>\n<p>Six months into, the cost of product development was:<br>\nCompany incorporation: Rs30,000<br>\nOffice renovation: Rs1,20,000<br>\nAC\/fridge\/inverter: Rs40,000<br>\nRent: Rs91,000<br>\nSalaries: Rs3,60,000 + Rs1,00,000 + Rs65,000<br>\nTravel, food, marketing material and others: Rs1,00,000<br><strong>Total: Rs9,56,000<\/strong><\/p>\n<p>We were confident in our software, but to sell it, we had to leave our jobs. We were ready to take the risk. We put in our resignations. We decided to move our development office to Chandigarh where I would manage operations, and my co-founder would handle sales in Gurgaon.<\/p>\n<p>It went well. Our senior developer was now spending more time in development than traveling between Gurgaon and Chandigarh. We saved money on office rental, and I saved money on my living expenses.<\/p>\n<p>Then, in another surprise, our designer ran away with the laptop. We tracked him down and recovered the laptop, but we lost our only designer. I took the challenge and learned the basics of web designing. We revamped the entire design in one month. The product came out nicely.<\/p>\n<p>Meanwhile, we started reaching out to schools. But none of the co-founders had a sales background. We struggled to get appointments. We found that principals had no decision-making power. The decision-makers were never available in the school. Most school administrators do not check or respond to emails..<\/p>\n<p>We were unable to sell our product even though it cost much less than our competitors. We were devastated, and cried on each other&rsquo;s shoulders. (The biggest benefit of having a co-founder in a startup.)<\/p>\n<p>We found a few customers by leveraging references, but revenue was far away. My co-founder knew customers better than me. He said that few big schools would buy our product if we could implement a few more features.<\/p>\n<p>I had a different opinion. I argued that we had enough features for any school, but that there was something missing in the sales process. I thought we should focus on small to medium schools, even if we make less money. Conflicts between co-founders began escalating.<\/p>\n<p>We were running out of money, so we invested more of our personal savings into our startup. And then, we hired a sales person from a big competitor&mdash;our big mistake.<\/p>\n<p>We felt that we&rsquo;d found a silver bullet because he gave us access to our competitor&rsquo;s product, and told us the secrets of selling to schools. We thought that finally <em>&ldquo;aache din aane wale hain&rdquo;<\/em> (The good days are about to come).<\/p>\n<p>He worked with us for a month, but couldn&rsquo;t crack even a single sale. We wondered what was wrong. Actually, he was able to sell in his previous company because of the brand name. He had never faced the heat of an unknown startup.<\/p>\n<p>We needed more money to survive. My co-founder was busy chasing big schools who could pay good money in advance. He also started establishing contacts with political and influential folks to win the deals. But we, the co-founders, were on different paths.<span class=\"pull-quote\"><span class=\"quote-line\">&nbsp;<\/span><span>I was reading a lot of startup blogs and books. I started believing in lean startup methodologies and doing more with less resources. <\/span><span class=\"quote-line\">&nbsp;<\/span><\/span><\/p>\n<p>I was reading a lot of startup blogs and books. I started believing in lean startup methodologies and doing more with less resources. Unfortunately, my co-founder was still building our startup like a big corporate (alliances with other companies and politicians, hiring sales, and maintaining hierarchy).<\/p>\n<p>I proposed to reduce our expenses:<\/p>\n<ul><li>Bring our only developer from cash to equity (up to 20%).<\/li>\n<li>Stop chasing big schools and focus on small schools.<\/li>\n<li>Target schools on the outskirts, which are relatively easy to win.<\/li>\n<li>Fire the sales guy and spend all our time in sales.<\/li>\n<\/ul><p>But our vision and thoughts were not aligned. I knew that our relationship would be spoiled if we continued working together. We had long (and bitter) discussions on keeping the ownership and equity, but nothing came of it. Finally, my co-founder took over the company and promised to return my cash if the company made any profits in the future.<\/p>\n<p>Expenses at the end of 11 months:<br>\nInitial six months: Rs9,56,000<br>\nSalaries: Rs3,00,000<br>\nSales training: Rs30,000<br>\nRent: Rs56,000<br>\nTravel, marketing, and others: Rs2,00,000<br><strong>Total: Rs15,42,000<\/strong><\/p>\n<p>By now, we had wasted more than Rs15 lakh ($22,000) on a product that nobody wanted to purchase. After a few more weeks of struggle, my co-founder had to join a job. The end of the startup, SchoolGennie.<\/p>\n<p>But I learnt some of the great lessons of my life:<\/p>\n<h2><strong>1. Know your customer before building your product<\/strong><\/h2>\n<p>The point should be clear by now. We built our product based on the assumptions and feature lists of our competitors. We should have talked to our customers before building our product.<\/p>\n<p>We should have convinced two to three schools of different sizes to test our product. In exchange, we should have provided a lifetime free product and support for early-adopter schools. I should have validated my product before leaving my job.<\/p>\n<h2><strong>2. Know where to spend money and where to save<\/strong><\/h2>\n<p>We spent most of the money on office infrastructure and employee salaries. We could have avoided 80% of expenses by working from home and hiring employees on survival salary and ESOPs.<\/p>\n<p>We  avoided expenses on professional design of sales material, marketing tools, and paid consultancy. We should have spent money on these things since they translate into more sales or leads.<\/p>\n<p>If the primary source of your customer acquisition is your website, then you should spend money on content marketing, sales deck, and sales pages. If you acquire your customers offline, then spend money on sales brochures and other printed material.<\/p>\n<h2><strong>3. Get your hands dirty with the code, even if you are a non-techie<\/strong><\/h2>\n<p>Non-technical co-founders remain clueless about technical know-hows. They should not behave like a foreign client who just assigns work and expects it to be completed by the technical team.<\/p>\n<p>That didn&rsquo;t work in my startup and it will not work in your startup. I advise you to start coding. There might be some exceptions, but a non-tech co-founder can take better decisions if he or she knows how things get implemented.<\/p>\n<p>If you do not have a tech co-founder and are building a software product, then there is no exception.<\/p>\n<h2><strong>4. Sell, even if you are from a non-sales background<\/strong><\/h2>\n<p>The sales process is not just about good public speaking but addressing the concerns of the customer.<\/p>\n<p>When I moved to Chandigarh, I tried sales in the local schools. I visited about 50 schools in one month and closed three deals. I not only learnt the sales process, but also got acquainted with customers&rsquo; real issues. You can build a great product with a better understanding of your customer&rsquo;s pain areas.<span class=\"pull-quote\"><span class=\"quote-line\">&nbsp;<\/span><span>You can build a great product with a better understanding of your customer&rsquo;s pain areas.<\/span><span class=\"quote-line\">&nbsp;<\/span><\/span><\/p>\n<p>Disclaimer: I am not suggesting that all co-founders should be doing all the things at all the time. No. They should be owners of their areas, but at the same time, they should have first-hand experience of all kind of jobs in a startup.<\/p>\n<h2>5. Take a decision and trust your intuition<\/h2>\n<p>We became bad at taking firm decisions. We started postponing tough decisions like the sales budget, hiring or firing, offering equity to the employees, deciding between chasing big schools and small schools, offering a free solution or charging premium and, in the end, on how to go our own ways.<\/p>\n<p>Since the closure of my first venture, I started taking firm decisions based on the available information at that time. You can never have 100% data available for taking any decision. You should be smart enough to derive a conclusion with between 60% and 70% information and fill the gap with your intuition.<\/p>\n<p>If you are confused with your decision, then you will not be able to execute with 100% confidence.<\/p>\n<h2>6. Money is just a by-product of a startup<\/h2>\n<p>We entrepreneurs start a venture to solve a customer&rsquo;s problem (or to explore our passion), and money is just fuel for our startup vehicle.<\/p>\n<p>If you focus on money, then you will become short-sighted. You can make money in the short-term, but you will lose strength in the long-term. Focus on solving problems and keeping your customers happy. The money will follow.<\/p>\n<p><em>This post first appeared on <a href=\"https:\/\/www.linkedin.com\/pulse\/how-we-lost-rs-1500000-startup-shutdown-before-first-pardeep-goyal?trk=hp-feed-article-title-channel-add\">Linkedin<\/a>. We welcome your comments at <a href=\"mailto:ideas.india@qz.com\">ideas.india@qz.com<\/a>.<\/em><\/p>\n","hero":{"id":567097,"alt":"India-startup-fail-entrepreneur","title":"An employee works on a computer terminal against the backdrop of a picture of late Apple co-founder Steve Jobs at the Start-up Village in Kinfra High Tech Park in the southern Indian city of Kochi","caption":"Failure and no easy money.","credit":"Reuters\/Sivaram V","size":"extra-large","thumbnail":"https:\/\/qzprod.files.wordpress.com\/2015\/12\/startup-fail.jpg?quality=80&strip=all&w=270&h=152&crop=1","src":{"mobile":"https:\/\/qzprod.files.wordpress.com\/2015\/12\/startup-fail.jpg?quality=80&strip=all&w=320","mobile_2x":"https:\/\/qzprod.files.wordpress.com\/2015\/12\/startup-fail.jpg?quality=80&strip=all&w=640","tablet":"https:\/\/qzprod.files.wordpress.com\/2015\/12\/startup-fail.jpg?quality=80&strip=all&w=768","tablet_2x":"https:\/\/qzprod.files.wordpress.com\/2015\/12\/startup-fail.jpg?quality=80&strip=all&w=1536","desktop":"https:\/\/qzprod.files.wordpress.com\/2015\/12\/startup-fail.jpg?quality=80&strip=all&w=1600","desktop_2x":"https:\/\/qzprod.files.wordpress.com\/2015\/12\/startup-fail.jpg?quality=80&strip=all&w=1600"}},"edition":"india","popularPostsRank":1,"taxonomies":{"kicker":[{"name":"EPIC FAIL","slug":"epic-fail"}],"tags":[{"name":"billion-dollar industry","slug":"billion-dollar-industry"},{"name":"boring job","slug":"boring-job"},{"name":"Business","slug":"business"},{"name":"capabilities","slug":"capabilities"},{"name":"children's education","slug":"childrens-education"},{"name":"company incentives","slug":"company-incentives"},{"name":"customer","slug":"customer"},{"name":"decision","slug":"decision"},{"name":"edu-tech","slug":"edu-tech"},{"name":"education","slug":"education"},{"name":"entrepreneur","slug":"entrepreneur"},{"name":"ERP products","slug":"erp-products"},{"name":"Expenditure","slug":"expenditure"},{"name":"expenses","slug":"expenses"},{"name":"fail","slug":"fail"},{"name":"failure","slug":"failure"},{"name":"first venture","slug":"first-venture"},{"name":"gurgaon","slug":"gurgaon"},{"name":"hardware","slug":"hardware"},{"name":"hiring","slug":"hiring"},{"name":"india","slug":"india-2"},{"name":"Internet","slug":"internet"},{"name":"intuition","slug":"intuition"},{"name":"investing","slug":"investing"},{"name":"investment","slug":"investment"},{"name":"laptop","slug":"laptop"},{"name":"money","slug":"money"},{"name":"new companies","slug":"new-companies"},{"name":"office space","slug":"office-space"},{"name":"premium","slug":"premium"},{"name":"recruitment firm","slug":"recruitment-firm"},{"name":"risky business","slug":"risky-business"},{"name":"sales person","slug":"sales-person"},{"name":"schools","slug":"schools"},{"name":"software","slug":"software"},{"name":"startup","slug":"startup"},{"name":"startup ecosystem","slug":"startup-ecosystem"},{"name":"Technology","slug":"technology"}],"topic":[{"name":"Science and Tech","slug":"science-and-tech-t"}]},"kicker":"EPIC FAIL","byline":{"bylineString":"Pardeep Goyal","type":"custom_byline","label":"Written by"},"share":{"twitter":"https:\/\/twitter.com\/intent\/tweet?url=http%3A%2F%2Fqz.com%2F556691&#038;text=How+my+startup+lost+Rs15+lakh+and+shut+down+before+its+first+anniversary&#038;via=qzindia","facebook":"https:\/\/www.facebook.com\/sharer.php?u=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F","linkedin":"http:\/\/www.linkedin.com\/shareArticle?mini=true&#038;url=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F&#038;title=How+my+startup+lost+Rs15+lakh+and+shut+down+before+its+first+anniversary&#038;summary=I+thought+I+would+make+millions+of+dollars+through+my+startup%2C+but+I+failed+miserably.+I+had+read+amazing+stories+of+startups+like+Flipkart+and%26hellip%3B&#038;source=Quartz","email":"mailto:?subject=Quartz%3A%20How%20my%20startup%20lost%20Rs15%20lakh%20and%20shut%20down%20before%20its%20first%20anniversary&body=http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F%0A%0AI%20thought%20I%20would%20make%20millions%20of%20dollars%20through%20my%20startup%2C%20but%20I%20failed%20miserably.%20I%20had%20read%20amazing%20stories%20of%20startups%20like%20Flipkart%20and%E2%80%A6%0A%0ASign%20up%20for%20the%20Quartz%20Daily%20Brief%3A%20http%3A%2F%2Fbit.ly%2Fquartzdailybrief.","whatsapp":"whatsapp:\/\/send?text=How%20my%20startup%20lost%20Rs15%20lakh%20and%20shut%20down%20before%20its%20first%20anniversary%3A%20http%3A%2F%2Fqz.com%2F556691%2Fhow-my-startup-lost-rs15-lakh-and-shut-down-before-its-first-anniversary%2F"}}]}};
+		QZ.preview = false;
+	</script>
+	
+	<script data-main="http://app.qz.com/build-directory/build-app.4.0.168.js" src="http://app.qz.com/js/vendor/require.js"></script>	
+	<script>
+/*	Google Analytics */
+	(function(i,s,o,g,r,a,m){
+		i['GoogleAnalyticsObject']=r;
+		i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments); };
+		i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+	ga('create', 'UA-39970610-1', 'qz.com');
+	ga('require','linker');
+	ga("linker:autoLink", ["ssl.qz.com"]);	
+
+	// DFP
+	(function() {
+		var gads = document.createElement("script");
+		gads.async = true;
+		gads.type = "text/javascript";
+		var useSSL = "https:" == document.location.protocol;
+		gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+		var node =document.getElementsByTagName("script")[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
+
+	// Chartbeat
+	var _sf_async_config={uid:55570};
+	(function(){
+		function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('src',
+			(("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + "js/chartbeat.js");
+			document.body.appendChild(e);
+		}
+		var oldonload = window.onload;
+		window.onload = (typeof window.onload != 'function') ?
+		loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+
+	// Bizo
+	var _bizo_data_partner_id = "1016";
+	(function(){
+		var b,a,u;a=document.createElement("script");
+		a.type="text/javascript"; a.async=true;
+		u=(window.location.protocol==="https:"?"https://sjs.":"http://js.") + "bizographics.com/insight.min.js";
+		a.src=u; b=document.getElementsByTagName("script")[0];
+		return b.parentNode.insertBefore(a,b);
+	})();
+
+	// Comscore
+	var _comscore = _comscore || [];
+	_comscore.push({ c1: "2", c2: "6463921" });
+	(function() {
+		var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+		s.async = true;
+		s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+		el.parentNode.insertBefore(s, el);
+	})();
+
+	if (navigator.appVersion.indexOf('MSIE')>=0) document.write(unescape('%3C')+'\!-'+'-')
+
+	// Facebook
+	(function() {
+		var _fbq = window._fbq || (window._fbq = []);
+		if (!_fbq.loaded) {
+			var fbds = document.createElement('script');
+			fbds.async = true;
+			fbds.src = '//connect.facebook.net/en_US/fbds.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(fbds, s);
+			_fbq.loaded = true;
+		}
+		_fbq.push(['addPixelId', '1416115438681460']);
+	})();
+	window._fbq = window._fbq || [];
+	window._fbq.push(['track', 'PixelInitialized', {}]);
+
+</script>
+<noscript>
+	<!--	comScore	-->
+	<img src="http://b.scorecardresearch.com/p?c1=2&c2=6463921&c3=&c4=&c5=&c6=&c15=&cj=1" />
+	<!--	Facebook	-->
+	<img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1416115438681460&ev=PixelInitialized" />
+</noscript>
+
+<!-- Parse.ly -->
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="qz.com"></div>
+</div>
+<script type="text/javascript">
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include -->
+
+</body>
+</html>
+<!--
+	generated 271 seconds ago
+	generated in 0.117 seconds
+	served from batcache in 0.002 seconds
+	expires in 29 seconds
+-->
