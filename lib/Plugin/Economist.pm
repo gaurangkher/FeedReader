@@ -5,7 +5,7 @@ use Moose;
 use Try::Tiny;
 use Mojo::DOM;
 use LWP::Simple;
-use HTML::HeadParser;
+use HTML::Entities qw(decode_entities);
 use Story;
 use Log::Log4perl qw(:easy);
 
@@ -41,10 +41,10 @@ sub parse {
     my @check = lc($story->{description}) =~ /india/;
     next if ( scalar @check == 0 );
 
-    my $title  = $story->{title}; 
+    my $title  = decode_entities($story->{title});
     my $time   = $story->{pubDate};
-    my $author = $story->{author};
-    my $category = $story->{category}->[-1];    
+    my $author = decode_entities($story->{author});
+    my $category = decode_entities($story->{category}->[-1]);
     my $url = $story->{'link'};
     INFO qq{$url};
 
