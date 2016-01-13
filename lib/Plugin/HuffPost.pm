@@ -68,9 +68,10 @@ sub parse_page {
     $content->find('p')->each(sub {$_->append_content("#*##") }); 
     $content = $content->all_text();
     $content =~ s/\#\*\#\#/\n\n/g;
+    my ($cont1, @arr) = split q{\@media only screen}, $content;
 
     return {
-        content     => $content,
+        content     => $cont1,
         description => $description,
         tags        => $tags,
         category    => $category,
