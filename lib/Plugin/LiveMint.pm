@@ -59,7 +59,7 @@ sub parse_page {
 
     my $page    = Mojo::DOM->new($pd);
     my $content = '';
-    for my $e ($page->find('div[class~="story-content"]')->first->find('p')->each) {
+    for my $e ($page->find('div[class*="story-content"]')->first->find('p')->each) {
         my $string = $e->to_string();
         next if $string =~ /script type=\"text\/javascript\"/;
         $content = $content . "\n" . $e->all_text(0);

@@ -63,7 +63,7 @@ sub parse_page {
     $tags = $tags->tree->[2]->{content};
 
     my $content = '';
-    for my $e ($page->find('div.main-story')->first->find('p')->each) {
+    for my $e ($page->find('div[class*="main-story"]')->first->find('p')->each) {
         $content = $content . "\n\n" . $e->all_text(0);
     }
 
