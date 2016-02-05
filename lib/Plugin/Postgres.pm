@@ -25,8 +25,8 @@ has dbh => (
         }
         else {
             return DBI->connect(
-                "dbi:Pg:dbname='vartaa';host='207.181.217.150';port=5432;",
-                "admin", "admin" 
+                "dbi:Pg:dbname='vartaa';host='db-vs.vartaa.in';port=5432;",
+                "postgres", "Zrothry0" 
             );
         }
     },
@@ -39,8 +39,8 @@ has es_dbh => (
     default => sub {
         return Search::Elasticsearch->new(
             nodes => [
-                '207.181.217.150:9200',
-                '207.181.217.150:9200'
+                'db-vs.vartaa.in:9200',
+                'db-vs.vartaa.in:9200'
             ]
         );
     },
