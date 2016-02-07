@@ -75,9 +75,7 @@ sub parse_page {
     my $category = $page->find('span[itemprop="title"]')->map('text');
     $category =  $category->[1];
     
-    my $strap = $page->find('div.strstrap')->first;
-    
-    my $author = $strap->find('span')->first->find('a')->map('text')->first;
+    my $author = $page->find('div.authername')->first->find('a')->map('text')->first;
 
     return {
         author      => $author,

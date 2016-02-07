@@ -17,14 +17,15 @@ my $plugin = Plugin::IndiaToday->new();
 
 my $story =  $plugin->parse_page($page);
 my $content = delete $story->{content};
+
 is_deeply(
     $story,
     {
-          'description' => 'In what could provide more fodder to the Opposition to target Prime Minister Narendra Modi and the NDA government at the Centre, former Research and Analysis Wing (R&AW) chief AS Dulat has revealed that former Prime Minister Atal Bihari Vajpayee, following the loss in 2004 general elections, had expressed his discontent over the handling of situation during 2002 Gujarat riots.',
-          'tags' => 'AS Dulat,Atal Bihari Vajpayee,Gujarat riots,Karan Thapar,To The Point,India-Pakistan Agra Summit,IC-814 hijacking,Mufti Mohammad Sayeed',
-          'category' => 'India',
-          'image_url' => 'http://media2.intoday.in/indiatoday/images/stories/dulat--video_305-2_070215093826.jpg',
-          'author' => 'IndiaToday.in'
+          'image_url' => 'http://media2.intoday.in/indiatoday/images/stories/amit-shah-jan18-1_305_010716074944.jpg',
+          'category' => 'Archive',
+          'tags' => 'Amit Shah,BJP President Amit Shah,Narendra Modi,Assembly election 2016',
+          'author' => 'Uday Mahurkar',
+          'description' => 'Like most Shakespearean heroes, BJP president Amit Shah, whose tenure is up for renewal this month, has a vaulting ambition. But in Shakespearean tragedies, the protagonist'
     },
     q{got tags, description, author, image_url, category}
 );
