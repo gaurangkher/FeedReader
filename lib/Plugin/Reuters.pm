@@ -20,7 +20,6 @@ has feeds => (
         [ 
             'http://feeds.reuters.com/reuters/INtopNews',
             'http://feeds.reuters.com/reuters/INbusinessNews',
-            'http://feeds.reuters.com/reuters/INentertainmentNews',
             'http://feeds.reuters.com/reuters/worldOfSport',
         ];
     },
