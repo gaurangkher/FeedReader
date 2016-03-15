@@ -64,7 +64,9 @@ sub parse_page {
     $image_url = $image_url->tree->[2]->{content};
 
     my $content = $page->find('div#mainentrycontent')->first;
-    $content->at('script')->remove;
+    while( $content->at('script') ) {
+        $content->at('script')->remove;
+    }
     $content->find('p')->each(sub {$_->append_content("#*##") }); 
     $content = $content->all_text();
     $content =~ s/\#\*\#\#/\n\n/g;
