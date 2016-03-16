@@ -45,6 +45,7 @@ sub get_url {
     my ($self, $url) = @_;
 
     $ua->agent('My agent/1.0');
+    $ua->default_header('Accept-Language' => "en");
     my $content = retry { get($url) } strategy => q{Fibonacci};
 
     if (!defined $content) {
