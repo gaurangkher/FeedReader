@@ -17,7 +17,7 @@ my $plugin = Plugin::IndiaToday->new();
 
 my $story =  $plugin->parse_page($page);
 my $content = delete $story->{content};
-
+print Dumper $story;
 is_deeply(
     $story,
     {

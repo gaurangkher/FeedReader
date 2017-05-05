@@ -17,7 +17,7 @@ has feeds => (
     required => 1,
     default  => sub {
         [ 
-            'http://www.huffingtonpost.in/feeds/verticals/india/index.xml'
+            'http://www.huffingtonpost.in/feeds/index.xml'
         ];
     },
 );
@@ -37,10 +37,9 @@ sub parse {
     my $obj   = Story->new(
         time      => $story->{'pubDate'},
         title     => $story->{'title'},
-        author    => $story->{'author'},
         source    => $self->source_name(),
         url       => $url,
-        %{$args},
+        %{$args}
     );
 
     return $obj;
@@ -51,33 +50,36 @@ sub parse_page {
 
     my $page = Mojo::DOM->new($pd);
 
+    my $author = $page->find('span.author-card__details__name')->first;
+    $author = $author->all_text();
+
     my $description = $page->find('meta[name="description"]')->first;
     $description = $description->tree->[2]->{content};
 
-    my $category = $page->find('meta[name="category"]')->first;
+    my $category = $page->find('meta[property="article:section"]')->first;
     $category = $category->tree->[2]->{content};
 
-    my $tags = $page->find('meta[name="keywords"]')->first;
+    my $tags = $page->find('meta[property="keywords"]')->first;
     $tags = $tags->tree->[2]->{content};
 
     my $image_url = $page->find('meta[property="og:image"]')->first;
     $image_url = $image_url->tree->[2]->{content};
 
-    my $content = $page->find('div#mainentrycontent')->first;
-    while( $content->at('script') ) {
-        $content->at('script')->remove;
+    my $cont1 = ''; 
+    for my $content ($page->find('.content-list-component')->each) {
+        for my $ct ($content->find('p')->each) {
+            my $c = $ct->all_text();
+            my ($cont, @arr) = split q{\@media only screen}, $c;
+            $cont1 = $cont1 . "\n\n" . $cont;
+        }
     }
-    $content->find('p')->each(sub {$_->append_content("#*##") }); 
-    $content = $content->all_text();
-    $content =~ s/\#\*\#\#/\n\n/g;
-    my ($cont1, @arr) = split q{\@media only screen}, $content;
-
     return {
         content     => $cont1,
         description => $description,
         tags        => $tags,
         category    => $category,
         image_url   => $image_url,
+        author      => $author,
     };
 }
 

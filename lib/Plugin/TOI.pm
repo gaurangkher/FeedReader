@@ -17,13 +17,12 @@ has feeds => (
     required => 1,
     default  => sub {
         [ 
-            'http://timesofindia.feedsportal.com/c/33039/f/533916/index.rss',
-            'http://timesofindia.feedsportal.com/c/33039/f/533919/index.rss',
-            'http://timesofindia.feedsportal.com/c/33039/f/533965/index.rss',
-            'http://timesofindia.feedsportal.com/c/33039/f/533921/index.rss',
-            'http://timesofindia.feedsportal.com/c/33039/f/533927/index.rss',
-            'http://timesofindia.feedsportal.com/c/33039/f/533928/index.rss',
-            'http://timesofindia.indiatimes.com/rssfeeds/7098551.cms',
+            #'http://timesofindia.indiatimes.com/rssfeedstopstories.cms',
+            #'http://timesofindia.indiatimes.com/rssfeeds/1898055.cms',
+            'http://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms',
+            #'http://timesofindia.indiatimes.com/rssfeeds/4719148.cms',
+            #'http://timesofindia.indiatimes.com/rssfeeds/5880659.cms',
+            #'http://timesofindia.indiatimes.com/rssfeeds/-2128669051.cms',
         ];
     },
 );
@@ -69,10 +68,10 @@ sub parse_page {
 
 
     # After this
-    my $author = $page->find('span#authortext')->first->all_text();
+    my $author = $page->find('a.auth_detail')->first->all_text();
 
-    my $category = $page->find('.bdcrumb')->first->find('a')->first;
-    $category = $category->all_text(0);
+    my $category = $page->find('meta[itemprop="articleSection"]')->first;
+    $category = $category->tree->[2]->{'name'};
 
     my $content = $page->find('div.Normal')->first;
     $content->find('br')->each(sub {$_->replace("<p>#*##</p>") });

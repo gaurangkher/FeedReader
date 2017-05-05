@@ -18,14 +18,12 @@ has feeds => (
     required => 1,
     default  => sub {
         [ 
-           'http://indiatoday.feedsportal.com/c/33614/f/589699/index.rss?http://indiatoday.intoday.in/rss/homepage-topstories.jsp', 
-           'http://indiatoday.feedsportal.com/c/33614/f/647964/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=150',
-           'http://indiatoday.feedsportal.com/c/33614/f/589701/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=30',
-           'http://indiatoday.feedsportal.com/c/33614/f/589704/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=34',
-           'http://indiatoday.feedsportal.com/c/33614/f/589705/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=61',
-           'http://indiatoday.feedsportal.com/c/33614/f/589711/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=25',
-           'http://indiatoday.feedsportal.com/c/33614/f/589706/index.rss?http://indiatoday.intoday.in/rss/article.jsp?sid=84',  
-           'http://indiatoday.feedsportal.com/c/33614/f/589714/index.rss?http://indiatoday.intoday.in/rss/issue.jsp',
+            'http://indiatoday.intoday.in/rss/homepage-topstories.jsp',
+            'http://indiatoday.intoday.in/rss/article.jsp?sid=36',
+            'http://indiatoday.intoday.in/rss/article.jsp?sid=150',
+            'http://indiatoday.intoday.in/rss/article.jsp?sid=34',
+            'http://indiatoday.intoday.in/rss/article.jsp?sid=21',
+            'http://indiatoday.intoday.in/rss/article.jsp?sid=41',
         ];
     },
 );
@@ -37,7 +35,7 @@ sub source_name {
 sub parse {
     my ( $self, $story ) = @_;
 
-    my $url = $story->{'guid'};
+    my $url = $story->{'link'};
     INFO qq{$url};
     my $pd    = $self->get_url($url);
     my $title = $story->{'title'};
@@ -47,6 +45,7 @@ sub parse {
         time   => $story->{'pubDate'},
         source => $self->source_name(),
         url    => $url,
+        description => $story->{description},
         %{$args},
     );
 
@@ -57,9 +56,6 @@ sub parse_page {
     my ( $self, $pd ) = @_;
 
     my $page = Mojo::DOM->new($pd);
-    my $title = $page->find('title')->first->content;
-    my $description = $page->find('meta[name="description"]')->first;
-    $description = $description->tree->[2]->{content};
 
     my $tags = $page->find('meta[name="news_keywords"]')->first;
     $tags = $tags->tree->[2]->{content};
@@ -80,7 +76,6 @@ sub parse_page {
     return {
         author      => $author,
         content     => $content,
-        description => $description,
         image_url   => $image_url,
         tags        => $tags,
         category    => $category,

@@ -18,7 +18,11 @@ has feeds => (
     required => 1,
     default  => sub {
         [ 
-            'http://www.financialexpress.com/feed/'
+            'http://www.financialexpress.com/economy/feed/',
+            'http://www.financialexpress.com/industry/feed/',
+            'http://www.financialexpress.com/industry/banking-finance/feed/',
+            'http://www.financialexpress.com/lifestyle/science/feed/',
+            'http://www.financialexpress.com/sports/feed/',
         ];
     },
 );
