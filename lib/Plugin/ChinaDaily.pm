@@ -18,11 +18,11 @@ has feeds => (
     default  => sub {
         [ 
             'http://www.chinadaily.com.cn/rss/world_rss.xml',
-#            'http://www.chinadaily.com.cn/rss/bizchina_rss.xml',
-#            'http://www.chinadaily.com.cn/rss/opinion_rss.xml',
+            'http://www.chinadaily.com.cn/rss/bizchina_rss.xml',
+            'http://www.chinadaily.com.cn/rss/opinion_rss.xml',
 #            'http://www.chinadaily.com.cn/rss/hk_rss.xml',
 #            'http://www.chinadaily.com.cn/rss/lifestyle_rss.xml',
-#            'http://www.chinadaily.com.cn/rss/entertainment_rss.xml', 
+            'http://www.chinadaily.com.cn/rss/entertainment_rss.xml', 
         ];
     },
 );

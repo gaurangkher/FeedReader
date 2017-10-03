@@ -18,7 +18,8 @@ has feeds => (
     required => 1,
     default  => sub {
         [ 
-            'http://economictimes.indiatimes.com/rssfeedsdefault.cms'
+            'http://economictimes.indiatimes.com/rssfeedsdefault.cms',
+            'http://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms'
         ];
     },
 );

@@ -95,6 +95,7 @@ sub persist {
         body  => {
             title       => $a_t,
             date        => $a_d,
+            photo_url   => $image_url,
             authors     => \@a_s,
             source      => $source,
             tags        => \@t_s,
