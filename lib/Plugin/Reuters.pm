@@ -69,7 +69,7 @@ sub parse_page {
     my $json =  JSON->new->utf8->decode($data->all_text);    
     my $category = $json->{articleSection};
 
-    my $content = $page->find('#articleText')->first;
+    my $content = $page->find('div[class^="ArticleBody"]')->first;
     $content->find('span')->each(sub {$_->append_content("#*##") });
     $content = $content->all_text();
     $content =~ s/\#\*\#\#/\n\n/g;

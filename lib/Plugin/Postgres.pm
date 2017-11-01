@@ -17,18 +17,14 @@ has dbh => (
     isa     => 'Object',
     lazy    => 1,
     default => sub {
-        if (exists $ENV{v_env} && $ENV{v_env} eq 'test') {
-            return DBI->connect(
-                "dbi:Pg:dbname='vartaatest';host='vartaatest.cu829urpqqax.us-west-2.rds.amazonaws.com';port=5432;",
-                "vartaa_test", "Vart1AdotIn" 
-            );
-        }
-        else {
-            return DBI->connect(
-                "dbi:Pg:dbname='vartaa';host='db-vs.vartaa.in';port=5432;",
-                "postgres", "Zrothry0" 
-            );
-        }
+    	my $dbname = $ENV{'DBNAME'};
+    	my $host = $ENV{'HOST'};
+    	my $uname = $ENV{'USER'};
+    	my $pass = $ENV{'PASS'};
+        return DBI->connect(
+            "dbi:Pg:dbname='$dbname';host='$host';port=5432;",
+            "$uname", "$pass" 
+        );
     },
 );
 
@@ -68,14 +64,15 @@ sub persist {
 
     $content =~ s/^\s+//g;
  
-    my $category_id  = $self->category_id($category);
+    my ($category_id, $section_id)  = $self->category_id($category);
+    my ($section) = $self->section($section_id);
     my $source_id  = $self->source_id($source);
     my $author_ids = $self->author_ids($author);
 
     $self->insert(
         q{article}, $id,         $title, $time,
         $source_id, $author_ids, $desc,  $image_url,
-        $url,       $category_id
+        $url,       $category_id, $section
     );
 
     $self->insert( q{metatags}, $id, $tags );
@@ -100,6 +97,7 @@ sub persist {
             source      => $source,
             tags        => \@t_s,
             description => $a_de,
+            url 		=> $url,
         }
     );
 
@@ -114,7 +112,7 @@ sub insert {
     if ( $table eq q{article} ) {
         $sth = $self->dbh->prepare(
                 qq{INSERT INTO article(id, title, date, source_id, author_ids, }
-              . qq{description, photo_url, url, category_id) VALUES (?,?,?,?,?,?,?,?,?)}
+              . qq{description, photo_url, url, category_id, category) VALUES (?,?,?,?,?,?,?,?,?,?)}
         );
     }
     elsif ( $table eq q{content} ) {
@@ -165,15 +163,27 @@ sub source_id {
     return $id;
 }
 
+sub section {
+	my ( $self, $id ) = @_;
+
+	my $sth = $self->dbh->prepare("select ltree2text(path) from section where id = $id");
+	$sth->execute;
+	my ($path) = $sth->fetchrow_array();
+
+	return $path if ( defined $path );
+
+	return 'NoCat';
+}
+
 sub category_id {
     my ( $self, $name ) = @_;
 
     my $sth =
-      $self->dbh->prepare("select id from category where name = '$name'");
+      $self->dbh->prepare("select id, section_id from category where name = '$name'");
     $sth->execute;
-    my ($id) = $sth->fetchrow_array();
+    my ($id, $section) = $sth->fetchrow_array();
 
-    return $id if ( defined $id );
+    return ($id, $section) if ( defined $id );
 
     $sth = $self->dbh->prepare("select max(id) from category");
     $sth->execute;
@@ -183,7 +193,7 @@ sub category_id {
     $id++;
     $sth->execute( $id, $name );
 
-    return $id;
+    return ($id, 0);
 }
 
 sub author_ids {

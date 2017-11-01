@@ -13,21 +13,15 @@ Log::Log4perl->easy_init({ log_level => 'INFO' });
 
 my $dt = DateTime->now->subtract(days => 2);
 my $date = $dt->ymd;
-my $dbh;
-if (exists $ENV{v_env} && $ENV{v_env} eq 'test') {
-    $dbh = DBI->connect(
-        "dbi:Pg:dbname='vartaatest';host='vartaatest.cu829urpqqax.us-west-2.rds.amazonaws.com';port=5432;",
-        "vartaa_test", "Vart1AdotIn" 
-   
-    );
-}
-else {
-    $dbh = DBI->connect(
-        "dbi:Pg:dbname='vartaa';host='db-vs.vartaa.in';port=5432;",
-        "postgres", "Zrothry0" 
-    );
+my $dbname = $ENV{'DBNAME'};
+my $host = $ENV{'HOST'};
+my $uname = $ENV{'USER'};
+my $pass = $ENV{'PASS'};
 
-}
+my $dbh = DBI->connect(
+    "dbi:Pg:dbname='$dbname';host='$host';port=5432;",
+    "$uname", "$pass" 
+);
 
 my $sth = $dbh->prepare("select id from source");
 $sth->execute;
