@@ -5,6 +5,7 @@ use Moose;
 use Mojo::DOM;
 use LWP::Simple;
 use HTML::HeadParser;
+use JSON;
 use Story;
 use Log::Log4perl qw(:easy);
 
@@ -59,7 +60,7 @@ sub parse_page {
 
     my $page    = Mojo::DOM->new($pd);
     my $content = '';
-    for my $e ($page->find('div[class*="story-content"]')->first->find('p')->each) {
+    for my $e ($page->find('div[class="content"]')->first->find('p')->each) {
         my $string = $e->to_string();
         next if $string =~ /script type=\"text\/javascript\"/;
         $content = $content . "\n" . $e->all_text(0);
@@ -67,14 +68,13 @@ sub parse_page {
     
     my $category = $page->find('meta[property="article:section"]')->first;
     $category = $category->tree->[2]->{content};
-    
-    my $hp = HTML::HeadParser->new();
-    $hp->parse($pd);
-    my $tags        = $hp->header('X-Meta-keywords');
-    my $description = $hp->header('X-Meta-description');
-    my $time        = $hp->header('X-Meta-eomportal-lastUpdate');
-    my ( $day, @args ) = split q{ }, $time;
-    $time = join q{ }, @args;
+   
+   	my $description = $page->find('meta[name="description"]')->first;
+   	$description = $description->tree->[2]->{content};
+    my $data = $page->find('script[type="application/ld+json"]')->first;
+    my $json =  JSON->new->utf8->decode($data->all_text);
+	my $tags = join q{, }, $json->{keywords};
+	my $time = $json->{dateCreated};
 
     return {
         time        => $time,

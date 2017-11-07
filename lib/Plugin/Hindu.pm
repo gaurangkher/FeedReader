@@ -54,17 +54,16 @@ sub parse_page {
     my $try   = $page->find('meta[property="og:title"]')->first;
     my $title = $try->tree->[2]->{content};
     my $image_url =
-      try { $page->at('img.main-image')->tree->[2]->{src} } || undef;
+      try { $page->find('meta[property="og:image"]')->first->tree->[2]->{content} } || undef;
 
-    my $category = $page->find('.artbcrumb')->first->find('a')->first->content;
-    my $time = try { $page->at('div.artPubUpdate')->text; };
-    $time =~ s/Updated: //g;
+    my $category =
+    	try { $page->find('meta[property="article:section"]')->first->tree->[2]->{content} } || 'Home';
 
-    my $hp = HTML::HeadParser->new();
-    $hp->parse($pd);
-    my $author      = $hp->header('X-Meta-author');
-    my $tags        = $hp->header('X-Meta-keywords');
-    my $description = $hp->header('X-Meta-description');
+    my $time = $page->find('meta[name="publish-date"]')->first->tree->[2]->{content};
+
+    my $author      = $page->find('meta[property="article:author"]')->first->tree->[2]->{content};
+    my $tags        = $page->find('meta[name="news_keywords"]')->first->tree->[2]->{content};
+    my $description = $page->find('meta[name="description"]')->first->tree->[2]->{content};
 
     return {
         title       => $title,
