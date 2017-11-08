@@ -73,7 +73,7 @@ sub parse_page {
    	$description = $description->tree->[2]->{content};
     my $data = $page->find('script[type="application/ld+json"]')->first;
     my $json =  JSON->new->utf8->decode($data->all_text);
-	my $tags = join q{, }, $json->{keywords};
+	my $tags = join q{, }, @{$json->{keywords}};
 	my $time = $json->{dateCreated};
 
     return {
