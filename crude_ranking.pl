@@ -39,7 +39,7 @@ my $total = scalar @array;
 for my $source (@sources) {
     INFO qq{Ranking for source $source};    
     my $sth1 = $dbh->prepare(
-        "select id from article where date >= '$date' and category_id not in (3, 4, 5, 6, 52, 115) and source_id = $source order by date desc"
+        "select id from article where date >= '$date' and source_id = $source order by date desc"
     );
     my $num = shift @array;
     $sth1->execute;

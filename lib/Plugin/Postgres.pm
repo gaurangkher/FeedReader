@@ -77,7 +77,7 @@ sub persist {
 
     $self->insert( q{metatags}, $id, $tags );
     $self->insert( q{content},  $id, $content );
-
+    $self->insert( q{ranking},  $id );
     # Move out to messaging
     my @a_s = split q{,}, $author;
     my @t_s = split q{,}, $tags; 
@@ -118,6 +118,11 @@ sub insert {
     elsif ( $table eq q{content} ) {
         $sth = $self->dbh->prepare(
             qq{INSERT INTO content(id, content) VALUES (?, ?)} );
+    }
+    elsif ( $table eq q{ranking} ) {
+        $sth = $self->dbh->prepare(
+            qq{INSERT INTO ranking(id, auto, admin, page_rank, likes, dislikes)}
+          . qq{ VALUES (?, 0, 1000, 1000, 0, 0)} );
     }
     elsif ( $table eq q{metatags} ) {
         $sth = $self->dbh->prepare(
